@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
-using Convertion;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TDCOLib;
 using dclogXLib;
@@ -63,7 +62,7 @@ namespace DCUnitTest
             Assert.IsTrue(actions.ProcessFormula("test1"));
         }
         #region Conversion
-
+/*
         [TestMethod]
         public void ProcessExpression1()
         {
@@ -85,7 +84,7 @@ namespace DCUnitTest
             Assert.AreEqual(res - r, 0, 0.00001);
 
         }
-
+        */
         #endregion
     }
 }

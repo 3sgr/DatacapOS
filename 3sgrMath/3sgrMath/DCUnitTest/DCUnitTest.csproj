@@ -102,10 +102,6 @@
       <Project>{241c94a7-a0c0-4c05-8563-01a1196ab9f9}</Project>
       <Name>3sgrMath</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Convertion\Convertion.csproj">
-      <Project>{64267d47-5778-4e55-9c50-69f89c4c85d6}</Project>
-      <Name>Convertion</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dependency\dcsmart.dll" />
