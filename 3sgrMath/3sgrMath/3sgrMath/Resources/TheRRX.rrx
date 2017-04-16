@@ -1,0 +1,206 @@
+﻿<rrx>
+<!-- === .NET Action Definition and Help === -->
+<!-- Licensed Materials - Property of IBM
+
+ 5725-C15
+ © Copyright IBM Corp. 1994, 2014 All Rights Reserved
+ US Government Users Restricted Rights - Use, duplication or
+ disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ -->
+
+<!-- format: <net ref="C#Namespace.Class"> -->
+<net ref="_3sgrMath.SampleAction">
+  
+  <!-- Actions and Properties defined here are displayed in alphabetical order in DStudio -->
+  <!-- An example custom action that takes multiple parameters. -->  
+  <!-- This definition must match the c# menthod -->
+  <method name="CustomAction1">
+    <p name="p1" type="string" qi="This is a example string type.  Smart parameters are supported."/>
+    <p name="p2" type="bool" qi="This is a example bool type."/>
+    <p name="p3" type="int" qi="This is a example int type."/>
+    <p name="p4" type="uint" qi="This is a example uint type."/>
+    <p name="p5" type="long" qi="This is a example long type."/>
+    <p name="p6" type="ulong" qi="This is a example ulong type."/>
+    <p name="p7" type="short" qi="This is a example short type."/>
+    <p name="p8" type="ushort" qi="This is a example ushort type."/>
+    <p name="p9" type="byte" qi="This is a example byte type."/>
+    <p name="p10" type="sbyte" qi="This is a example sbyte type."/>
+    <p name="p11" type="float" qi="This is a example float type."/>
+    <p name="p12" type="double" qi="This is a example double type."/>    
+    <ap>
+      Any additional parameter information can be placed here.
+    </ap>
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+    <ret>
+      <b>True,</b> if the action succeeds.  Otherwise, <b>False.</b>
+    </ret>
+  </method>
+
+  <!-- An example property action.  Property actions always returns true.  -->
+  <prop name="SampleProperty01" type="string" qi="This is an example string property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop> 
+  
+	<prop name="SampleProperty02" type="bool" qi="This is an example bool property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+  
+  <prop name="SampleProperty03" type="int" qi="This is an example int property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+  
+  <prop name="SampleProperty04" type="uint" qi="This is an example uint property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+  
+  <prop name="SampleProperty05" type="long" qi="This is an example long property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+  
+  <prop name="SampleProperty06" type="ulong" qi="This is an example ulong property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+  
+  <prop name="SampleProperty07" type="short" qi="This is an example short property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+  
+  <prop name="SampleProperty08" type="ushort" qi="This is an example ushort property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+  
+  <prop name="SampleProperty09" type="byte" qi="This is an example byte property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+  
+  <prop name="SampleProperty10" type="sbyte" qi="This is an example sbyte property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+ 
+  <prop name="SampleProperty11" type="float" qi="This is an example float property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+  
+  <prop name="SampleProperty12" type="double" qi="This is an example double property.">
+    <h>
+      Put your action description here.<br/><br/>
+
+      More description here.
+      <e>
+        <b>MyAction("123")</b><br/>
+        This is the action example.
+      </e>
+    </h>
+    <lvl>All levels.</lvl>
+  </prop>
+
+</net>
+</rrx>
