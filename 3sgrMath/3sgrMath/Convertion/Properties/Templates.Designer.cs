@@ -8,8 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _3sgrMath.Properties {
+namespace Convertion.Properties {
     using System;
+    using System.Reflection;
     
     
     /// <summary>
@@ -22,14 +23,14 @@ namespace _3sgrMath.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class Templates {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Templates() {
         }
         
         /// <summary>
@@ -39,7 +40,7 @@ namespace _3sgrMath.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_3sgrMath.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Convertion.Properties.Templates", typeof(Templates).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,34 +62,83 @@ namespace _3sgrMath.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is string from default local for the .NET actions.
+        ///   Looks up a localized string similar to ^/*-+()={}.
         /// </summary>
-        internal static string SampleStringNET {
+        internal static string ArithmeticOperations {
             get {
-                return ResourceManager.GetString("SampleStringNET", resourceCulture);
+                return ResourceManager.GetString("ArithmeticOperations", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;rrx&gt;
-        ///&lt;!-- === .NET Action Definition and Help === --&gt;
-        ///&lt;!-- Licensed Materials - Property of IBM
-        ///
-        /// 5725-C15
-        /// © Copyright IBM Corp. 1994, 2014 All Rights Reserved
-        /// US Government Users Restricted Rights - Use, duplication or
-        /// disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
-        /// --&gt;
-        ///
-        ///&lt;!-- format: &lt;net ref=&quot;C#Namespace.Class&quot;&gt; --&gt;
-        ///&lt;net ref=&quot;_3sgrMath.Actions&quot;&gt;
-        ///  
-        ///  &lt;!-- Actions and Properties defined here are displayed in alphabetical order in DStudio --&gt;
-        ///  &lt;!-- An example custom act [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to ,.
         /// </summary>
-        internal static string TheRRX {
+        internal static string Coma {
             get {
-                return ResourceManager.GetString("TheRRX", resourceCulture);
+                return ResourceManager.GetString("Coma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ..
+        /// </summary>
+        internal static string Dot {
+            get {
+                return ResourceManager.GetString("Dot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ~~.
+        /// </summary>
+        internal static string Eliminator {
+            get {
+                return ResourceManager.GetString("Eliminator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Empty {
+            get {
+                return ResourceManager.GetString("Empty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ~|\?.
+        /// </summary>
+        internal static string ForbiddenSymbols {
+            get {
+                return ResourceManager.GetString("ForbiddenSymbols", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to |.
+        /// </summary>
+        internal static string Line {
+            get {
+                return ResourceManager.GetString("Line", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  ().
+        /// </summary>
+        internal static string Separators {
+            get {
+                return ResourceManager.GetString("Separators", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  .
+        /// </summary>
+        internal static string Space {
+            get {
+                return ResourceManager.GetString("Space", resourceCulture);
             }
         }
     }

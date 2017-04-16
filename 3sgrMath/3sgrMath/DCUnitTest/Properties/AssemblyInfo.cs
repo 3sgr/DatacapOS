@@ -1,26 +1,16 @@
-﻿//
-// Licensed Materials - Property of IBM
-// 5725-C15
-// © Copyright IBM Corp. 1994, 2014 All Rights Reserved
-//
-// US Government Users Restricted Rights - Use, duplication or
-// disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
-//
-
-
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("_3sgrMath Custom Action Library")]
-[assembly: AssemblyDescription("_3sgrMath Custom Action Library")]
+[assembly: AssemblyTitle("DCUnitTest")]
+[assembly: AssemblyDescription("Unit Test for © IBM Datacap action library ")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SSS Group Ltd.")]
-[assembly: AssemblyProduct("IBM Datacap")]
-[assembly: AssemblyCopyright("© Copyright IBM Corp. 1994, 2014")]
+[assembly: AssemblyProduct("DCUnitTest")]
+[assembly: AssemblyCopyright("Copyright © SSS Group Ltd. 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -30,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3a7f4fd2-c709-4fab-9a23-139fd1171e8f")]
+[assembly: Guid("ea3f497b-90a3-4520-a8e6-9d3492cd9811")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -39,7 +29,8 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-// You can specify all the values or you can default the Revision and Build Numbers 
+// You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("9.1.0.1")]
-[assembly: AssemblyFileVersion("9.1.0.1")]
+// [assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
