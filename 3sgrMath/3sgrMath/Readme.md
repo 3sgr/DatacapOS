@@ -2,7 +2,7 @@
 
 Custom Actions Library for © IBM Datacap
 
-Abstract
+Abstract<br/>
 This library is designed to provide formula processing capabilities for © IBM Datacap.
 
 Please note: You are responsible for providing access to all of the required dependencies, as they are not included with this project. 
