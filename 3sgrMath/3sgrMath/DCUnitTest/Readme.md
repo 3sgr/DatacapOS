@@ -10,7 +10,7 @@ You can copy required dlls to the folders listed below and use supplied bat file
 - PilotCtrl.dll<br/>
 - TDCO.dll<br/>
 <br/>
-<b> \\Dependencies </b><br/>
+<b> \Dependencies </b><br/>
 - dcsmart.dll  <br/>
 - iRRX.dll <br/>
 <br/>
