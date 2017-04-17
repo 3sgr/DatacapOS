@@ -10,10 +10,10 @@ You can copy required dlls to the folders listed below and use supplied bat file
 - dcrro.dll<br/>
 - PilotCtrl.dll<br/>
 - TDCO.dll<br/>
-<b> \\Dependencies\\ </b> 
-<br/>
+<b> \\Dependencies\\ </b> <br/>
 - dcsmart.dll  <br/>
 - iRRX.dll <br/>
+<br/>
 - To Register COM use : Regsvr.bat<br/>
 - To Unregister COM: UnRegsvr.bat<br/>
 After registering the dlls add them via COM reference in Visual Studio for COM dlls and add dcsmart.dll and iRRX.dll as .dll <br/>
