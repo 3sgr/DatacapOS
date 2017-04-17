@@ -12,7 +12,11 @@ Installation/Deployment
 Content of this folder is a Visual Studio Solution that once built results in Custom Actions Library (.dll).Once Built the .dll needs to be place into Application-specific location (e.g. \Datacap\APT\dco_APT\Rules) or inside \Datacap\RRS\ folder.
 
 1. Download(Pull) the solution to the PC that has ©IBM Datacap installed (version 9.x)
-2. Remap references (iRRX.dll and dcSmart.dll) for the 3sgrMath project
-3. Build the solution
+2. Remap references ('iRRX.dll' and 'dcSmart.dll') for the 3sgrMath project
+3. Optional(Setting up Unit Test Project(see 'DCUnitTest' for more details) :
+    3.1. Create: '..\DCUnitTest\DCO\Setup' and '..\DCUnitTest\DCO\Runtime' folders
+    3.2 Copy APT Setup DCO ('C:\Datacap\APT\dco_APT\APT.xml') to '..\DCUnitTest\DCO\Setup'
+    3.3 Copy APT Batch content (at least at the Verify step, 'C:\Datacap\APT\batches\<batchID>\') to '..\DCUnitTest\DCO\Runtime'
+4. Build the solution
 
 For additional details, please see Wiki page.
