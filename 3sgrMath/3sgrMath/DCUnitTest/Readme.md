@@ -4,12 +4,14 @@ In order to successfully run unit tests you need to set up the environemnt.
 It is recommended to use a computer that already has © IBM Datacap software installed.
 If you do not have © IBM Datacap software installed on your Development station you will need to register certain dlls.
 You can copy required dlls to the folders listed below and use supplied bat files to register: <br/>
-\Dependencies\RegisterCOM<br/>
+<b> \\Dependencies\\RegisterCOM </b>
+<br/>
 - dclogX.dll<br/>
 - dcrro.dll<br/>
 - PilotCtrl.dll<br/>
 - TDCO.dll<br/>
-<b>\Dependencies\</b> <br/>
+<b> \\Dependencies\\ </b> 
+<br/>
 - dcsmart.dll  <br/>
 - iRRX.dll <br/>
 - To Register COM use : Regsvr.bat<br/>
