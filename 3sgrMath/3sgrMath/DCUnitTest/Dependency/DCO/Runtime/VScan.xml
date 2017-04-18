@@ -1,0 +1,61 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<B id="20170413.000003">
+  <V n="TYPE">APT</V>
+  <V n="STATUS">0</V>
+  <V n="ScanOperator">admin</V>
+  <V n="ScanStation">1</V>
+  <P id="TM000001">
+    <V n="TYPE">Other</V>
+    <V n="STATUS">49</V>
+    <V n="IMAGEFILE">tm000001.tif</V>
+    <V n="ScanSrcPath">C:\Datacap\APT\Images\Input\APT001.tif</V>
+  </P>
+  <P id="TM000002">
+    <V n="TYPE">Other</V>
+    <V n="STATUS">49</V>
+    <V n="IMAGEFILE">tm000002.tif</V>
+    <V n="ScanSrcPath">C:\Datacap\APT\Images\Input\APT002.tif</V>
+  </P>
+  <P id="TM000003">
+    <V n="TYPE">Other</V>
+    <V n="STATUS">49</V>
+    <V n="IMAGEFILE">tm000003.tif</V>
+    <V n="ScanSrcPath">C:\Datacap\APT\Images\Input\APT003.tif</V>
+  </P>
+  <P id="TM000004">
+    <V n="TYPE">Other</V>
+    <V n="STATUS">49</V>
+    <V n="IMAGEFILE">tm000004.tif</V>
+    <V n="ScanSrcPath">C:\Datacap\APT\Images\Input\APT004.tif</V>
+  </P>
+  <P id="TM000005">
+    <V n="TYPE">Other</V>
+    <V n="STATUS">49</V>
+    <V n="IMAGEFILE">tm000005.tif</V>
+    <V n="ScanSrcPath">C:\Datacap\APT\Images\Input\APT005.tif</V>
+  </P>
+  <P id="TM000006">
+    <V n="TYPE">Other</V>
+    <V n="STATUS">49</V>
+    <V n="IMAGEFILE">tm000006.tif</V>
+    <V n="ScanSrcPath">C:\Datacap\APT\Images\Input\APT006.tif</V>
+  </P>
+  <P id="TM000007">
+    <V n="TYPE">Other</V>
+    <V n="STATUS">49</V>
+    <V n="IMAGEFILE">tm000007.tif</V>
+    <V n="ScanSrcPath">C:\Datacap\APT\Images\Input\APT007.tif</V>
+  </P>
+  <P id="TM000008">
+    <V n="TYPE">Other</V>
+    <V n="STATUS">49</V>
+    <V n="IMAGEFILE">tm000008.tif</V>
+    <V n="ScanSrcPath">C:\Datacap\APT\Images\Input\APT008.tif</V>
+  </P>
+  <P id="TM000009">
+    <V n="TYPE">Other</V>
+    <V n="STATUS">49</V>
+    <V n="IMAGEFILE">tm000009.tif</V>
+    <V n="ScanSrcPath">C:\Datacap\APT\Images\Input\APT009.tif</V>
+  </P>
+</B>

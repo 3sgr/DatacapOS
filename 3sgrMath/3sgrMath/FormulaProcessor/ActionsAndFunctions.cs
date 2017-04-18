@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Convertion.Properties;
 
-namespace FormulaProcessor
+namespace _3sgr.Datacap.CustomAction.MathProcessing
 {
     #region ErrorException
     public class ErrorMesage : Exception

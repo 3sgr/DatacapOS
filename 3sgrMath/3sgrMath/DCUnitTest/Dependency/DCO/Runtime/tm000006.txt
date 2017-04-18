@@ -1,0 +1,26 @@
+﻿0 
+FACTURE 
+ABC Apothicaire 
+20 Rue de Medical 
+14111, CABOURG 
+France 
+Client: 00 11 33 55 77 
+Xavier X. Stuart 
+999 Nowhere Lane No. Facture INV-555 
+Augusta, Maine 04336 
+Date Facture 19/12/2011 
+Etats-Unis 
++1 (207) 555-0000 
+Termes DO a reception 
+VAT ID 123123123 DO le 19/12/2011 
+Description Volume Taux Ajustements Montant (EUR) 
+3 paquet gaze 18.000 0,12 2.160,00 
+bande 4 50,0 200,00 
+Sous-total: 2.360,00 
+VAT (20,00%): 472,00 
+GST (7,50%): 177,00 
+Total: 3.009,00 
+Paiement deja recu: (0,00) 
+Somme due (EUR): €3.009,00 
+Merci beaucoup! 
+All references to names, places, addresses, and other data or information, are fictitious and are used for illustration purposes only. 

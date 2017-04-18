@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Convertion.Properties {
+namespace _3sgr.Datacap.CustomAction.MathProcessing.Properties {
     using System;
     using System.Reflection;
     

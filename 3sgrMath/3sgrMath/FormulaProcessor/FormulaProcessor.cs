@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Convertion.Properties;
-
-namespace FormulaProcessor
+using _3sgr.Datacap.CustomAction.MathProcessing.Properties;
+namespace _3sgr.Datacap.CustomAction.MathProcessing
 {
     public class FormulaProcessor
     {

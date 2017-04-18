@@ -96,17 +96,22 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Readme.md" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\3sgrMath\3sgrMath.csproj">
       <Project>{241c94a7-a0c0-4c05-8563-01a1196ab9f9}</Project>
       <Name>3sgrMath</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FormulaProcessor\FormulaProcessor.csproj">
+      <Project>{a671f3bf-7428-4132-b5c6-76385cdfde50}</Project>
+      <Name>FormulaProcessor</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dependency\dcsmart.dll" />
     <Content Include="Dependency\iRRX.dll" />
-    <Content Include="Readme.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

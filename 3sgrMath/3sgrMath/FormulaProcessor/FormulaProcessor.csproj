@@ -7,7 +7,7 @@
     <ProjectGuid>{A671F3BF-7428-4132-B5C6-76385CDFDE50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FormulaProcessor</RootNamespace>
+    <RootNamespace>_3sgrMath</RootNamespace>
     <AssemblyName>FormulaProcessor</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

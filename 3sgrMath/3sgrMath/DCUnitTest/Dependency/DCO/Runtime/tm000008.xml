@@ -1,0 +1,3146 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<P id="TM000008">
+<F id="Vendor">
+	<V n="TYPE">Vendor</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val">Stuart Apothecary</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Vendor</V>
+	<V n="MESSAGE">The character string &quot;&lt;New&gt;&quot; is not contained in the character string &quot;Stuart Apothecary&quot; that was found in the Vendor field.</V>
+	<V n="RecognizedText">Stuart Apothecary</V>
+	<C cn="10" cr="0,0,0,0">83</C>
+	<C cn="10" cr="0,0,0,0">116</C>
+	<C cn="10" cr="0,0,0,0">117</C>
+	<C cn="10" cr="0,0,0,0">97</C>
+	<C cn="10" cr="0,0,0,0">114</C>
+	<C cn="10" cr="0,0,0,0">116</C>
+	<C cn="10" cr="0,0,0,0">32</C>
+	<C cn="10" cr="0,0,0,0">65</C>
+	<C cn="10" cr="0,0,0,0">112</C>
+	<C cn="10" cr="0,0,0,0">111</C>
+	<C cn="10" cr="0,0,0,0">116</C>
+	<C cn="10" cr="0,0,0,0">104</C>
+	<C cn="10" cr="0,0,0,0">101</C>
+	<C cn="10" cr="0,0,0,0">99</C>
+	<C cn="10" cr="0,0,0,0">97</C>
+	<C cn="10" cr="0,0,0,0">114</C>
+	<C cn="10" cr="0,0,0,0">121</C>
+</F>
+<F id="Vendor_Number">
+	<V n="TYPE">Vendor_Number</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val">TS71288</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Vendor Number</V>
+	<V n="RecognizedText">TS71288</V>
+	<C cn="10" cr="0,0,0,0">84</C>
+	<C cn="10" cr="0,0,0,0">83</C>
+	<C cn="10" cr="0,0,0,0">55</C>
+	<C cn="10" cr="0,0,0,0">49</C>
+	<C cn="10" cr="0,0,0,0">50</C>
+	<C cn="10" cr="0,0,0,0">56</C>
+	<C cn="10" cr="0,0,0,0">56</C>
+</F>
+<F id="Remittance_Zip">
+	<V n="TYPE">Remittance_Zip</V>
+	<V n="Position">1420,485,1525,517</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val">94205</V>
+	<V n="PreVerify Pos">1420,485,1525,517</V>
+	<V n="label">Postal code</V>
+	<V n="RecognizedText">94205</V>
+	<C cn="10" cr="1423,488,1439,514">57</C>
+	<C cn="10" cr="1442,488,1460,514">52</C>
+	<C cn="10" cr="1465,488,1481,514">50</C>
+	<C cn="10" cr="1484,488,1501,514">48</C>
+	<C cn="10" cr="1506,488,1522,514">53</C>
+</F>
+<F id="Invoice_Number">
+	<V n="TYPE">Invoice_Number</V>
+	<V n="Position">1962,695,2107,727</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val">2041955</V>
+	<V n="PreVerify Pos">1962,695,2107,727</V>
+	<V n="label">Invoice Number</V>
+	<V n="RecognizedText">2041955</V>
+	<C cn="10" cr="1965,698,1981,724">50</C>
+	<C cn="10" cr="1986,698,2003,724">48</C>
+	<C cn="10" cr="2005,698,2023,724">52</C>
+	<C cn="10" cr="2028,698,2043,724">49</C>
+	<C cn="10" cr="2047,698,2063,724">57</C>
+	<C cn="10" cr="2068,698,2084,724">53</C>
+	<C cn="10" cr="2088,698,2104,724">53</C>
+</F>
+<F id="Invoice_Date">
+	<V n="TYPE">Invoice_Date</V>
+	<V n="Position">1961,742,2139,785</V>
+	<V n="STATUS">0</V>
+	<V n="OriginalLocale"></V>
+	<V n="hr_locale">en-US</V>
+	<V n="PreVerify Val">2011/08/17</V>
+	<V n="PreVerify Pos">1961,742,2139,785</V>
+	<V n="label">Invoice Date</V>
+	<V n="RecognizedText">2011/08/17</V>
+	<C cn="10" cr="1965,749,1982,775">50</C>
+	<C cn="10" cr="1984,746,1999,781">48</C>
+	<C cn="10" cr="2002,749,2017,775">49</C>
+	<C cn="10" cr="2022,749,2039,775">49</C>
+	<C cn="10" cr="2040,746,2055,781">47</C>
+	<C cn="10" cr="2058,749,2074,775">48</C>
+	<C cn="10" cr="2078,749,2095,775">56</C>
+	<C cn="10" cr="2100,749,2115,775">47</C>
+	<C cn="10" cr="2120,749,2135,775">49</C>
+	<C cn="10" cr="0,0,0,0">55</C>
+</F>
+<F id="PO_Number">
+	<V n="TYPE">PO_Number</V>
+	<V n="Position">1962,797,2087,829</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val">342033</V>
+	<V n="PreVerify Pos">1962,797,2087,829</V>
+	<V n="label">PO Number</V>
+	<V n="RecognizedText">342033</V>
+	<C cn="10" cr="1965,800,1981,826">51</C>
+	<C cn="10" cr="1985,800,2003,826">52</C>
+	<C cn="10" cr="2006,800,2022,826">50</C>
+	<C cn="10" cr="2027,800,2044,826">48</C>
+	<C cn="10" cr="2047,800,2063,826">51</C>
+	<C cn="10" cr="2068,800,2084,826">51</C>
+</F>
+<F id="Shipping">
+	<V n="TYPE">Shipping</V>
+	<V n="Position">2086,2725,2201,2759</V>
+	<V n="STATUS">0</V>
+	<V n="IMAGEFILE">tm000009.tif</V>
+	<V n="IMAGEHEIGHT"></V>
+	<V n="Locale Checked">Yes</V>
+	<V n="PreVerify Val">123.45</V>
+	<V n="PreVerify Pos">2086,2725,2201,2759</V>
+	<V n="label">Shipping</V>
+	<V n="RecognizedText">123.45</V>
+	<C cn="10" cr="2090,2729,2105,2755">49</C>
+	<C cn="10" cr="2110,2729,2126,2755">50</C>
+	<C cn="10" cr="2130,2729,2146,2755">51</C>
+	<C cn="10" cr="2152,2750,2156,2755">46</C>
+	<C cn="10" cr="2160,2729,2178,2755">52</C>
+	<C cn="10" cr="2181,2729,2197,2755">53</C>
+</F>
+<F id="Invoice_Type">
+	<V n="TYPE">Invoice_Type</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Invoice Type</V>
+	<V n="RecognizedText">PO</V>
+	<C cn="9" cr="0,0,0,0">80</C>
+	<C cn="9" cr="0,0,0,0">79</C>
+</F>
+<F id="Taxes">
+	<V n="TYPE">Taxes</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Taxes</V>
+	<F id="TaxLineitem1">
+		<V n="TYPE">TaxLineitem</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">0,0,0,0</V>
+		<V n="label">Tax Lineitem</V>
+		<F id="Tax_Type">
+			<V n="TYPE">Tax_Type</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val">Sales</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Type</V>
+			<V n="RecognizedText">Sales</V>
+			<C cn="10" cr="0,0,0,0">83</C>
+			<C cn="10" cr="0,0,0,0">97</C>
+			<C cn="10" cr="0,0,0,0">108</C>
+			<C cn="10" cr="0,0,0,0">101</C>
+			<C cn="10" cr="0,0,0,0">115</C>
+		</F>
+		<F id="Tax_Value">
+			<V n="TYPE">Tax_Value</V>
+			<V n="STATUS">0</V>
+			<V n="Position">1636,2723,1792,2766</V>
+			<V n="IMAGEFILE">tm000009.tif</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">1636,2723,1792,2766</V>
+			<V n="label">Tax Value</V>
+		</F>
+	</F>
+	<F id="TaxLineitem2">
+		<V n="TYPE">TaxLineitem</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">0,0,0,0</V>
+		<V n="label">Tax Lineitem</V>
+		<F id="Tax_Type">
+			<V n="TYPE">Tax_Type</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val">VAT</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Type</V>
+			<V n="RecognizedText">VAT</V>
+			<C cn="10" cr="0,0,0,0">86</C>
+			<C cn="10" cr="0,0,0,0">65</C>
+			<C cn="10" cr="0,0,0,0">84</C>
+		</F>
+		<F id="Tax_Value">
+			<V n="TYPE">Tax_Value</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Value</V>
+		</F>
+	</F>
+	<F id="TaxLineitem3">
+		<V n="TYPE">TaxLineitem</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">0,0,0,0</V>
+		<V n="label">Tax Lineitem</V>
+		<F id="Tax_Type">
+			<V n="TYPE">Tax_Type</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val">GST</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Type</V>
+			<V n="RecognizedText">GST</V>
+			<C cn="10" cr="0,0,0,0">71</C>
+			<C cn="10" cr="0,0,0,0">83</C>
+			<C cn="10" cr="0,0,0,0">84</C>
+		</F>
+		<F id="Tax_Value">
+			<V n="TYPE">Tax_Value</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Value</V>
+		</F>
+	</F>
+</F>
+<F id="Tax">
+	<V n="TYPE">Tax</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="Locale Checked">Yes</V>
+	<V n="PreVerify Val">0.00</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Tax</V>
+	<V n="RecognizedText">0.00</V>
+	<C cn="10" cr="0,0,0,0">48</C>
+	<C cn="10" cr="0,0,0,0">46</C>
+	<C cn="10" cr="0,0,0,0">48</C>
+	<C cn="10" cr="0,0,0,0">48</C>
+</F>
+<F id="Invoice_Total">
+	<V n="TYPE">Invoice_Total</V>
+	<V n="Position">2065,2776,2202,2810</V>
+	<V n="STATUS">0</V>
+	<V n="IMAGEFILE">tm000009.tif</V>
+	<V n="IMAGEHEIGHT"></V>
+	<V n="Locale Checked">Yes</V>
+	<V n="PreVerify Val">2755.44</V>
+	<V n="PreVerify Pos">2065,2776,2202,2810</V>
+	<V n="label">Invoice Total</V>
+	<V n="RecognizedText">2755.44</V>
+	<C cn="10" cr="2069,2780,2085,2806">50</C>
+	<C cn="10" cr="2089,2780,2106,2806">55</C>
+	<C cn="10" cr="2110,2780,2126,2806">53</C>
+	<C cn="10" cr="2130,2780,2146,2806">53</C>
+	<C cn="10" cr="2152,2801,2156,2806">46</C>
+	<C cn="10" cr="2160,2780,2178,2806">52</C>
+	<C cn="10" cr="2180,2780,2198,2806">52</C>
+</F>
+<F id="Add_New_Fingerprint">
+	<V n="TYPE">Add_New_Fingerprint</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Add New Fingerprint</V>
+</F>
+<F id="Routing_Instructions">
+	<V n="TYPE">Routing_Instructions</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="Batch Profiler Operator">admin</V>
+	<V n="Batch Profiler Station">1.0</V>
+	<V n="Batch Profiler Time">4/13/2017 6:52:47 PM</V>
+	<V n="PreVerify Val">None</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Routing Instructions</V>
+	<V n="RecognizedText">None</V>
+	<C cn="9" cr="0,0,0,0">78</C>
+	<C cn="9" cr="0,0,0,0">111</C>
+	<C cn="9" cr="0,0,0,0">110</C>
+	<C cn="9" cr="0,0,0,0">101</C>
+</F>
+<F id="Browse">
+	<V n="TYPE">Browse</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Browse</V>
+	<F id="Page_No1">
+		<V n="TYPE">Page_No</V>
+		<V n="STATUS">0</V>
+		<V n="Position">90,90,210,210</V>
+		<V n="IMAGEFILE">tm000008.tif</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">90,90,210,210</V>
+		<V n="label">Page No</V>
+		<F id="TIFF">
+			<V n="IMAGEFILE">tm000008.tif</V>
+			<V n="Position">104,100,204,200</V>
+			<V n="STATUS">0</V>
+			<V n="TYPE">TIFF</V>
+			<V n="PreVerify Val">tm000008.tif</V>
+			<V n="PreVerify Pos">104,100,204,200</V>
+			<V n="label">TIFF</V>
+			<V n="RecognizedText">tm000008.tif</V>
+			<C cn="10" cr="0,0,0,0">116</C>
+			<C cn="10" cr="0,0,0,0">109</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">56</C>
+			<C cn="10" cr="0,0,0,0">46</C>
+			<C cn="10" cr="0,0,0,0">116</C>
+			<C cn="10" cr="0,0,0,0">105</C>
+			<C cn="10" cr="0,0,0,0">102</C>
+		</F>
+	</F>
+	<F id="Page_No2">
+		<V n="TYPE">Page_No</V>
+		<V n="STATUS">0</V>
+		<V n="Position">90,90,210,210</V>
+		<V n="IMAGEFILE">tm000009.tif</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">90,90,210,210</V>
+		<V n="label">Page No</V>
+		<F id="TIFF">
+			<V n="IMAGEFILE">tm000009.tif</V>
+			<V n="Position">104,100,204,200</V>
+			<V n="STATUS">0</V>
+			<V n="TYPE">TIFF</V>
+			<V n="PreVerify Val">tm000009.tif</V>
+			<V n="PreVerify Pos">104,100,204,200</V>
+			<V n="label">TIFF</V>
+			<V n="RecognizedText">tm000009.tif</V>
+			<C cn="10" cr="0,0,0,0">116</C>
+			<C cn="10" cr="0,0,0,0">109</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">57</C>
+			<C cn="10" cr="0,0,0,0">46</C>
+			<C cn="10" cr="0,0,0,0">116</C>
+			<C cn="10" cr="0,0,0,0">105</C>
+			<C cn="10" cr="0,0,0,0">102</C>
+		</F>
+	</F>
+</F>
+<F id="Details">
+	<V n="TYPE">Details</V>
+	<V n="Position">0,1272,2479,7016</V>
+	<V n="STATUS">0</V>
+	<V n="LineItemPos">0,1273,2479,1323</V>
+	<V n="POS-ItemID">1460,1273,1625,1310</V>
+	<V n="POS-ItemDesc">498,1283,1290,1323</V>
+	<V n="POS-Qty">278,1283,399,1319</V>
+	<V n="POS-Price">1822,1273,1953,1310</V>
+	<V n="POS-LineTotal">2068,1273,2200,1310</V>
+	<V n="Unmatched Invoice Lines">2</V>
+	<V n="PO Separator Character">|</V>
+	<V n="Unused PO Line 1">20|45|6423216|100 pk Daisy Cups - 4oz|7.25</V>
+	<V n="Unused PO Line 2">90|24|2341133|3-pack White Adhesive Tape - 1.5 inch|6.14</V>
+	<V n="Unused PO Line 3">100|12|2341132|4-pack White Adhesive Tape - 1 inch|5.77</V>
+	<V n="Unused PO Line 4">110|2|2993886|OSHA 4.3 compliant ear protectors|43.12</V>
+	<V n="Unused PO Line 5">180|5|6332212|5 oz tube Antibacterial Ointment|6.34</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,1272,2479,7016</V>
+	<V n="label">Details</V>
+	<F id="Lineitem0">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">348,1274,2194,1306</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">10</V>
+		<V n="PO Qty">3</V>
+		<V n="PO Item ID">3332223</V>
+		<V n="PO Description">First Aid Kit - Deluxe</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">129.89</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">348,1274,2194,1306</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1272,1622,1308</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">3332223</V>
+			<V n="PreVerify Pos">1458,1272,1622,1308</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">3332223</V>
+			<C cn="10" cr="1461,1276,1480,1305">51</C>
+			<C cn="10" cr="1484,1276,1503,1305">51</C>
+			<C cn="10" cr="1507,1276,1526,1305">51</C>
+			<C cn="10" cr="1531,1275,1549,1304">50</C>
+			<C cn="10" cr="1555,1275,1573,1304">50</C>
+			<C cn="10" cr="1578,1275,1596,1304">50</C>
+			<C cn="10" cr="1600,1275,1619,1304">51</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">513,1271,865,1308</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">Deluxe First Aid Kit</V>
+			<V n="PreVerify Pos">513,1271,865,1308</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Deluxe First Aid Kit</V>
+			<C cn="10" cr="516,1276,538,1305">68</C>
+			<C cn="10" cr="542,1283,561,1305">101</C>
+			<C cn="10" cr="566,1274,570,1305">108</C>
+			<C cn="10" cr="576,1284,594,1305">117</C>
+			<C cn="10" cr="598,1284,616,1305">120</C>
+			<C cn="10" cr="619,1283,638,1305">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="655,1276,670,1305">70</C>
+			<C cn="10" cr="675,1275,680,1305">105</C>
+			<C cn="10" cr="685,1283,697,1305">114</C>
+			<C cn="10" cr="700,1283,714,1305">115</C>
+			<C cn="10" cr="717,1278,730,1305">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="743,1276,768,1305">65</C>
+			<C cn="10" cr="772,1275,777,1305">105</C>
+			<C cn="10" cr="781,1274,800,1305">100</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="818,1276,837,1305">75</C>
+			<C cn="10" cr="841,1275,846,1305">105</C>
+			<C cn="10" cr="849,1278,862,1305">116</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">345,1274,370,1309</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">3</V>
+			<V n="PreVerify Pos">345,1274,370,1309</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">3</V>
+			<C cn="10" cr="348,1277,367,1306">51</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1821,1272,1949,1307</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">129.89</V>
+			<V n="PreVerify Pos">1821,1272,1949,1307</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">129.89</V>
+			<C cn="10" cr="1824,1275,1841,1304">49</C>
+			<C cn="10" cr="1846,1275,1864,1304">50</C>
+			<C cn="10" cr="1869,1275,1888,1304">57</C>
+			<C cn="10" cr="1893,1299,1898,1304">46</C>
+			<C cn="10" cr="1904,1275,1923,1304">56</C>
+			<C cn="10" cr="1927,1275,1946,1304">57</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2067,1272,2197,1307</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">389.67</V>
+			<V n="PreVerify Pos">2067,1272,2197,1307</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">389.67</V>
+			<C cn="10" cr="2070,1275,2089,1304">51</C>
+			<C cn="10" cr="2093,1275,2112,1304">56</C>
+			<C cn="10" cr="2117,1275,2136,1304">57</C>
+			<C cn="10" cr="2141,1299,2146,1304">46</C>
+			<C cn="10" cr="2152,1275,2172,1304">54</C>
+			<C cn="10" cr="2175,1275,2194,1304">55</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">10</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">10</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem1">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">323,1330,2194,1369</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number"></V>
+		<V n="PO Qty"></V>
+		<V n="PO Item ID"></V>
+		<V n="PO Description"></V>
+		<V n="PO Reconcilled By"></V>
+		<V n="PO Unit Price"></V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">323,1330,2194,1369</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1328,1623,1364</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">6423216</V>
+			<V n="PreVerify Pos">1458,1328,1623,1364</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">6423216</V>
+			<C cn="10" cr="1461,1332,1481,1361">54</C>
+			<C cn="10" cr="1483,1332,1504,1361">52</C>
+			<C cn="10" cr="1508,1332,1526,1361">50</C>
+			<C cn="10" cr="1530,1331,1549,1360">51</C>
+			<C cn="10" cr="1555,1331,1573,1360">50</C>
+			<C cn="10" cr="1579,1331,1596,1360">49</C>
+			<C cn="10" cr="1600,1331,1620,1360">54</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">512,1326,997,1373</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">100 pack paper cups - 4oz</V>
+			<V n="PreVerify Pos">512,1326,997,1373</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">100 pack paper cups - 4oz</V>
+			<C cn="10" cr="516,1332,533,1361">49</C>
+			<C cn="10" cr="537,1332,557,1361">48</C>
+			<C cn="10" cr="560,1332,580,1361">48</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="595,1339,614,1369">112</C>
+			<C cn="10" cr="618,1339,635,1361">97</C>
+			<C cn="10" cr="640,1339,656,1361">99</C>
+			<C cn="10" cr="661,1330,678,1361">107</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="692,1339,711,1369">112</C>
+			<C cn="10" cr="715,1339,732,1361">97</C>
+			<C cn="10" cr="738,1339,757,1369">112</C>
+			<C cn="10" cr="761,1339,780,1361">101</C>
+			<C cn="10" cr="785,1339,797,1361">114</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="811,1339,827,1361">99</C>
+			<C cn="10" cr="831,1340,849,1361">117</C>
+			<C cn="10" cr="855,1339,874,1369">112</C>
+			<C cn="10" cr="878,1339,892,1361">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="907,1348,918,1351">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="930,1332,951,1361">52</C>
+			<C cn="5" cr="955,1339,975,1361">111</C>
+			<C cn="10" cr="979,1340,993,1361">122</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">320,1330,369,1365</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">45</V>
+			<V n="PreVerify Pos">320,1330,369,1365</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">45</V>
+			<C cn="10" cr="323,1333,344,1362">52</C>
+			<C cn="10" cr="347,1333,366,1362">53</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1866,1328,1949,1363</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">7.23</V>
+			<V n="PreVerify Pos">1866,1328,1949,1363</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">7.23</V>
+			<C cn="10" cr="1869,1331,1888,1360">55</C>
+			<C cn="10" cr="1893,1355,1898,1360">46</C>
+			<C cn="10" cr="1905,1331,1923,1360">50</C>
+			<C cn="10" cr="1927,1331,1946,1360">51</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2067,1328,2197,1363</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">325.35</V>
+			<V n="PreVerify Pos">2067,1328,2197,1363</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">325.35</V>
+			<C cn="10" cr="2070,1331,2089,1360">51</C>
+			<C cn="10" cr="2094,1331,2112,1360">50</C>
+			<C cn="10" cr="2117,1331,2136,1360">53</C>
+			<C cn="10" cr="2141,1355,2146,1360">46</C>
+			<C cn="10" cr="2152,1331,2171,1360">51</C>
+			<C cn="10" cr="2175,1331,2194,1360">53</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+		</F>
+	</F>
+	<F id="Lineitem2">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">348,1387,2194,1426</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">30</V>
+		<V n="PO Qty">5</V>
+		<V n="PO Item ID">8738224</V>
+		<V n="PO Description">Stainless Steel Tape Dispensers</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">19.55</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">348,1387,2194,1426</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1385,1623,1421</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">8738224</V>
+			<V n="PreVerify Pos">1458,1385,1623,1421</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">8738224</V>
+			<C cn="10" cr="1461,1389,1480,1418">56</C>
+			<C cn="10" cr="1484,1389,1503,1418">55</C>
+			<C cn="10" cr="1507,1389,1526,1418">51</C>
+			<C cn="10" cr="1530,1388,1549,1417">56</C>
+			<C cn="10" cr="1555,1388,1573,1417">50</C>
+			<C cn="10" cr="1578,1388,1596,1417">50</C>
+			<C cn="10" cr="1599,1388,1620,1417">52</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">510,1383,1095,1430</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">Stainless Steel Tape Dispensers</V>
+			<V n="PreVerify Pos">510,1383,1095,1430</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Stainless Steel Tape Dispensers</V>
+			<C cn="10" cr="514,1389,531,1418">83</C>
+			<C cn="10" cr="534,1391,547,1418">116</C>
+			<C cn="10" cr="550,1396,567,1418">97</C>
+			<C cn="10" cr="573,1388,578,1418">105</C>
+			<C cn="10" cr="584,1396,602,1418">110</C>
+			<C cn="10" cr="608,1387,612,1418">108</C>
+			<C cn="10" cr="617,1396,636,1418">101</C>
+			<C cn="10" cr="640,1396,654,1418">115</C>
+			<C cn="10" cr="658,1396,672,1418">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="687,1389,704,1418">83</C>
+			<C cn="10" cr="707,1391,720,1418">116</C>
+			<C cn="10" cr="723,1396,742,1418">101</C>
+			<C cn="10" cr="746,1396,765,1418">101</C>
+			<C cn="10" cr="770,1387,774,1418">108</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="788,1389,810,1418">84</C>
+			<C cn="10" cr="812,1396,829,1418">97</C>
+			<C cn="10" cr="835,1396,854,1426">112</C>
+			<C cn="10" cr="859,1396,878,1418">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="894,1389,916,1418">68</C>
+			<C cn="10" cr="921,1388,926,1418">105</C>
+			<C cn="10" cr="931,1396,945,1418">115</C>
+			<C cn="10" cr="950,1396,969,1426">112</C>
+			<C cn="10" cr="973,1396,992,1418">101</C>
+			<C cn="10" cr="997,1396,1015,1418">110</C>
+			<C cn="10" cr="1020,1396,1034,1418">115</C>
+			<C cn="10" cr="1038,1396,1057,1418">101</C>
+			<C cn="10" cr="1062,1396,1074,1418">114</C>
+			<C cn="10" cr="1077,1396,1091,1418">115</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">345,1387,370,1422</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">5</V>
+			<V n="PreVerify Pos">345,1387,370,1422</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">5</V>
+			<C cn="10" cr="348,1390,367,1419">53</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1845,1385,1949,1420</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">19.55</V>
+			<V n="PreVerify Pos">1845,1385,1949,1420</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">19.55</V>
+			<C cn="10" cr="1848,1388,1865,1417">49</C>
+			<C cn="10" cr="1869,1388,1888,1417">57</C>
+			<C cn="10" cr="1893,1412,1898,1417">46</C>
+			<C cn="10" cr="1904,1388,1923,1417">53</C>
+			<C cn="10" cr="1927,1388,1946,1417">53</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2091,1385,2197,1420</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">97.75</V>
+			<V n="PreVerify Pos">2091,1385,2197,1420</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">97.75</V>
+			<C cn="10" cr="2094,1388,2113,1417">57</C>
+			<C cn="10" cr="2117,1388,2136,1417">55</C>
+			<C cn="10" cr="2141,1412,2146,1417">46</C>
+			<C cn="10" cr="2152,1388,2171,1417">55</C>
+			<C cn="10" cr="2175,1388,2194,1417">53</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">30</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">30</V>
+			<C cn="10" cr="0,0,0,0">51</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem3">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">348,1444,2194,1482</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">40</V>
+		<V n="PO Qty">3</V>
+		<V n="PO Item ID">3734353</V>
+		<V n="PO Description">Aspirin 100mg - 1000 count</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">8.26</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">348,1444,2194,1482</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1441,1622,1477</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">3734353</V>
+			<V n="PreVerify Pos">1458,1441,1622,1477</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">3734353</V>
+			<C cn="10" cr="1461,1445,1480,1474">51</C>
+			<C cn="10" cr="1484,1445,1503,1474">55</C>
+			<C cn="10" cr="1507,1445,1526,1474">51</C>
+			<C cn="10" cr="1529,1444,1550,1473">52</C>
+			<C cn="10" cr="1554,1444,1573,1473">51</C>
+			<C cn="10" cr="1577,1444,1596,1473">53</C>
+			<C cn="10" cr="1600,1444,1619,1473">51</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">512,1440,1034,1486</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">1000 Count Aspirin - 100mg</V>
+			<V n="PreVerify Pos">512,1440,1034,1486</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">1000 Count Aspirin - 100mg</V>
+			<C cn="10" cr="516,1445,533,1474">49</C>
+			<C cn="10" cr="537,1445,557,1474">48</C>
+			<C cn="10" cr="560,1445,580,1474">48</C>
+			<C cn="10" cr="583,1445,603,1474">48</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="617,1445,638,1474">67</C>
+			<C cn="10" cr="642,1452,662,1474">111</C>
+			<C cn="10" cr="667,1453,685,1474">117</C>
+			<C cn="10" cr="691,1452,709,1474">110</C>
+			<C cn="10" cr="713,1447,726,1474">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="739,1445,764,1474">65</C>
+			<C cn="10" cr="767,1452,781,1474">115</C>
+			<C cn="10" cr="786,1452,805,1482">112</C>
+			<C cn="10" cr="810,1444,815,1474">105</C>
+			<C cn="10" cr="821,1452,833,1474">114</C>
+			<C cn="10" cr="837,1444,842,1474">105</C>
+			<C cn="10" cr="847,1452,865,1474">110</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="881,1461,892,1464">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="907,1445,924,1474">49</C>
+			<C cn="10" cr="929,1445,949,1474">48</C>
+			<C cn="10" cr="952,1445,972,1474">48</C>
+			<C cn="10" cr="976,1452,1007,1474">109</C>
+			<C cn="10" cr="1011,1452,1030,1482">103</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">345,1443,370,1478</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">3</V>
+			<V n="PreVerify Pos">345,1443,370,1478</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">3</V>
+			<C cn="10" cr="348,1446,367,1475">51</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1866,1441,1950,1476</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">8.26</V>
+			<V n="PreVerify Pos">1866,1441,1950,1476</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">8.26</V>
+			<C cn="10" cr="1869,1444,1888,1473">56</C>
+			<C cn="10" cr="1893,1468,1898,1473">46</C>
+			<C cn="10" cr="1905,1444,1923,1473">50</C>
+			<C cn="10" cr="1927,1444,1947,1473">54</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2092,1441,2197,1476</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">24.78</V>
+			<V n="PreVerify Pos">2092,1441,2197,1476</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">24.78</V>
+			<C cn="10" cr="2095,1444,2113,1473">50</C>
+			<C cn="10" cr="2116,1444,2137,1473">52</C>
+			<C cn="10" cr="2141,1468,2146,1473">46</C>
+			<C cn="10" cr="2152,1444,2171,1473">55</C>
+			<C cn="10" cr="2175,1444,2194,1473">56</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">40</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">40</V>
+			<C cn="10" cr="0,0,0,0">52</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem4">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">326,1500,2195,1539</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">50</V>
+		<V n="PO Qty">17</V>
+		<V n="PO Item ID">8534554</V>
+		<V n="PO Description">4&quot; Gauze Bandage</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">2.16</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">326,1500,2195,1539</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1498,1623,1534</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">8534554</V>
+			<V n="PreVerify Pos">1458,1498,1623,1534</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">8534554</V>
+			<C cn="10" cr="1461,1502,1481,1531">56</C>
+			<C cn="10" cr="1485,1502,1504,1531">53</C>
+			<C cn="10" cr="1508,1502,1526,1531">51</C>
+			<C cn="10" cr="1529,1501,1550,1530">52</C>
+			<C cn="10" cr="1555,1501,1573,1530">53</C>
+			<C cn="10" cr="1578,1501,1596,1530">53</C>
+			<C cn="10" cr="1599,1501,1620,1530">52</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">512,1496,1048,1543</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">Rolls Gauze Bandage - 4 inch</V>
+			<V n="PreVerify Pos">512,1496,1048,1543</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Rolls Gauze Bandage - 4 inch</V>
+			<C cn="10" cr="516,1502,536,1531">82</C>
+			<C cn="10" cr="538,1509,558,1531">111</C>
+			<C cn="10" cr="564,1500,569,1531">108</C>
+			<C cn="10" cr="574,1500,579,1531">108</C>
+			<C cn="10" cr="584,1509,599,1531">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="612,1502,637,1531">71</C>
+			<C cn="10" cr="641,1509,659,1531">97</C>
+			<C cn="10" cr="664,1510,683,1531">117</C>
+			<C cn="10" cr="688,1510,703,1531">122</C>
+			<C cn="10" cr="706,1509,725,1531">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="741,1502,761,1531">66</C>
+			<C cn="10" cr="764,1509,782,1531">97</C>
+			<C cn="10" cr="787,1509,806,1531">110</C>
+			<C cn="10" cr="810,1500,830,1531">100</C>
+			<C cn="10" cr="834,1509,852,1531">97</C>
+			<C cn="10" cr="856,1509,875,1539">103</C>
+			<C cn="10" cr="878,1509,897,1531">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="911,1518,922,1521">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="935,1502,956,1531">52</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="971,1501,976,1531">105</C>
+			<C cn="10" cr="981,1509,1000,1531">110</C>
+			<C cn="10" cr="1004,1509,1021,1531">99</C>
+			<C cn="10" cr="1025,1500,1044,1531">104</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">323,1500,369,1535</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">17</V>
+			<V n="PreVerify Pos">323,1500,369,1535</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">17</V>
+			<C cn="10" cr="326,1503,344,1532">49</C>
+			<C cn="10" cr="347,1503,366,1532">55</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1867,1498,1950,1533</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">2.16</V>
+			<V n="PreVerify Pos">1867,1498,1950,1533</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">2.16</V>
+			<C cn="10" cr="1870,1501,1889,1530">50</C>
+			<C cn="10" cr="1894,1525,1899,1530">46</C>
+			<C cn="10" cr="1906,1501,1924,1530">49</C>
+			<C cn="10" cr="1927,1501,1947,1530">54</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2092,1498,2198,1533</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">36.72</V>
+			<V n="PreVerify Pos">2092,1498,2198,1533</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">36.72</V>
+			<C cn="10" cr="2095,1501,2113,1530">51</C>
+			<C cn="10" cr="2117,1501,2137,1530">54</C>
+			<C cn="10" cr="2142,1525,2147,1530">46</C>
+			<C cn="10" cr="2152,1501,2171,1530">55</C>
+			<C cn="10" cr="2176,1501,2195,1530">50</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">50</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">50</V>
+			<C cn="10" cr="0,0,0,0">53</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem5">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">327,1556,2195,1595</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">60</V>
+		<V n="PO Qty">17</V>
+		<V n="PO Item ID">4334522</V>
+		<V n="PO Description">3&quot; Gauze Bandage</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">1.99</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">327,1556,2195,1595</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1554,1623,1590</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">4334522</V>
+			<V n="PreVerify Pos">1458,1554,1623,1590</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">4334522</V>
+			<C cn="10" cr="1461,1558,1482,1587">52</C>
+			<C cn="10" cr="1485,1558,1504,1587">51</C>
+			<C cn="10" cr="1508,1558,1527,1587">51</C>
+			<C cn="10" cr="1530,1557,1551,1586">52</C>
+			<C cn="10" cr="1555,1557,1574,1586">53</C>
+			<C cn="10" cr="1579,1557,1597,1586">50</C>
+			<C cn="10" cr="1602,1557,1620,1586">50</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">513,1552,1048,1599</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">Rolls Gauze Bandage - 3 inch</V>
+			<V n="PreVerify Pos">513,1552,1048,1599</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Rolls Gauze Bandage - 3 inch</V>
+			<C cn="10" cr="517,1558,536,1587">82</C>
+			<C cn="10" cr="539,1565,559,1587">111</C>
+			<C cn="10" cr="565,1556,569,1587">108</C>
+			<C cn="10" cr="575,1556,579,1587">108</C>
+			<C cn="10" cr="585,1565,599,1587">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="613,1558,637,1587">71</C>
+			<C cn="10" cr="642,1565,659,1587">97</C>
+			<C cn="10" cr="665,1566,683,1587">117</C>
+			<C cn="10" cr="689,1566,703,1587">122</C>
+			<C cn="10" cr="707,1565,726,1587">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="742,1558,761,1587">66</C>
+			<C cn="10" cr="765,1565,782,1587">97</C>
+			<C cn="10" cr="788,1565,806,1587">110</C>
+			<C cn="10" cr="811,1556,830,1587">100</C>
+			<C cn="10" cr="835,1565,852,1587">97</C>
+			<C cn="10" cr="856,1565,875,1595">103</C>
+			<C cn="10" cr="879,1565,898,1587">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="912,1574,923,1577">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="937,1558,956,1587">51</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="972,1557,977,1587">105</C>
+			<C cn="10" cr="982,1565,1000,1587">110</C>
+			<C cn="10" cr="1005,1565,1021,1587">99</C>
+			<C cn="10" cr="1026,1556,1044,1587">104</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">324,1556,370,1591</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">17</V>
+			<V n="PreVerify Pos">324,1556,370,1591</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">17</V>
+			<C cn="10" cr="327,1559,344,1588">49</C>
+			<C cn="10" cr="348,1559,367,1588">55</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1869,1554,1950,1589</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">1.99</V>
+			<V n="PreVerify Pos">1869,1554,1950,1589</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">1.99</V>
+			<C cn="10" cr="1872,1557,1889,1586">49</C>
+			<C cn="10" cr="1894,1581,1899,1586">46</C>
+			<C cn="10" cr="1905,1557,1924,1586">57</C>
+			<C cn="10" cr="1928,1557,1947,1586">57</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2092,1554,2198,1589</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">33.83</V>
+			<V n="PreVerify Pos">2092,1554,2198,1589</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">33.83</V>
+			<C cn="10" cr="2095,1557,2114,1586">51</C>
+			<C cn="10" cr="2118,1557,2137,1586">51</C>
+			<C cn="10" cr="2142,1581,2147,1586">46</C>
+			<C cn="10" cr="2153,1557,2172,1586">56</C>
+			<C cn="10" cr="2176,1557,2195,1586">51</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">60</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">60</V>
+			<C cn="10" cr="0,0,0,0">54</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem6">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">327,1613,2195,1652</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">70</V>
+		<V n="PO Qty">17</V>
+		<V n="PO Item ID">4334523</V>
+		<V n="PO Description">2&quot; Gauze bandage</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">1.67</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">327,1613,2195,1652</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1611,1623,1647</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">4334523</V>
+			<V n="PreVerify Pos">1458,1611,1623,1647</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">4334523</V>
+			<C cn="10" cr="1461,1615,1482,1644">52</C>
+			<C cn="10" cr="1485,1615,1504,1644">51</C>
+			<C cn="10" cr="1508,1615,1527,1644">51</C>
+			<C cn="10" cr="1530,1614,1551,1643">52</C>
+			<C cn="10" cr="1555,1614,1574,1643">53</C>
+			<C cn="10" cr="1579,1614,1597,1643">50</C>
+			<C cn="10" cr="1601,1614,1620,1643">51</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">513,1609,1048,1656</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">Rolls Gauze Bandage - 2 inch</V>
+			<V n="PreVerify Pos">513,1609,1048,1656</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Rolls Gauze Bandage - 2 inch</V>
+			<C cn="10" cr="517,1615,536,1644">82</C>
+			<C cn="10" cr="539,1622,559,1644">111</C>
+			<C cn="10" cr="565,1613,569,1644">108</C>
+			<C cn="10" cr="575,1613,579,1644">108</C>
+			<C cn="10" cr="585,1622,599,1644">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="613,1615,637,1644">71</C>
+			<C cn="10" cr="642,1622,659,1644">97</C>
+			<C cn="10" cr="665,1623,683,1644">117</C>
+			<C cn="10" cr="689,1623,703,1644">122</C>
+			<C cn="10" cr="707,1622,726,1644">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="742,1615,761,1644">66</C>
+			<C cn="10" cr="765,1622,782,1644">97</C>
+			<C cn="10" cr="788,1622,806,1644">110</C>
+			<C cn="10" cr="811,1613,830,1644">100</C>
+			<C cn="10" cr="835,1622,852,1644">97</C>
+			<C cn="10" cr="856,1622,875,1652">103</C>
+			<C cn="10" cr="879,1622,898,1644">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="912,1631,923,1634">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="938,1615,956,1644">50</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="972,1614,977,1644">105</C>
+			<C cn="10" cr="982,1622,1000,1644">110</C>
+			<C cn="10" cr="1005,1622,1021,1644">99</C>
+			<C cn="10" cr="1026,1613,1044,1644">104</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">324,1613,370,1648</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">17</V>
+			<V n="PreVerify Pos">324,1613,370,1648</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">17</V>
+			<C cn="10" cr="327,1616,344,1645">49</C>
+			<C cn="10" cr="348,1616,367,1645">55</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1869,1611,1950,1646</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">1.67</V>
+			<V n="PreVerify Pos">1869,1611,1950,1646</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">1.67</V>
+			<C cn="10" cr="1872,1614,1889,1643">49</C>
+			<C cn="10" cr="1894,1638,1899,1643">46</C>
+			<C cn="10" cr="1905,1614,1925,1643">54</C>
+			<C cn="10" cr="1928,1614,1947,1643">55</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2093,1611,2198,1646</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">28.39</V>
+			<V n="PreVerify Pos">2093,1611,2198,1646</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">28.39</V>
+			<C cn="10" cr="2096,1614,2114,1643">50</C>
+			<C cn="10" cr="2118,1614,2137,1643">56</C>
+			<C cn="10" cr="2142,1638,2147,1643">46</C>
+			<C cn="10" cr="2153,1614,2172,1643">51</C>
+			<C cn="10" cr="2176,1614,2195,1643">57</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">70</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">70</V>
+			<C cn="10" cr="0,0,0,0">55</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem7">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">327,1669,2196,1708</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">80</V>
+		<V n="PO Qty">17</V>
+		<V n="PO Item ID">4334524</V>
+		<V n="PO Description">1.5&quot; Gauze Bandage</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">1.42</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">327,1669,2196,1708</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1667,1624,1703</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">4334524</V>
+			<V n="PreVerify Pos">1458,1667,1624,1703</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">4334524</V>
+			<C cn="10" cr="1461,1671,1482,1700">52</C>
+			<C cn="10" cr="1485,1671,1504,1700">51</C>
+			<C cn="10" cr="1508,1671,1527,1700">51</C>
+			<C cn="10" cr="1530,1670,1551,1699">52</C>
+			<C cn="10" cr="1555,1670,1574,1699">53</C>
+			<C cn="10" cr="1579,1670,1597,1699">50</C>
+			<C cn="10" cr="1600,1670,1621,1699">52</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">513,1665,1083,1712</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">Rolls Gauze Bandage - 1.5 inch</V>
+			<V n="PreVerify Pos">513,1665,1083,1712</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Rolls Gauze Bandage - 1.5 inch</V>
+			<C cn="10" cr="517,1671,536,1700">82</C>
+			<C cn="10" cr="539,1678,559,1700">111</C>
+			<C cn="10" cr="565,1669,569,1700">108</C>
+			<C cn="10" cr="575,1669,579,1700">108</C>
+			<C cn="10" cr="585,1678,599,1700">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="613,1671,637,1700">71</C>
+			<C cn="10" cr="642,1678,659,1700">97</C>
+			<C cn="10" cr="665,1679,683,1700">117</C>
+			<C cn="10" cr="689,1679,703,1700">122</C>
+			<C cn="10" cr="707,1678,726,1700">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="742,1671,761,1700">66</C>
+			<C cn="10" cr="765,1678,782,1700">97</C>
+			<C cn="10" cr="788,1678,806,1700">110</C>
+			<C cn="10" cr="811,1669,830,1700">100</C>
+			<C cn="10" cr="835,1678,852,1700">97</C>
+			<C cn="10" cr="856,1678,875,1708">103</C>
+			<C cn="10" cr="879,1678,898,1700">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="912,1687,923,1690">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="939,1671,956,1700">49</C>
+			<C cn="10" cr="961,1695,966,1700">46</C>
+			<C cn="10" cr="972,1671,991,1700">53</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1007,1670,1012,1700">105</C>
+			<C cn="10" cr="1017,1678,1035,1700">110</C>
+			<C cn="10" cr="1040,1678,1056,1700">99</C>
+			<C cn="10" cr="1061,1669,1079,1700">104</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">324,1669,370,1704</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">17</V>
+			<V n="PreVerify Pos">324,1669,370,1704</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">17</V>
+			<C cn="10" cr="327,1672,344,1701">49</C>
+			<C cn="10" cr="348,1672,367,1701">55</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1869,1667,1950,1702</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">1.42</V>
+			<V n="PreVerify Pos">1869,1667,1950,1702</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">1.42</V>
+			<C cn="10" cr="1872,1670,1889,1699">49</C>
+			<C cn="10" cr="1894,1694,1899,1699">46</C>
+			<C cn="10" cr="1904,1670,1925,1699">52</C>
+			<C cn="10" cr="1929,1670,1947,1699">50</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2093,1667,2199,1702</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">24.14</V>
+			<V n="PreVerify Pos">2093,1667,2199,1702</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">24.14</V>
+			<C cn="10" cr="2096,1670,2114,1699">50</C>
+			<C cn="10" cr="2117,1670,2138,1699">52</C>
+			<C cn="10" cr="2142,1694,2147,1699">46</C>
+			<C cn="10" cr="2155,1670,2172,1699">49</C>
+			<C cn="10" cr="2175,1670,2196,1699">52</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">80</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">80</V>
+			<C cn="10" cr="0,0,0,0">56</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem8">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">326,1726,2196,1765</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">90</V>
+		<V n="PO Qty">24</V>
+		<V n="PO Item ID">2344433</V>
+		<V n="PO Description">3-pack White Adhesive Tape - 1.5 inch</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">6.14</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">326,1726,2196,1765</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1460,1724,1623,1760</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">2344433</V>
+			<V n="PreVerify Pos">1460,1724,1623,1760</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">2344433</V>
+			<C cn="10" cr="1463,1728,1481,1757">50</C>
+			<C cn="10" cr="1485,1728,1504,1757">51</C>
+			<C cn="10" cr="1507,1728,1528,1757">52</C>
+			<C cn="10" cr="1530,1727,1551,1756">52</C>
+			<C cn="10" cr="1554,1727,1575,1756">52</C>
+			<C cn="10" cr="1578,1727,1597,1756">51</C>
+			<C cn="10" cr="1601,1727,1620,1756">51</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">511,1722,1226,1769</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">3-pack White Adhesive Tape - 1.5 inch</V>
+			<V n="PreVerify Pos">511,1722,1226,1769</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">3-pack White Adhesive Tape - 1.5 inch</V>
+			<C cn="10" cr="515,1728,534,1757">51</C>
+			<C cn="10" cr="538,1744,549,1747">45</C>
+			<C cn="10" cr="553,1735,572,1765">112</C>
+			<C cn="10" cr="576,1735,593,1757">97</C>
+			<C cn="10" cr="598,1735,614,1757">99</C>
+			<C cn="10" cr="619,1726,636,1757">107</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="648,1728,687,1757">87</C>
+			<C cn="10" cr="691,1726,709,1757">104</C>
+			<C cn="10" cr="715,1727,720,1757">105</C>
+			<C cn="10" cr="724,1730,737,1757">116</C>
+			<C cn="10" cr="740,1735,759,1757">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="772,1728,797,1757">65</C>
+			<C cn="10" cr="800,1726,819,1757">100</C>
+			<C cn="10" cr="825,1726,843,1757">104</C>
+			<C cn="10" cr="848,1735,867,1757">101</C>
+			<C cn="10" cr="871,1735,885,1757">115</C>
+			<C cn="10" cr="890,1727,895,1757">105</C>
+			<C cn="10" cr="899,1736,918,1757">118</C>
+			<C cn="10" cr="921,1735,940,1757">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="952,1728,974,1757">84</C>
+			<C cn="10" cr="976,1735,993,1757">97</C>
+			<C cn="10" cr="999,1735,1018,1765">112</C>
+			<C cn="10" cr="1022,1735,1041,1757">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1056,1744,1067,1747">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1082,1728,1099,1757">49</C>
+			<C cn="10" cr="1105,1752,1110,1757">46</C>
+			<C cn="10" cr="1115,1728,1134,1757">53</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1150,1727,1155,1757">105</C>
+			<C cn="10" cr="1160,1735,1178,1757">110</C>
+			<C cn="10" cr="1184,1735,1200,1757">99</C>
+			<C cn="10" cr="1204,1726,1222,1757">104</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">323,1726,371,1761</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">24</V>
+			<V n="PreVerify Pos">323,1726,371,1761</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">24</V>
+			<C cn="10" cr="326,1729,344,1758">50</C>
+			<C cn="10" cr="347,1729,368,1758">52</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1867,1724,1951,1759</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">6.14</V>
+			<V n="PreVerify Pos">1867,1724,1951,1759</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">6.14</V>
+			<C cn="10" cr="1870,1727,1890,1756">54</C>
+			<C cn="10" cr="1894,1751,1899,1756">46</C>
+			<C cn="10" cr="1907,1727,1924,1756">49</C>
+			<C cn="10" cr="1927,1727,1948,1756">52</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2070,1724,2199,1759</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">147.36</V>
+			<V n="PreVerify Pos">2070,1724,2199,1759</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">147.36</V>
+			<C cn="10" cr="2073,1727,2090,1756">49</C>
+			<C cn="10" cr="2093,1727,2114,1756">52</C>
+			<C cn="10" cr="2118,1727,2137,1756">55</C>
+			<C cn="10" cr="2142,1751,2147,1756">46</C>
+			<C cn="10" cr="2153,1727,2172,1756">51</C>
+			<C cn="10" cr="2176,1727,2196,1756">54</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">90</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">90</V>
+			<C cn="10" cr="0,0,0,0">57</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem9">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">327,1782,2196,1821</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">100</V>
+		<V n="PO Qty">12</V>
+		<V n="PO Item ID">2344432</V>
+		<V n="PO Description">4-pack White Adhesive Tape - 1 inch</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">5.77</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">327,1782,2196,1821</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1460,1780,1623,1816</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">2344432</V>
+			<V n="PreVerify Pos">1460,1780,1623,1816</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">2344432</V>
+			<C cn="10" cr="1463,1784,1481,1813">50</C>
+			<C cn="10" cr="1485,1784,1504,1813">51</C>
+			<C cn="10" cr="1507,1784,1528,1813">52</C>
+			<C cn="10" cr="1530,1783,1551,1812">52</C>
+			<C cn="10" cr="1554,1783,1575,1812">52</C>
+			<C cn="10" cr="1578,1783,1597,1812">51</C>
+			<C cn="10" cr="1602,1783,1620,1812">50</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">510,1778,1191,1825</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">4-pack White Adhesive Tape - 1 inch</V>
+			<V n="PreVerify Pos">510,1778,1191,1825</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">4-pack White Adhesive Tape - 1 inch</V>
+			<C cn="10" cr="514,1784,535,1813">52</C>
+			<C cn="10" cr="538,1800,549,1803">45</C>
+			<C cn="10" cr="553,1791,572,1821">112</C>
+			<C cn="10" cr="576,1791,593,1813">97</C>
+			<C cn="10" cr="598,1791,614,1813">99</C>
+			<C cn="10" cr="619,1782,636,1813">107</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="648,1784,687,1813">87</C>
+			<C cn="10" cr="691,1782,709,1813">104</C>
+			<C cn="10" cr="715,1783,720,1813">105</C>
+			<C cn="10" cr="724,1786,737,1813">116</C>
+			<C cn="10" cr="740,1791,759,1813">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="772,1784,797,1813">65</C>
+			<C cn="10" cr="800,1782,819,1813">100</C>
+			<C cn="10" cr="825,1782,843,1813">104</C>
+			<C cn="10" cr="848,1791,867,1813">101</C>
+			<C cn="10" cr="871,1791,885,1813">115</C>
+			<C cn="10" cr="890,1783,895,1813">105</C>
+			<C cn="10" cr="899,1792,918,1813">118</C>
+			<C cn="10" cr="921,1791,940,1813">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="952,1784,974,1813">84</C>
+			<C cn="10" cr="976,1791,993,1813">97</C>
+			<C cn="10" cr="999,1791,1018,1821">112</C>
+			<C cn="10" cr="1022,1791,1041,1813">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1056,1800,1067,1803">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1082,1784,1099,1813">49</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1115,1783,1120,1813">105</C>
+			<C cn="10" cr="1126,1791,1144,1813">110</C>
+			<C cn="10" cr="1149,1791,1165,1813">99</C>
+			<C cn="10" cr="1169,1782,1187,1813">104</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">324,1782,370,1817</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">12</V>
+			<V n="PreVerify Pos">324,1782,370,1817</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">12</V>
+			<C cn="10" cr="327,1785,344,1814">49</C>
+			<C cn="10" cr="349,1785,367,1814">50</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1867,1780,1950,1815</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">5.77</V>
+			<V n="PreVerify Pos">1867,1780,1950,1815</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">5.77</V>
+			<C cn="10" cr="1870,1783,1889,1812">53</C>
+			<C cn="10" cr="1894,1807,1899,1812">46</C>
+			<C cn="10" cr="1905,1783,1924,1812">55</C>
+			<C cn="10" cr="1928,1783,1947,1812">55</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2092,1780,2199,1815</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">69.24</V>
+			<V n="PreVerify Pos">2092,1780,2199,1815</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">69.24</V>
+			<C cn="10" cr="2095,1783,2115,1812">54</C>
+			<C cn="10" cr="2118,1783,2137,1812">57</C>
+			<C cn="10" cr="2142,1807,2147,1812">46</C>
+			<C cn="10" cr="2154,1783,2172,1812">50</C>
+			<C cn="10" cr="2175,1783,2196,1812">52</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">100</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">100</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem10">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">350,1839,2196,1878</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">110</V>
+		<V n="PO Qty">2</V>
+		<V n="PO Item ID">2332555</V>
+		<V n="PO Description">Safety compliant ear protectors</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">43.12</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">350,1839,2196,1878</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1460,1837,1623,1873</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">2332555</V>
+			<V n="PreVerify Pos">1460,1837,1623,1873</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">2332555</V>
+			<C cn="10" cr="1463,1841,1481,1870">50</C>
+			<C cn="10" cr="1485,1841,1504,1870">51</C>
+			<C cn="10" cr="1508,1841,1527,1870">51</C>
+			<C cn="10" cr="1532,1840,1550,1869">50</C>
+			<C cn="10" cr="1555,1840,1574,1869">53</C>
+			<C cn="10" cr="1578,1840,1597,1869">53</C>
+			<C cn="10" cr="1601,1840,1620,1869">53</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">511,1835,1106,1882</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">Safety compliant ear protectors</V>
+			<V n="PreVerify Pos">511,1835,1106,1882</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Safety compliant ear protectors</V>
+			<C cn="10" cr="515,1841,532,1870">83</C>
+			<C cn="10" cr="536,1848,553,1870">97</C>
+			<C cn="10" cr="557,1839,570,1870">102</C>
+			<C cn="10" cr="572,1848,591,1870">101</C>
+			<C cn="10" cr="594,1843,607,1870">116</C>
+			<C cn="10" cr="609,1849,628,1878">121</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="641,1848,657,1870">99</C>
+			<C cn="10" cr="661,1848,681,1870">111</C>
+			<C cn="10" cr="686,1848,717,1870">109</C>
+			<C cn="10" cr="723,1848,742,1878">112</C>
+			<C cn="10" cr="747,1839,751,1870">108</C>
+			<C cn="10" cr="757,1840,762,1870">105</C>
+			<C cn="10" cr="767,1848,784,1870">97</C>
+			<C cn="10" cr="790,1848,808,1870">110</C>
+			<C cn="10" cr="812,1843,825,1870">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="839,1848,858,1870">101</C>
+			<C cn="10" cr="862,1848,879,1870">97</C>
+			<C cn="10" cr="885,1848,897,1870">114</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="911,1848,930,1878">112</C>
+			<C cn="10" cr="936,1848,948,1870">114</C>
+			<C cn="10" cr="951,1848,971,1870">111</C>
+			<C cn="10" cr="974,1843,987,1870">116</C>
+			<C cn="10" cr="990,1848,1009,1870">101</C>
+			<C cn="10" cr="1013,1848,1029,1870">99</C>
+			<C cn="10" cr="1032,1843,1045,1870">116</C>
+			<C cn="10" cr="1048,1848,1068,1870">111</C>
+			<C cn="10" cr="1073,1848,1085,1870">114</C>
+			<C cn="10" cr="1088,1848,1102,1870">115</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">347,1839,371,1874</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">2</V>
+			<V n="PreVerify Pos">347,1839,371,1874</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">2</V>
+			<C cn="10" cr="350,1842,368,1871">50</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1843,1837,1950,1872</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">43.12</V>
+			<V n="PreVerify Pos">1843,1837,1950,1872</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">43.12</V>
+			<C cn="10" cr="1846,1840,1867,1869">52</C>
+			<C cn="10" cr="1870,1840,1889,1869">51</C>
+			<C cn="10" cr="1894,1864,1899,1869">46</C>
+			<C cn="10" cr="1907,1840,1924,1869">49</C>
+			<C cn="10" cr="1929,1840,1947,1869">50</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2092,1837,2199,1872</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">86.24</V>
+			<V n="PreVerify Pos">2092,1837,2199,1872</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">86.24</V>
+			<C cn="10" cr="2095,1840,2114,1869">56</C>
+			<C cn="10" cr="2118,1840,2138,1869">54</C>
+			<C cn="10" cr="2142,1864,2147,1869">46</C>
+			<C cn="10" cr="2154,1840,2172,1869">50</C>
+			<C cn="10" cr="2175,1840,2196,1869">52</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">110</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">110</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem11">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">349,1895,2195,1934</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">120</V>
+		<V n="PO Qty">8</V>
+		<V n="PO Item ID">8456454</V>
+		<V n="PO Description">Goggles</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">27.66</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">349,1895,2195,1934</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1459,1893,1624,1929</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">8456454</V>
+			<V n="PreVerify Pos">1459,1893,1624,1929</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">8456454</V>
+			<C cn="10" cr="1462,1897,1481,1926">56</C>
+			<C cn="10" cr="1484,1897,1505,1926">52</C>
+			<C cn="10" cr="1508,1897,1527,1926">53</C>
+			<C cn="10" cr="1531,1896,1551,1925">54</C>
+			<C cn="10" cr="1554,1896,1575,1925">52</C>
+			<C cn="10" cr="1578,1896,1597,1925">53</C>
+			<C cn="10" cr="1600,1896,1621,1925">52</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">510,1891,716,1938</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">XL Goggles</V>
+			<V n="PreVerify Pos">510,1891,716,1938</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">XL Goggles</V>
+			<C cn="10" cr="514,1897,536,1926">88</C>
+			<C cn="10" cr="540,1897,555,1926">76</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="568,1897,592,1926">71</C>
+			<C cn="10" cr="597,1904,617,1926">111</C>
+			<C cn="10" cr="620,1904,639,1934">103</C>
+			<C cn="10" cr="642,1904,661,1934">103</C>
+			<C cn="10" cr="666,1895,670,1926">108</C>
+			<C cn="10" cr="675,1904,694,1926">101</C>
+			<C cn="10" cr="698,1904,712,1926">115</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">346,1895,371,1930</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">8</V>
+			<V n="PreVerify Pos">346,1895,371,1930</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">8</V>
+			<C cn="10" cr="349,1898,368,1927">56</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1845,1893,1951,1928</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">27.66</V>
+			<V n="PreVerify Pos">1845,1893,1951,1928</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">27.66</V>
+			<C cn="10" cr="1848,1896,1866,1925">50</C>
+			<C cn="10" cr="1870,1896,1889,1925">55</C>
+			<C cn="10" cr="1894,1920,1899,1925">46</C>
+			<C cn="10" cr="1905,1896,1925,1925">54</C>
+			<C cn="10" cr="1928,1896,1948,1925">54</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2069,1893,2198,1928</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">221.28</V>
+			<V n="PreVerify Pos">2069,1893,2198,1928</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">221.28</V>
+			<C cn="10" cr="2072,1896,2090,1925">50</C>
+			<C cn="10" cr="2095,1896,2113,1925">50</C>
+			<C cn="10" cr="2120,1896,2137,1925">49</C>
+			<C cn="10" cr="2142,1920,2147,1925">46</C>
+			<C cn="10" cr="2154,1896,2172,1925">50</C>
+			<C cn="10" cr="2176,1896,2195,1925">56</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">120</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">120</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">50</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem12">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">348,1952,2196,1991</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">130</V>
+		<V n="PO Qty">4</V>
+		<V n="PO Item ID">6342233</V>
+		<V n="PO Description">12 pack Ammonia Inhalers</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">5.99</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">348,1952,2196,1991</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1459,1950,1623,1986</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">6342233</V>
+			<V n="PreVerify Pos">1459,1950,1623,1986</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">6342233</V>
+			<C cn="10" cr="1462,1954,1482,1983">54</C>
+			<C cn="10" cr="1485,1954,1504,1983">51</C>
+			<C cn="10" cr="1507,1954,1528,1983">52</C>
+			<C cn="10" cr="1532,1953,1550,1982">50</C>
+			<C cn="10" cr="1556,1953,1574,1982">50</C>
+			<C cn="10" cr="1578,1953,1597,1982">51</C>
+			<C cn="10" cr="1601,1953,1620,1982">51</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">513,1948,1010,1995</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">12 pack Ammonia Inhalers</V>
+			<V n="PreVerify Pos">513,1948,1010,1995</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">12 pack Ammonia Inhalers</V>
+			<C cn="10" cr="517,1954,534,1983">49</C>
+			<C cn="10" cr="539,1954,557,1983">50</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="573,1961,592,1991">112</C>
+			<C cn="10" cr="596,1961,613,1983">97</C>
+			<C cn="10" cr="618,1961,634,1983">99</C>
+			<C cn="10" cr="638,1952,655,1983">107</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="668,1954,693,1983">65</C>
+			<C cn="10" cr="696,1961,727,1983">109</C>
+			<C cn="10" cr="733,1961,764,1983">109</C>
+			<C cn="10" cr="769,1961,789,1983">111</C>
+			<C cn="10" cr="794,1961,812,1983">110</C>
+			<C cn="10" cr="818,1953,823,1983">105</C>
+			<C cn="10" cr="828,1961,845,1983">97</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="862,1954,866,1983">73</C>
+			<C cn="10" cr="873,1961,891,1983">110</C>
+			<C cn="10" cr="897,1952,915,1983">104</C>
+			<C cn="10" cr="920,1961,937,1983">97</C>
+			<C cn="10" cr="943,1952,947,1983">108</C>
+			<C cn="10" cr="953,1961,972,1983">101</C>
+			<C cn="10" cr="977,1961,989,1983">114</C>
+			<C cn="10" cr="992,1961,1006,1983">115</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">345,1952,372,1987</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">4</V>
+			<V n="PreVerify Pos">345,1952,372,1987</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">4</V>
+			<C cn="10" cr="348,1955,369,1984">52</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1867,1950,1950,1985</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">5.99</V>
+			<V n="PreVerify Pos">1867,1950,1950,1985</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">5.99</V>
+			<C cn="10" cr="1870,1953,1889,1982">53</C>
+			<C cn="10" cr="1894,1977,1899,1982">46</C>
+			<C cn="10" cr="1905,1953,1924,1982">57</C>
+			<C cn="10" cr="1928,1953,1947,1982">57</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2093,1950,2199,1985</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">23.96</V>
+			<V n="PreVerify Pos">2093,1950,2199,1985</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">23.96</V>
+			<C cn="10" cr="2096,1953,2114,1982">50</C>
+			<C cn="10" cr="2118,1953,2137,1982">51</C>
+			<C cn="10" cr="2142,1977,2147,1982">46</C>
+			<C cn="10" cr="2153,1953,2172,1982">57</C>
+			<C cn="10" cr="2176,1953,2196,1982">54</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">130</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">130</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">51</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem13">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">325,2008,2196,2047</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">140</V>
+		<V n="PO Qty">36</V>
+		<V n="PO Item ID">4428813</V>
+		<V n="PO Description">12 ct Adhesive Bandages-Sm</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">4.19</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">325,2008,2196,2047</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,2006,1623,2042</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">4428813</V>
+			<V n="PreVerify Pos">1458,2006,1623,2042</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">4428813</V>
+			<C cn="10" cr="1461,2010,1482,2039">52</C>
+			<C cn="10" cr="1484,2010,1505,2039">52</C>
+			<C cn="10" cr="1509,2010,1527,2039">50</C>
+			<C cn="10" cr="1531,2009,1550,2038">56</C>
+			<C cn="10" cr="1555,2009,1574,2038">56</C>
+			<C cn="10" cr="1580,2009,1597,2038">49</C>
+			<C cn="10" cr="1601,2009,1620,2038">51</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">513,2004,1101,2051</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">12 ct Adhesive Bandages -Small</V>
+			<V n="PreVerify Pos">513,2004,1101,2051</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">12 ct Adhesive Bandages -Small</V>
+			<C cn="10" cr="517,2010,534,2039">49</C>
+			<C cn="10" cr="539,2010,557,2039">50</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="572,2017,588,2039">99</C>
+			<C cn="10" cr="590,2012,603,2039">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="616,2010,641,2039">65</C>
+			<C cn="10" cr="643,2008,662,2039">100</C>
+			<C cn="10" cr="669,2008,687,2039">104</C>
+			<C cn="10" cr="692,2017,711,2039">101</C>
+			<C cn="10" cr="715,2017,729,2039">115</C>
+			<C cn="10" cr="734,2009,739,2039">105</C>
+			<C cn="10" cr="742,2018,761,2039">118</C>
+			<C cn="10" cr="764,2017,783,2039">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="799,2010,818,2039">66</C>
+			<C cn="10" cr="822,2017,839,2039">97</C>
+			<C cn="10" cr="845,2017,863,2039">110</C>
+			<C cn="10" cr="869,2008,888,2039">100</C>
+			<C cn="10" cr="893,2017,910,2039">97</C>
+			<C cn="10" cr="914,2017,933,2047">103</C>
+			<C cn="10" cr="936,2017,955,2039">101</C>
+			<C cn="10" cr="959,2017,973,2039">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="988,2026,999,2029">45</C>
+			<C cn="10" cr="1002,2010,1019,2039">83</C>
+			<C cn="10" cr="1024,2017,1055,2039">109</C>
+			<C cn="10" cr="1060,2017,1077,2039">97</C>
+			<C cn="10" cr="1083,2008,1087,2039">108</C>
+			<C cn="10" cr="1093,2008,1097,2039">108</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">322,2008,371,2043</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">36</V>
+			<V n="PreVerify Pos">322,2008,371,2043</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">36</V>
+			<C cn="10" cr="325,2011,344,2040">51</C>
+			<C cn="10" cr="348,2011,368,2040">54</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1866,2006,1950,2041</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">4.19</V>
+			<V n="PreVerify Pos">1866,2006,1950,2041</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">4.19</V>
+			<C cn="10" cr="1869,2009,1890,2038">52</C>
+			<C cn="10" cr="1894,2033,1899,2038">46</C>
+			<C cn="10" cr="1907,2009,1924,2038">49</C>
+			<C cn="10" cr="1928,2009,1947,2038">57</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2070,2006,2199,2041</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">150.84</V>
+			<V n="PreVerify Pos">2070,2006,2199,2041</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">150.84</V>
+			<C cn="10" cr="2073,2009,2090,2038">49</C>
+			<C cn="10" cr="2094,2009,2113,2038">53</C>
+			<C cn="10" cr="2118,2009,2138,2038">48</C>
+			<C cn="10" cr="2142,2033,2147,2038">46</C>
+			<C cn="10" cr="2153,2009,2172,2038">56</C>
+			<C cn="10" cr="2175,2009,2196,2038">52</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">140</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">140</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">52</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem14">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">325,2065,2196,2104</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">150</V>
+		<V n="PO Qty">36</V>
+		<V n="PO Item ID">4428814</V>
+		<V n="PO Description">12 ct Adhesive Bandages-Med</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">5.44</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">325,2065,2196,2104</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,2063,1624,2099</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">4428814</V>
+			<V n="PreVerify Pos">1458,2063,1624,2099</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">4428814</V>
+			<C cn="10" cr="1461,2067,1482,2096">52</C>
+			<C cn="10" cr="1484,2067,1505,2096">52</C>
+			<C cn="10" cr="1509,2067,1527,2096">50</C>
+			<C cn="10" cr="1531,2066,1550,2095">56</C>
+			<C cn="10" cr="1555,2066,1574,2095">56</C>
+			<C cn="10" cr="1580,2066,1597,2095">49</C>
+			<C cn="10" cr="1600,2066,1621,2095">52</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">513,2061,1169,2108</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">12 ct Adhesive Bandages - Medium</V>
+			<V n="PreVerify Pos">513,2061,1169,2108</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">12 ct Adhesive Bandages - Medium</V>
+			<C cn="10" cr="517,2067,534,2096">49</C>
+			<C cn="10" cr="539,2067,557,2096">50</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="1" cr="572,2074,588,2096">99</C>
+			<C cn="1" cr="590,2069,603,2096">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="616,2067,641,2096">65</C>
+			<C cn="10" cr="643,2065,662,2096">100</C>
+			<C cn="10" cr="669,2065,687,2096">104</C>
+			<C cn="10" cr="692,2074,711,2096">101</C>
+			<C cn="10" cr="715,2074,729,2096">115</C>
+			<C cn="10" cr="734,2066,739,2096">105</C>
+			<C cn="10" cr="742,2075,761,2096">118</C>
+			<C cn="10" cr="764,2074,783,2096">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="799,2067,818,2096">66</C>
+			<C cn="10" cr="822,2074,839,2096">97</C>
+			<C cn="10" cr="845,2074,863,2096">110</C>
+			<C cn="10" cr="869,2065,888,2096">100</C>
+			<C cn="10" cr="893,2074,910,2096">97</C>
+			<C cn="10" cr="914,2074,933,2104">103</C>
+			<C cn="10" cr="936,2074,955,2096">101</C>
+			<C cn="10" cr="959,2074,973,2096">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="1" cr="988,2083,999,2086">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1014,2067,1046,2096">77</C>
+			<C cn="10" cr="1052,2074,1071,2096">101</C>
+			<C cn="10" cr="1074,2065,1093,2096">100</C>
+			<C cn="10" cr="1100,2066,1105,2096">105</C>
+			<C cn="10" cr="1110,2075,1128,2096">117</C>
+			<C cn="10" cr="1134,2074,1165,2096">109</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">322,2065,371,2100</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">36</V>
+			<V n="PreVerify Pos">322,2065,371,2100</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">36</V>
+			<C cn="10" cr="325,2068,344,2097">51</C>
+			<C cn="10" cr="348,2068,368,2097">54</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1867,2063,1951,2098</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">5.44</V>
+			<V n="PreVerify Pos">1867,2063,1951,2098</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">5.44</V>
+			<C cn="10" cr="1870,2066,1889,2095">53</C>
+			<C cn="10" cr="1894,2090,1899,2095">46</C>
+			<C cn="10" cr="1904,2066,1925,2095">52</C>
+			<C cn="10" cr="1927,2066,1948,2095">52</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2070,2063,2199,2098</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">195.84</V>
+			<V n="PreVerify Pos">2070,2063,2199,2098</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">195.84</V>
+			<C cn="10" cr="2073,2066,2090,2095">49</C>
+			<C cn="10" cr="2094,2066,2113,2095">57</C>
+			<C cn="10" cr="2118,2066,2137,2095">53</C>
+			<C cn="10" cr="2142,2090,2147,2095">46</C>
+			<C cn="10" cr="2153,2066,2172,2095">56</C>
+			<C cn="10" cr="2175,2066,2196,2095">52</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">150</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">150</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">53</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem15">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">326,2121,2195,2160</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">160</V>
+		<V n="PO Qty">24</V>
+		<V n="PO Item ID">4428815</V>
+		<V n="PO Description">12 ct Adhesive Bandages-Lg</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">6.32</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">326,2121,2195,2160</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,2119,1623,2155</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">4428815</V>
+			<V n="PreVerify Pos">1458,2119,1623,2155</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">4428815</V>
+			<C cn="10" cr="1461,2123,1482,2152">52</C>
+			<C cn="10" cr="1484,2123,1505,2152">52</C>
+			<C cn="10" cr="1509,2123,1527,2152">50</C>
+			<C cn="10" cr="1531,2122,1550,2151">56</C>
+			<C cn="10" cr="1555,2122,1574,2151">56</C>
+			<C cn="10" cr="1580,2122,1597,2151">49</C>
+			<C cn="10" cr="1601,2122,1620,2151">53</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">513,2117,1114,2164</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">12 ct Adhesive Bandages - Large</V>
+			<V n="PreVerify Pos">513,2117,1114,2164</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">12 ct Adhesive Bandages - Large</V>
+			<C cn="10" cr="517,2123,534,2152">49</C>
+			<C cn="10" cr="539,2123,557,2152">50</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="1" cr="572,2130,588,2152">99</C>
+			<C cn="1" cr="590,2125,603,2152">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="616,2123,641,2152">65</C>
+			<C cn="10" cr="643,2121,662,2152">100</C>
+			<C cn="10" cr="669,2121,687,2152">104</C>
+			<C cn="10" cr="692,2130,711,2152">101</C>
+			<C cn="10" cr="715,2130,729,2152">115</C>
+			<C cn="10" cr="734,2122,739,2152">105</C>
+			<C cn="10" cr="742,2131,761,2152">118</C>
+			<C cn="10" cr="764,2130,783,2152">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="799,2123,818,2152">66</C>
+			<C cn="10" cr="822,2130,839,2152">97</C>
+			<C cn="10" cr="845,2130,863,2152">110</C>
+			<C cn="10" cr="869,2121,888,2152">100</C>
+			<C cn="10" cr="893,2130,910,2152">97</C>
+			<C cn="10" cr="914,2130,933,2160">103</C>
+			<C cn="10" cr="936,2130,955,2152">101</C>
+			<C cn="10" cr="959,2130,973,2152">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="1" cr="988,2139,999,2142">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1014,2123,1029,2152">76</C>
+			<C cn="10" cr="1032,2130,1049,2152">97</C>
+			<C cn="10" cr="1055,2130,1067,2152">114</C>
+			<C cn="10" cr="1069,2130,1088,2160">103</C>
+			<C cn="10" cr="1091,2130,1110,2152">101</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">323,2121,371,2156</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">24</V>
+			<V n="PreVerify Pos">323,2121,371,2156</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">24</V>
+			<C cn="10" cr="326,2124,344,2153">50</C>
+			<C cn="10" cr="347,2124,368,2153">52</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1867,2119,1950,2154</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">6.32</V>
+			<V n="PreVerify Pos">1867,2119,1950,2154</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">6.32</V>
+			<C cn="10" cr="1870,2122,1890,2151">54</C>
+			<C cn="10" cr="1894,2146,1899,2151">46</C>
+			<C cn="10" cr="1905,2122,1924,2151">51</C>
+			<C cn="10" cr="1929,2122,1947,2151">50</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2070,2119,2198,2154</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">151.68</V>
+			<V n="PreVerify Pos">2070,2119,2198,2154</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">151.68</V>
+			<C cn="10" cr="2073,2122,2090,2151">49</C>
+			<C cn="10" cr="2094,2122,2113,2151">53</C>
+			<C cn="10" cr="2120,2122,2137,2151">49</C>
+			<C cn="10" cr="2142,2146,2147,2151">46</C>
+			<C cn="10" cr="2153,2122,2173,2151">54</C>
+			<C cn="10" cr="2176,2122,2195,2151">56</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">160</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">160</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">54</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem16">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">327,2178,2195,2217</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">170</V>
+		<V n="PO Qty">12</V>
+		<V n="PO Item ID">9110911</V>
+		<V n="PO Description">5 ct Adhesive Bandages-XXL</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">9.11</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">327,2178,2195,2217</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1459,2176,1623,2212</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">9110911</V>
+			<V n="PreVerify Pos">1459,2176,1623,2212</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">9110911</V>
+			<C cn="10" cr="1462,2180,1481,2209">57</C>
+			<C cn="10" cr="1487,2180,1504,2209">49</C>
+			<C cn="10" cr="1510,2180,1527,2209">49</C>
+			<C cn="10" cr="1531,2179,1551,2208">48</C>
+			<C cn="10" cr="1555,2179,1574,2208">57</C>
+			<C cn="10" cr="1580,2179,1597,2208">49</C>
+			<C cn="10" cr="1603,2179,1620,2208">49</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">511,2174,1268,2221</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">5 ct Adhesive Bandages - Gaping Wound</V>
+			<V n="PreVerify Pos">511,2174,1268,2221</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">5 ct Adhesive Bandages - Gaping Wound</V>
+			<C cn="10" cr="515,2180,534,2209">53</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="548,2187,564,2209">99</C>
+			<C cn="10" cr="567,2182,580,2209">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="593,2180,618,2209">65</C>
+			<C cn="10" cr="620,2178,639,2209">100</C>
+			<C cn="10" cr="645,2178,663,2209">104</C>
+			<C cn="10" cr="668,2187,687,2209">101</C>
+			<C cn="10" cr="691,2187,705,2209">115</C>
+			<C cn="10" cr="710,2179,715,2209">105</C>
+			<C cn="10" cr="719,2188,738,2209">118</C>
+			<C cn="10" cr="741,2187,760,2209">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="776,2180,795,2209">66</C>
+			<C cn="10" cr="799,2187,816,2209">97</C>
+			<C cn="10" cr="822,2187,840,2209">110</C>
+			<C cn="10" cr="845,2178,864,2209">100</C>
+			<C cn="10" cr="869,2187,886,2209">97</C>
+			<C cn="10" cr="890,2187,909,2217">103</C>
+			<C cn="10" cr="913,2187,932,2209">101</C>
+			<C cn="10" cr="936,2187,950,2209">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="964,2196,975,2199">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="989,2180,1013,2209">71</C>
+			<C cn="10" cr="1018,2187,1035,2209">97</C>
+			<C cn="10" cr="1041,2187,1060,2217">112</C>
+			<C cn="10" cr="1065,2179,1070,2209">105</C>
+			<C cn="10" cr="1076,2187,1094,2209">110</C>
+			<C cn="10" cr="1098,2187,1117,2217">103</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="1130,2180,1169,2209">87</C>
+			<C cn="10" cr="1172,2187,1192,2209">111</C>
+			<C cn="10" cr="1197,2188,1215,2209">117</C>
+			<C cn="10" cr="1221,2187,1239,2209">110</C>
+			<C cn="10" cr="1245,2178,1264,2209">100</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">324,2178,370,2213</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">12</V>
+			<V n="PreVerify Pos">324,2178,370,2213</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">12</V>
+			<C cn="10" cr="327,2181,344,2210">49</C>
+			<C cn="10" cr="349,2181,367,2210">50</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1867,2176,1950,2211</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">9.11</V>
+			<V n="PreVerify Pos">1867,2176,1950,2211</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">9.11</V>
+			<C cn="10" cr="1870,2179,1889,2208">57</C>
+			<C cn="10" cr="1894,2203,1899,2208">46</C>
+			<C cn="10" cr="1907,2179,1924,2208">49</C>
+			<C cn="10" cr="1930,2179,1947,2208">49</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2070,2176,2198,2211</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">109.32</V>
+			<V n="PreVerify Pos">2070,2176,2198,2211</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">109.32</V>
+			<C cn="10" cr="2073,2179,2090,2208">49</C>
+			<C cn="10" cr="2094,2179,2114,2208">48</C>
+			<C cn="10" cr="2118,2179,2137,2208">57</C>
+			<C cn="10" cr="2142,2203,2147,2208">46</C>
+			<C cn="10" cr="2153,2179,2172,2208">51</C>
+			<C cn="10" cr="2177,2179,2195,2208">50</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">170</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">170</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">55</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem17">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">349,2234,2196,2266</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number"></V>
+		<V n="PO Qty"></V>
+		<V n="PO Item ID"></V>
+		<V n="PO Description"></V>
+		<V n="PO Reconcilled By"></V>
+		<V n="PO Unit Price"></V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">349,2234,2196,2266</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1459,2232,1623,2268</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">6332212</V>
+			<V n="PreVerify Pos">1459,2232,1623,2268</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">6332212</V>
+			<C cn="10" cr="1462,2236,1482,2265">54</C>
+			<C cn="10" cr="1485,2236,1504,2265">51</C>
+			<C cn="10" cr="1508,2236,1527,2265">51</C>
+			<C cn="10" cr="1532,2235,1550,2264">50</C>
+			<C cn="10" cr="1556,2235,1574,2264">50</C>
+			<C cn="10" cr="1580,2235,1597,2264">49</C>
+			<C cn="10" cr="1602,2235,1620,2264">50</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">512,2231,1128,2268</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">5 oz tube Antibacterial Ointment</V>
+			<V n="PreVerify Pos">512,2231,1128,2268</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">5 oz tube Antibacterial Ointment</V>
+			<C cn="10" cr="515,2236,534,2265">53</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="548,2243,568,2265">111</C>
+			<C cn="10" cr="572,2244,586,2265">122</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="600,2238,613,2265">116</C>
+			<C cn="10" cr="617,2244,635,2265">117</C>
+			<C cn="10" cr="643,2234,661,2265">98</C>
+			<C cn="10" cr="665,2243,684,2265">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="697,2236,722,2265">65</C>
+			<C cn="10" cr="726,2243,744,2265">110</C>
+			<C cn="10" cr="748,2238,761,2265">116</C>
+			<C cn="10" cr="765,2235,770,2265">105</C>
+			<C cn="10" cr="777,2234,795,2265">98</C>
+			<C cn="10" cr="799,2243,816,2265">97</C>
+			<C cn="10" cr="821,2243,837,2265">99</C>
+			<C cn="10" cr="840,2238,853,2265">116</C>
+			<C cn="10" cr="856,2243,875,2265">101</C>
+			<C cn="10" cr="880,2243,892,2265">114</C>
+			<C cn="10" cr="896,2235,901,2265">105</C>
+			<C cn="10" cr="905,2243,922,2265">97</C>
+			<C cn="10" cr="929,2234,933,2265">108</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="948,2236,974,2265">79</C>
+			<C cn="10" cr="980,2235,985,2265">105</C>
+			<C cn="10" cr="991,2243,1009,2265">110</C>
+			<C cn="10" cr="1013,2238,1026,2265">116</C>
+			<C cn="10" cr="1030,2243,1061,2265">109</C>
+			<C cn="10" cr="1066,2243,1085,2265">101</C>
+			<C cn="10" cr="1090,2243,1108,2265">110</C>
+			<C cn="10" cr="1112,2238,1125,2265">116</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">346,2234,371,2269</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">9</V>
+			<V n="PreVerify Pos">346,2234,371,2269</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">9</V>
+			<C cn="10" cr="349,2237,368,2266">57</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1867,2232,1951,2267</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">6.34</V>
+			<V n="PreVerify Pos">1867,2232,1951,2267</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">6.34</V>
+			<C cn="10" cr="1870,2235,1890,2264">54</C>
+			<C cn="10" cr="1894,2259,1899,2264">46</C>
+			<C cn="10" cr="1905,2235,1924,2264">51</C>
+			<C cn="10" cr="1927,2235,1948,2264">52</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2092,2232,2199,2267</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">57.06</V>
+			<V n="PreVerify Pos">2092,2232,2199,2267</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">57.06</V>
+			<C cn="10" cr="2095,2235,2114,2264">53</C>
+			<C cn="10" cr="2118,2235,2137,2264">55</C>
+			<C cn="10" cr="2142,2259,2147,2264">46</C>
+			<C cn="10" cr="2153,2235,2173,2264">48</C>
+			<C cn="10" cr="2176,2235,2196,2264">54</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+		</F>
+	</F>
+	<F id="Lineitem44">
+		<V n="TYPE">Lineitem</V>
+		<V n="IMAGEFILE">tm000009.tif</V>
+		<V n="IMAGEHEIGHT">3508</V>
+		<V n="Position">349,1274,2195,1313</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">190</V>
+		<V n="PO Qty">2</V>
+		<V n="PO Item ID">5232344</V>
+		<V n="PO Description">Crutches</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">32.12</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">349,1274,2195,1313</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1272,1623,1308</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">5232344</V>
+			<V n="PreVerify Pos">1458,1272,1623,1308</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">5232344</V>
+			<C cn="10" cr="1461,1276,1480,1305">53</C>
+			<C cn="10" cr="1485,1276,1503,1305">50</C>
+			<C cn="10" cr="1507,1276,1526,1305">51</C>
+			<C cn="10" cr="1531,1275,1549,1304">50</C>
+			<C cn="10" cr="1554,1275,1573,1304">51</C>
+			<C cn="10" cr="1576,1275,1597,1304">52</C>
+			<C cn="10" cr="1599,1275,1620,1304">52</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">509,1270,939,1317</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">Adjustable Crutches pr</V>
+			<V n="PreVerify Pos">509,1270,939,1317</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Adjustable Crutches pr</V>
+			<C cn="10" cr="513,1276,538,1305">65</C>
+			<C cn="10" cr="540,1274,559,1305">100</C>
+			<C cn="10" cr="561,1275,570,1313">106</C>
+			<C cn="10" cr="576,1284,594,1305">117</C>
+			<C cn="10" cr="599,1283,613,1305">115</C>
+			<C cn="10" cr="616,1278,629,1305">116</C>
+			<C cn="10" cr="633,1283,650,1305">97</C>
+			<C cn="10" cr="657,1274,675,1305">98</C>
+			<C cn="10" cr="680,1274,684,1305">108</C>
+			<C cn="10" cr="690,1283,709,1305">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="723,1276,744,1305">67</C>
+			<C cn="10" cr="749,1283,761,1305">114</C>
+			<C cn="10" cr="765,1284,783,1305">117</C>
+			<C cn="10" cr="787,1278,800,1305">116</C>
+			<C cn="10" cr="803,1283,819,1305">99</C>
+			<C cn="10" cr="824,1274,842,1305">104</C>
+			<C cn="10" cr="847,1283,866,1305">101</C>
+			<C cn="10" cr="870,1283,884,1305">115</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="899,1283,918,1313">112</C>
+			<C cn="10" cr="923,1283,935,1305">114</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">346,1274,370,1309</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">2</V>
+			<V n="PreVerify Pos">346,1274,370,1309</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">2</V>
+			<C cn="10" cr="349,1277,367,1306">50</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1843,1272,1949,1307</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">32.12</V>
+			<V n="PreVerify Pos">1843,1272,1949,1307</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">32.12</V>
+			<C cn="10" cr="1846,1275,1865,1304">51</C>
+			<C cn="10" cr="1870,1275,1888,1304">50</C>
+			<C cn="10" cr="1893,1299,1898,1304">46</C>
+			<C cn="10" cr="1906,1275,1923,1304">49</C>
+			<C cn="10" cr="1928,1275,1946,1304">50</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2091,1272,2198,1307</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">64.24</V>
+			<V n="PreVerify Pos">2091,1272,2198,1307</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">64.24</V>
+			<C cn="10" cr="2094,1275,2114,1304">54</C>
+			<C cn="10" cr="2116,1275,2137,1304">52</C>
+			<C cn="10" cr="2141,1299,2146,1304">46</C>
+			<C cn="10" cr="2153,1275,2171,1304">50</C>
+			<C cn="10" cr="2174,1275,2195,1304">52</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">190</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">190</V>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">57</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem45">
+		<V n="TYPE">Lineitem</V>
+		<V n="IMAGEFILE">tm000009.tif</V>
+		<V n="IMAGEHEIGHT">3508</V>
+		<V n="Position">349,1330,2195,1369</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">200</V>
+		<V n="PO Qty">2</V>
+		<V n="PO Item ID">7546434</V>
+		<V n="PO Description">100 pkg Glucose Tablets</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">9.43</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">349,1330,2195,1369</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1328,1623,1364</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">7546434</V>
+			<V n="PreVerify Pos">1458,1328,1623,1364</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">7546434</V>
+			<C cn="10" cr="1461,1332,1480,1361">55</C>
+			<C cn="10" cr="1484,1332,1503,1361">53</C>
+			<C cn="10" cr="1506,1332,1527,1361">52</C>
+			<C cn="10" cr="1530,1331,1550,1360">54</C>
+			<C cn="10" cr="1553,1331,1574,1360">52</C>
+			<C cn="10" cr="1577,1331,1596,1360">51</C>
+			<C cn="10" cr="1599,1331,1620,1360">52</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">512,1326,950,1373</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">100 pkg Glucose Tables</V>
+			<V n="PreVerify Pos">512,1326,950,1373</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">100 pkg Glucose Tables</V>
+			<C cn="10" cr="516,1332,533,1361">49</C>
+			<C cn="10" cr="537,1332,557,1361">48</C>
+			<C cn="10" cr="560,1332,580,1361">48</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="595,1339,614,1369">112</C>
+			<C cn="10" cr="619,1330,636,1361">107</C>
+			<C cn="10" cr="638,1339,657,1369">103</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="671,1332,695,1361">71</C>
+			<C cn="10" cr="701,1330,705,1361">108</C>
+			<C cn="10" cr="712,1340,730,1361">117</C>
+			<C cn="10" cr="735,1339,751,1361">99</C>
+			<C cn="10" cr="754,1339,774,1361">111</C>
+			<C cn="10" cr="779,1339,793,1361">115</C>
+			<C cn="10" cr="797,1339,816,1361">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="828,1332,850,1361">84</C>
+			<C cn="10" cr="852,1339,869,1361">97</C>
+			<C cn="10" cr="876,1330,894,1361">98</C>
+			<C cn="10" cr="899,1330,903,1361">108</C>
+			<C cn="10" cr="909,1339,928,1361">101</C>
+			<C cn="10" cr="932,1339,946,1361">115</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">346,1330,370,1365</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">2</V>
+			<V n="PreVerify Pos">346,1330,370,1365</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">2</V>
+			<C cn="10" cr="349,1333,367,1362">50</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1866,1328,1949,1363</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">9.43</V>
+			<V n="PreVerify Pos">1866,1328,1949,1363</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">9.43</V>
+			<C cn="10" cr="1869,1331,1888,1360">57</C>
+			<C cn="10" cr="1893,1355,1898,1360">46</C>
+			<C cn="10" cr="1903,1331,1924,1360">52</C>
+			<C cn="10" cr="1927,1331,1946,1360">51</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2093,1328,2198,1363</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">18.86</V>
+			<V n="PreVerify Pos">2093,1328,2198,1363</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">18.86</V>
+			<C cn="10" cr="2096,1331,2113,1360">49</C>
+			<C cn="10" cr="2117,1331,2136,1360">56</C>
+			<C cn="10" cr="2141,1355,2146,1360">46</C>
+			<C cn="10" cr="2152,1331,2171,1360">56</C>
+			<C cn="10" cr="2175,1331,2195,1360">54</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">200</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">200</V>
+			<C cn="10" cr="0,0,0,0">50</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem46">
+		<V n="TYPE">Lineitem</V>
+		<V n="IMAGEFILE">tm000009.tif</V>
+		<V n="IMAGEHEIGHT">3508</V>
+		<V n="Position">350,1387,2194,1426</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">210</V>
+		<V n="PO Qty">1</V>
+		<V n="PO Item ID">3534634</V>
+		<V n="PO Description">Heartstarter Emergency Defibrulator</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">329.11</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">350,1387,2194,1426</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1385,1623,1421</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">3534634</V>
+			<V n="PreVerify Pos">1458,1385,1623,1421</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">3534634</V>
+			<C cn="10" cr="1461,1389,1480,1418">51</C>
+			<C cn="10" cr="1484,1389,1503,1418">53</C>
+			<C cn="10" cr="1507,1389,1526,1418">51</C>
+			<C cn="10" cr="1529,1388,1550,1417">52</C>
+			<C cn="10" cr="1554,1388,1574,1417">54</C>
+			<C cn="10" cr="1577,1388,1596,1417">51</C>
+			<C cn="10" cr="1599,1388,1620,1417">52</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">512,1383,958,1430</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">Emergency Defibrillator</V>
+			<V n="PreVerify Pos">512,1383,958,1430</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Emergency Defibrillator</V>
+			<C cn="10" cr="516,1389,532,1418">69</C>
+			<C cn="10" cr="537,1396,568,1418">109</C>
+			<C cn="10" cr="573,1396,592,1418">101</C>
+			<C cn="10" cr="597,1396,609,1418">114</C>
+			<C cn="10" cr="611,1396,630,1426">103</C>
+			<C cn="10" cr="633,1396,652,1418">101</C>
+			<C cn="10" cr="657,1396,675,1418">110</C>
+			<C cn="10" cr="680,1396,696,1418">99</C>
+			<C cn="10" cr="699,1397,718,1426">121</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="733,1389,755,1418">68</C>
+			<C cn="10" cr="759,1396,778,1418">101</C>
+			<C cn="10" cr="781,1387,794,1418">102</C>
+			<C cn="10" cr="797,1388,802,1418">105</C>
+			<C cn="10" cr="809,1387,827,1418">98</C>
+			<C cn="10" cr="832,1396,844,1418">114</C>
+			<C cn="10" cr="848,1388,853,1418">105</C>
+			<C cn="10" cr="859,1387,863,1418">108</C>
+			<C cn="10" cr="869,1387,873,1418">108</C>
+			<C cn="10" cr="879,1396,896,1418">97</C>
+			<C cn="10" cr="900,1391,913,1418">116</C>
+			<C cn="10" cr="916,1396,936,1418">111</C>
+			<C cn="10" cr="942,1396,954,1418">114</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">347,1387,370,1422</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">1</V>
+			<V n="PreVerify Pos">347,1387,370,1422</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">1</V>
+			<C cn="10" cr="350,1390,367,1419">49</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1819,1385,1949,1420</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">329.11</V>
+			<V n="PreVerify Pos">1819,1385,1949,1420</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">329.11</V>
+			<C cn="10" cr="1822,1388,1841,1417">51</C>
+			<C cn="10" cr="1846,1388,1864,1417">50</C>
+			<C cn="10" cr="1869,1388,1888,1417">57</C>
+			<C cn="10" cr="1893,1412,1898,1417">46</C>
+			<C cn="10" cr="1906,1388,1923,1417">49</C>
+			<C cn="10" cr="1929,1388,1946,1417">49</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2067,1385,2197,1420</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">329.11</V>
+			<V n="PreVerify Pos">2067,1385,2197,1420</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">329.11</V>
+			<C cn="10" cr="2070,1388,2089,1417">51</C>
+			<C cn="10" cr="2094,1388,2112,1417">50</C>
+			<C cn="10" cr="2117,1388,2136,1417">57</C>
+			<C cn="10" cr="2141,1412,2146,1417">46</C>
+			<C cn="10" cr="2154,1388,2171,1417">49</C>
+			<C cn="10" cr="2177,1388,2194,1417">49</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">210</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">210</V>
+			<C cn="10" cr="0,0,0,0">50</C>
+			<C cn="10" cr="0,0,0,0">49</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem47">
+		<V n="TYPE">Lineitem</V>
+		<V n="IMAGEFILE">tm000009.tif</V>
+		<V n="IMAGEHEIGHT">3508</V>
+		<V n="Position">350,1443,2194,1482</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">220</V>
+		<V n="PO Qty">1</V>
+		<V n="PO Item ID">6067995</V>
+		<V n="PO Description">Inflatable Splint - Foot</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">27.45</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">350,1443,2194,1482</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1458,1441,1622,1477</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">6067995</V>
+			<V n="PreVerify Pos">1458,1441,1622,1477</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">6067995</V>
+			<C cn="10" cr="1461,1445,1481,1474">54</C>
+			<C cn="10" cr="1484,1445,1504,1474">48</C>
+			<C cn="10" cr="1507,1445,1527,1474">54</C>
+			<C cn="10" cr="1530,1444,1549,1473">55</C>
+			<C cn="10" cr="1554,1444,1573,1473">57</C>
+			<C cn="10" cr="1577,1444,1596,1473">57</C>
+			<C cn="10" cr="1600,1444,1619,1473">53</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">512,1439,928,1486</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">Inflatable Splint - Foot</V>
+			<V n="PreVerify Pos">512,1439,928,1486</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Inflatable Splint - Foot</V>
+			<C cn="10" cr="516,1445,520,1474">73</C>
+			<C cn="10" cr="526,1452,544,1474">110</C>
+			<C cn="10" cr="548,1443,561,1474">102</C>
+			<C cn="10" cr="564,1443,568,1474">108</C>
+			<C cn="10" cr="574,1452,591,1474">97</C>
+			<C cn="10" cr="595,1447,608,1474">116</C>
+			<C cn="10" cr="611,1452,628,1474">97</C>
+			<C cn="10" cr="635,1443,653,1474">98</C>
+			<C cn="10" cr="659,1443,663,1474">108</C>
+			<C cn="10" cr="668,1452,687,1474">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="701,1445,718,1474">83</C>
+			<C cn="10" cr="724,1452,743,1482">112</C>
+			<C cn="10" cr="748,1443,752,1474">108</C>
+			<C cn="10" cr="758,1444,763,1474">105</C>
+			<C cn="10" cr="769,1452,787,1474">110</C>
+			<C cn="10" cr="791,1447,804,1474">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="818,1461,829,1464">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="844,1445,859,1474">70</C>
+			<C cn="10" cr="863,1452,883,1474">111</C>
+			<C cn="10" cr="888,1452,908,1474">111</C>
+			<C cn="10" cr="911,1447,924,1474">116</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">347,1443,370,1478</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">1</V>
+			<V n="PreVerify Pos">347,1443,370,1478</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">1</V>
+			<C cn="10" cr="350,1446,367,1475">49</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1844,1441,1949,1476</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">27.45</V>
+			<V n="PreVerify Pos">1844,1441,1949,1476</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">27.45</V>
+			<C cn="10" cr="1847,1444,1865,1473">50</C>
+			<C cn="10" cr="1869,1444,1888,1473">55</C>
+			<C cn="10" cr="1893,1468,1898,1473">46</C>
+			<C cn="10" cr="1903,1444,1924,1473">52</C>
+			<C cn="10" cr="1927,1444,1946,1473">53</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2092,1441,2197,1476</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">27.45</V>
+			<V n="PreVerify Pos">2092,1441,2197,1476</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">27.45</V>
+			<C cn="10" cr="2095,1444,2113,1473">50</C>
+			<C cn="10" cr="2117,1444,2136,1473">55</C>
+			<C cn="10" cr="2141,1468,2146,1473">46</C>
+			<C cn="10" cr="2151,1444,2172,1473">52</C>
+			<C cn="10" cr="2175,1444,2194,1473">53</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">220</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">220</V>
+			<C cn="10" cr="0,0,0,0">50</C>
+			<C cn="10" cr="0,0,0,0">50</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+	<F id="Lineitem48">
+		<V n="TYPE">Lineitem</V>
+		<V n="IMAGEFILE">tm000009.tif</V>
+		<V n="IMAGEHEIGHT">3508</V>
+		<V n="Position">350,1498,2195,1539</V>
+		<V n="STATUS">0</V>
+		<V n="PO Line Number">230</V>
+		<V n="PO Qty">1</V>
+		<V n="PO Item ID">4342234</V>
+		<V n="PO Description">Inflatable Splint - Arm/Calf</V>
+		<V n="PO Reconcilled By">auto</V>
+		<V n="PO Unit Price">18.88</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">350,1498,2195,1539</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position">1457,1498,1623,1534</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">4342234</V>
+			<V n="PreVerify Pos">1457,1498,1623,1534</V>
+			<V n="label">ItemID</V>
+			<V n="RecognizedText">4342234</V>
+			<C cn="10" cr="1460,1502,1481,1531">52</C>
+			<C cn="10" cr="1485,1502,1504,1531">51</C>
+			<C cn="10" cr="1506,1502,1527,1531">52</C>
+			<C cn="10" cr="1531,1501,1550,1530">50</C>
+			<C cn="10" cr="1555,1501,1574,1530">50</C>
+			<C cn="10" cr="1578,1501,1596,1530">51</C>
+			<C cn="10" cr="1599,1501,1620,1530">52</C>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">512,1494,1013,1543</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">Inflatable Splint - Arm/Calf</V>
+			<V n="PreVerify Pos">512,1494,1013,1543</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">Inflatable Splint - Arm/Calf</V>
+			<C cn="10" cr="516,1502,521,1531">73</C>
+			<C cn="10" cr="526,1509,545,1531">110</C>
+			<C cn="10" cr="548,1500,561,1531">102</C>
+			<C cn="10" cr="564,1500,569,1531">108</C>
+			<C cn="10" cr="574,1509,592,1531">97</C>
+			<C cn="10" cr="595,1504,609,1531">116</C>
+			<C cn="10" cr="611,1509,629,1531">97</C>
+			<C cn="10" cr="635,1500,653,1531">98</C>
+			<C cn="10" cr="659,1500,664,1531">108</C>
+			<C cn="10" cr="668,1509,687,1531">101</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="701,1502,719,1531">83</C>
+			<C cn="10" cr="724,1509,743,1539">112</C>
+			<C cn="10" cr="748,1500,753,1531">108</C>
+			<C cn="10" cr="758,1501,763,1531">105</C>
+			<C cn="10" cr="769,1509,788,1531">110</C>
+			<C cn="10" cr="791,1504,805,1531">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="818,1518,829,1521">45</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="842,1502,867,1531">65</C>
+			<C cn="10" cr="870,1509,882,1531">114</C>
+			<C cn="10" cr="886,1509,918,1531">109</C>
+			<C cn="10" cr="921,1498,937,1537">47</C>
+			<C cn="10" cr="940,1502,962,1531">67</C>
+			<C cn="10" cr="964,1509,982,1531">97</C>
+			<C cn="10" cr="987,1500,992,1531">108</C>
+			<C cn="10" cr="996,1500,1009,1531">102</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">347,1500,371,1535</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="PreVerify Val">1</V>
+			<V n="PreVerify Pos">347,1500,371,1535</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">1</V>
+			<C cn="10" cr="350,1503,368,1532">49</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1845,1498,1950,1533</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">18.88</V>
+			<V n="PreVerify Pos">1845,1498,1950,1533</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">18.88</V>
+			<C cn="10" cr="1848,1501,1866,1530">49</C>
+			<C cn="10" cr="1869,1501,1889,1530">56</C>
+			<C cn="10" cr="1894,1525,1899,1530">46</C>
+			<C cn="10" cr="1904,1501,1924,1530">56</C>
+			<C cn="10" cr="1927,1501,1947,1530">56</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">2093,1498,2198,1533</V>
+			<V n="STATUS">0</V>
+			<V n="IMAGEHEIGHT"></V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">18.88</V>
+			<V n="PreVerify Pos">2093,1498,2198,1533</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">18.88</V>
+			<C cn="10" cr="2096,1501,2114,1530">49</C>
+			<C cn="10" cr="2117,1501,2137,1530">56</C>
+			<C cn="10" cr="2142,1525,2147,1530">46</C>
+			<C cn="10" cr="2152,1501,2172,1530">56</C>
+			<C cn="10" cr="2175,1501,2195,1530">56</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">230</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+			<V n="RecognizedText">230</V>
+			<C cn="10" cr="0,0,0,0">50</C>
+			<C cn="10" cr="0,0,0,0">51</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+		</F>
+	</F>
+</F>
+<F id="ExportImage">
+	<V n="TYPE">ExportImage</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">-1</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">ExportImage</V>
+</F>
+</P>
