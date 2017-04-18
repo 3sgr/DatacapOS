@@ -45,6 +45,7 @@ namespace DCUnitTest
             _dco.ReadSetup(setupDCO);
             _pilot.BatchDir = Path.GetDirectoryName(runtimeDCO);
             var  i = 0;
+            var t = 0;
         }
 
         [TestMethod]
