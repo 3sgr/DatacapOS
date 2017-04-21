@@ -15,18 +15,35 @@
 // This template has been tested with IBM Datacap 9.0.  
 
 using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Net;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Reflection;
+using System.Xml.XPath;
 
 namespace _3sgrMath
 {
     public class Actions // This class must be a base class for .NET 4.0 Actions.
     {
         #region ExpectedByRRS
+
         /// <summary/>
+        public Actions()
+        {
+            var _customFunction = new Dictionary<string, Func<List<string>, object>>()
+            {
+                { "Count", Count },
+                { "sin", Sin },
+                { "cos", Cos },
+                { "abs", Abs }
+            };
+            _formulaProcessor = new FormulaProcessor(_customFunctions);
+        }
+
         ~Actions()
         {
             DatacapRRCleanupTime = true;
@@ -46,7 +63,7 @@ namespace _3sgrMath
                     RRLog = null;
                     RRState = null;
                     GC.Collect();
-                    GC.WaitForPendingFinalizers();
+                    GC.WaitForPendingFinalizers();                    
                 }
             }
         }
@@ -84,7 +101,7 @@ namespace _3sgrMath
         /// <summary/>
         public TDCOLib.IDCO DatacapRRCurrentDCO
         {
-            get { return this.CurrentDCO; }
+            get { return CurrentDCO; }
             set
             {
                 CurrentDCO = value;
@@ -109,6 +126,8 @@ namespace _3sgrMath
 
         #endregion
 
+        Dictionary<string, Func<string, double>> _customFunctions;
+        private FormulaProcessor _formulaProcessor;
         #region CommonActions
 
         void OutputToLog(int nLevel, string strMessage)
@@ -151,8 +170,43 @@ namespace _3sgrMath
         }
 
         #endregion
+        public Func<List<string>, object> Count = delegate(List<string> s)
+        {
+            return 5;
+        };
+        public Func<List<string>, object> Cos = delegate (List<string> s)
+        {
+            return Math.Cos(Convert.ToDouble(s[0]));
+        };
+        public Func<List<string>, object> Sin = delegate (List<string> s)
+        {
+            return 5;
+        };
+        public Func<List<string>, object> Abs = delegate (List<string> s)
+        {
+            return 5;
+        };
 
+        #region CustomKeywords
 
+        public double Count2(string xPath)
+        {
+            
+            
+            var res = 0.0;
+            using (var sr = new StringReader(CurrentDCO.XML))
+            {
+                var doc = new XPathDocument(sr);
+                var o = doc.CreateNavigator().Evaluate(xPath);
+                if (o != null)
+                {
+                    res = (int)o;
+                }
+            }
+            return res;
+        }
+
+#endregion
         //implementation of the Dispose method to release managed resources
         public void Dispose()
         {
@@ -176,7 +230,7 @@ namespace _3sgrMath
 
             try
             {
-               
+                _formulaProcessor.Value(formula);
             }
             catch (Exception ex)
             {
@@ -191,18 +245,16 @@ namespace _3sgrMath
         }
 
 
-        public string dateTimeFormat;
+        private string _dateTimeFormat;
         /// <summary/>
-        /// This is an example of an action that sets a C# DateTime Formats that needs to be used.  
-        /// An action that sets a property always returns true.
-        /// The parameter type must match the type defined in the RRX file for this action.
+        /// Supply custom DateTime Formats. Separator separated.
         public string DateTimeFormats
         {
-            get { return dateTimeFormat; }
+            get { return _dateTimeFormat; }
             set
             {
-                dateTimeFormat = value;
-                OutputToLog(5, dateTimeFormat);
+                _dateTimeFormat = value;
+                OutputToLog(5, _dateTimeFormat);
             }
         }
     }

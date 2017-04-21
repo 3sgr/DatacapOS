@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Convertion.Properties;
+using _3sgrMath.Properties;
 
-namespace FormulaProcessor
+namespace _3sgrMath
 {
     #region ErrorException
     public class ErrorMesage : Exception
@@ -16,9 +16,20 @@ namespace FormulaProcessor
     /// <summary>
     /// Calculating the values of operations and  functions
     /// </summary>
-    class ActionsAndFunctions 
+    class ActionsAndFunctions
     {
-      private readonly Stack<double> _parameters = new Stack<double>(0);       // Parameters Stack
+        private readonly Dictionary<string, Func<string, double>> _customFunctions;
+
+        public ActionsAndFunctions()
+        {
+        }
+
+        public ActionsAndFunctions(Dictionary<string, Func<string, double>> customFunctions)
+        {
+            _customFunctions = customFunctions;
+        }
+
+        private readonly Stack<double> _parameters = new Stack<double>(0);       // Parameters Stack
         
         #region Service
         public void ParametersPush(double dig)
@@ -81,17 +92,25 @@ namespace FormulaProcessor
           double rez;
           try { ParametersPop(); } catch (OverflowException) { throw new ErrorMesage(ErrorAr._6); }
           try { rez = ParametersPop(); } catch (OverflowException) { throw new ErrorMesage(ErrorAr._6); }
-            switch (funcID)
+            if (_customFunctions.ContainsKey(funcID))
             {
-                case "sqrt": rez = Math.Sqrt(rez); break;
-                case "ln"  : rez = Math.Log(rez) ; break;
-                case "exp" : rez = Math.Exp(rez) ; break;
-                case "abs" : rez = Math.Abs(rez ); break;
-                case "sin" : rez = Math.Sin(rez) ; break;
-                case "cos" : rez = Math.Cos(rez) ; break;
-                case "asin": rez = Math.Asin(rez); break;
-                case "acos": rez = Math.Acos(rez); break;
-                default    : throw new ErrorMesage(ErrorAr._66);
+                rez = _customFunctions[funcID](funcID);
+            }
+            else
+            {
+                switch (funcID)
+                {
+                    case "sqrt": rez = Math.Sqrt(rez); break;
+                    case "ln": rez = Math.Log(rez); break;
+                    case "exp": rez = Math.Exp(rez); break;
+                    case "abs": rez = Math.Abs(rez); break;
+                    case "sin": rez = Math.Sin(rez); break;
+                    case "cos": rez = Math.Cos(rez); break;
+                    case "asin": rez = Math.Asin(rez); break;
+                    case "acos": rez = Math.Acos(rez); break;
+                    default: throw new ErrorMesage(ErrorAr._66);
+                }
+
             }
             return rez;  
         }
