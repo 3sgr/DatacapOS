@@ -99,7 +99,6 @@ namespace _3sgrMath
             // Remove Eliminator
             CharsReplace(new[] {Templates.Eliminator[1]}, ref sO);
             return sO == Templates.Empty||_customFunctions.Count>0;
-            return sO == Templates.Empty || _customFunctions.Count > 0;
         }
 
         /// <summary>

@@ -31,27 +31,16 @@ namespace DCUnitTest
         [TestMethod]
         public void ReadDCOs()
         {
-           InitObjects();
             Assert.AreEqual(_dco.Variable["TYPE"], "APT");
             //Batch Profiler.xml
             //dco.Read()
         }
 
-        private void InitObjects()
-        {
-            var runtimeDir = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-            var setupDCO = Path.Combine(runtimeDir.Parent.Parent.FullName, "Dependency","DCO", "Setup", "APT.xml");
-            var runtimeDCO = Path.Combine(runtimeDir.Parent.Parent.FullName, "Dependency", "DCO", "Runtime", "Batch Profiler.xml");
-            //File.Copy(runtimeDCO, runtimeDCO+DateTime.Now.ToString("HH:mm:ss tt zz")+".bak");
-            _dco.Read(runtimeDCO);
-            _dco.ReadSetup(setupDCO);
-            _pilot.BatchDir = Path.GetDirectoryName(runtimeDCO);
-        }
+       
 
         [TestMethod]
         public void SimpleITTest()
         {
-            InitObjects();
             var actions = new _3sgrMath.Actions
             {
                 //DatacapRRDCO = _dco,
@@ -66,7 +55,6 @@ namespace DCUnitTest
         [TestMethod]
         public void RunCustomKeyWord()
         {
-            InitObjects();
             var actions = new _3sgrMath.Actions
             {
                 //DatacapRRDCO = _dco,
