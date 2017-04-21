@@ -51,12 +51,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BaseTestClass.cs" />
     <Compile Include="Mockups\MyBPilotCtrl.cs" />
     <Compile Include="Mockups\myDCLOgxLib.cs" />
     <Compile Include="Mockups\myDCO.cs" />
     <Compile Include="Mockups\MyRRState.cs" />
     <Compile Include="DCUnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_3sgrMathActionsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="dclogXLib">

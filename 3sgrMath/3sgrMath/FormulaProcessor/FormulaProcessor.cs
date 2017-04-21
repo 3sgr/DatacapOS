@@ -1,13 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using _3sgr.Datacap.CustomAction.MathProcessing.Properties;
-namespace _3sgr.Datacap.CustomAction.MathProcessing
+using _3sgrMath.Properties;
+
+namespace _3sgrMath
 {
     public class FormulaProcessor
     {
+        private readonly ActionsAndFunctions _af;
+        public FormulaProcessor()
+        {
+            _af = new ActionsAndFunctions();
+        }
+
+        private Dictionary<string, Func<string, double>> _customFunctions;
+        public FormulaProcessor(Dictionary<string, Func<string, double>> customFunctions)
+        {
+            _customFunctions = customFunctions;
+            _af = new ActionsAndFunctions(_customFunctions);
+        }
+
         private readonly Stack<int> _stackBrackets = new Stack<int>(0);
         private readonly Dictionary<string, double> _iDic = new Dictionary<string, double>();
         //       private Dictionary<string, double> _CDic = new Dictionary<string, double>();
@@ -47,7 +59,8 @@ namespace _3sgr.Datacap.CustomAction.MathProcessing
             {
             }
         }
-        private readonly ActionsAndFunctions _af = new ActionsAndFunctions();
+
+        
         #endregion
         #region Main
         /// <summary>
@@ -85,7 +98,7 @@ namespace _3sgr.Datacap.CustomAction.MathProcessing
             sO = keys.Aggregate(sO, (current, s) => current.Replace(Templates.Eliminator[0] + s + Templates.Eliminator[1], Templates.Empty));
             // Remove Eliminator
             CharsReplace(new[] {Templates.Eliminator[1]}, ref sO);
-            return sO == Templates.Empty;
+            return sO == Templates.Empty||_customFunctions.Count>0;
         }
 
         /// <summary>
@@ -116,6 +129,10 @@ namespace _3sgr.Datacap.CustomAction.MathProcessing
                 {
                 }
                 first = last;
+            }
+            foreach (var customName in _customFunctions.Keys)
+            {
+                _iDic.Add(customName,0.0);
             }
         }
         /// <summary>
