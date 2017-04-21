@@ -1,0 +1,29 @@
+﻿Brilliant Repair Shop 
+90 Fixed Street INVOICE 
+S 
+Carson City, NV 89701 
+Phone: 775-555-6789 
+INVOICE # 03-8508 
+DATE: 02 /15 /10 
+To: Ship To: 
+Busy Car Repair Busy Car Repair 
+100 Auto Road 100 Auto Road 
+Salt Lake City, UT 84101 Salt Lake City, UT 84101 
+Phone: 801-555-1234 Phone: 801-555-1234 
+Comments or special instructions: 
+SALESPERSON P.O. NUMBR REQIOSITIONER SHIPPED VIA F.O.B. POINT TERMS 
+198 0811012 2/10Net30 
+QUANTITY DESCRIPTION UNIT PRICE TOTAL 
+1 Left quarter panel 175.00 175.00 
+2 Tail lights 50.00 100.00 
+80 Gaskets .95 76.00 
+2 Front headlights 50.00 100.00 
+80 Bolts .95 76.00 
+SUBTOTAL 572.00 
+SALES TAX 27.68 
+SHIPPING & HANDLING 
+TOTAL DUE 554.68 
+Make all checks payable to Brilliant Repair Sjop. 
+If you have any questions concerning this invoice, contact (775) 555-6789. 
+Thank you for your business! 
+All references to names, places, addresses, and other data or information, are fictitious and are used for illustration purposes only. 

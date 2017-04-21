@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using _3sgrMath.Properties;
 
 namespace _3sgrMath
+
+
 {
     #region ErrorException
     public class ErrorMesage : Exception

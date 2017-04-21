@@ -1,0 +1,37 @@
+﻿INVOICE 
+Busy Car Repair 
+INVOICE # 28100 
+DATE: 02 / 26 / 10 
+100 Auto Road 
+Salt Lake City, UT 84101 
+Phone: (801) 555-1234 
+TO 
+Brilliant Repair Shop 
+SHIP 
+Brilliant Repair Shop 
+90 Fixed Street 90 Fixed Street 
+Carson City, NV 89701 TO Carson City, NV 89701 
+Phone: (775) 555-6789 Phone: (775) 555-6789 
+salesperson PO 
+shipping shipping 
+salesperson 
+payment 
+due date 
+method terms terms 
+191 678430 2/10 Net 30 03/26/10 
+qty item # description unit price discount line total 
+10 201 Trucking - Ticket 138432 70.00 700.00 
+130 204 Brine Water .70 91.00 
+130 203 Fresh Water .25 32.50 
+19 206 KCL 6.00 114.00 
+6 201 Trucking - Ticket 146611 65.00 390.00 
+130 203 Fresh Water .25 32.50 
+19 206 KCL 6.00 114.00 
+Total 
+Discount 
+Subtotal 1474.00 
+Sales Tax 77.39 
+TOTAL 1551.39 
+Make all checks payable to BCR 
+THANK YOU FOR YOUR BUSINESS! 
+All references to names, places, addresses, and other data or information, are fictitious and are used for illustration purposes only. 
