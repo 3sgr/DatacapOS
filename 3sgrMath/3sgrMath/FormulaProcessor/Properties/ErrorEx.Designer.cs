@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _3sgrMath {
+namespace _3sgrMath.Properties {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace _3sgrMath {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Const {
+    internal class ErrorEx {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Const() {
+        internal ErrorEx() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace _3sgrMath {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_3sgrMath.Const", typeof(Const).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_3sgrMath.Properties.ErrorEx", typeof(ErrorEx).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,47 @@ namespace _3sgrMath {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PFSuccess.
+        ///   Looks up a localized string similar to ***Fatal Error***.
         /// </summary>
-        internal static string DCOResultVar {
+        internal static string Fatal {
             get {
-                return ResourceManager.GetString("DCOResultVar", resourceCulture);
+                return ResourceManager.GetString("Fatal", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to False.
+        ///   Looks up a localized string similar to ***Repetition of identifier in unauthorized combination***.
         /// </summary>
-        internal static string False {
+        internal static string IllegalTwins {
             get {
-                return ResourceManager.GetString("False", resourceCulture);
+                return ResourceManager.GetString("IllegalTwins", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to True.
+        ///   Looks up a localized string similar to ***Don&apos;t found the data***.
         /// </summary>
-        internal static string True {
+        internal static string NoDat {
             get {
-                return ResourceManager.GetString("True", resourceCulture);
+                return ResourceManager.GetString("NoDat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ***Don&apos;t found fonction ID***.
+        /// </summary>
+        internal static string NoFunc {
+            get {
+                return ResourceManager.GetString("NoFunc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ***Syntax Error***.
+        /// </summary>
+        internal static string Syntax {
+            get {
+                return ResourceManager.GetString("Syntax", resourceCulture);
             }
         }
     }
