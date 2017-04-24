@@ -98,7 +98,9 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Readme.md" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\3sgrMath\3sgrMath.csproj">
       <Project>{241c94a7-a0c0-4c05-8563-01a1196ab9f9}</Project>
@@ -112,7 +114,6 @@
   <ItemGroup>
     <Content Include="Dependency\dcsmart.dll" />
     <Content Include="Dependency\iRRX.dll" />
-    <Content Include="Readme.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

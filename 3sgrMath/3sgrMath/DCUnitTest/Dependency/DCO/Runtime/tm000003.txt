@@ -1,0 +1,25 @@
+﻿Yellow Insuranc i 
+r Agency 
+rim J r 
+I N V 0 I C E 
+Invoice#: 23857 
+Invoice Date: 2/29/09 
+Customer ID: 63890 
+Bill To: Ship To: 
+Thelma T. Anderson Bettie B. Stuart 
+55 Unknown Road 999 Nowhere Lane 
+Montgomery, AL 36101 Augusta, Maine 04336 
+(333) 555-1111 (207) 555-0000 
+Date Your Order # OurOrder# Sales Rep. FOB Ship Via Terms Tax ID 
+745590 165489 ABC Ground Net 30 
+QUANTITY Item Units Description Discount % Taxable Unit Price Total 
+10 567889 Boxes Office Widgets Y 127.99 1279.90 
+45 5789969 Cartons Blue Office Things Y 35.69 1606.05 
+Subtotal 2885.95 
+Tax 151.51 
+Shipping 129.00 
+Miscellaneous 
+Balance Due 3166.46 
+70 Policy Rd Little Rock, AR 72201 
+Phone: (50) 555-8888 Fax: (50) 555-8888 eMail: me@yellowinsuranceagency.yis Web site: yellowinsuranceagency.test.com 
+All references to names, places, addresses, and other data or information, are fictitious and are used for illustration purposes only. 

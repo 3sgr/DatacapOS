@@ -1,0 +1,25 @@
+﻿Invoice No. 0014879 
+NI 
+* 
+XYZ Hardware 
+x - 
+c-=‘ 
+, 60 Shovel Rd Phone: 605-555-6789 
+Pierre, SD 57501 Fax: 605-555-6788 INVOICE 
+Customer: Misc: 
+Name Ralph R. Anderson Date 02/15/10 
+Address 55 Unknown Road Order No. 738939 
+City Montgomery State: AL ZIP: 36101 PO# 013125 
+Phone (334) 555-1111 Terms 2/10Net30 
+QTY Item Description Unit Price TOTAL 
+1 1000-XX Z100 HVAC system 32g 2100.00 2100.00 
+50 1100-MM Coupling 3.00 150.00 
+1 3200-NN Diverter 500.00 500.00 
+1 13001-AB Delivery 400.00 400.00 
+1 Discount Pro discount -1100.00 -1100.00 
+Su bTotal 2050.00 
+Shipping 
+Tax 5.25% 107.63 
+TOTAL 2157.63 
+Office Use Only 
+All references to names, places, addresses, and other data or information, are fictitious and are used for illustration purposes only. 

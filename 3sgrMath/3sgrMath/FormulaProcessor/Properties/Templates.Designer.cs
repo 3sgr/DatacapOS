@@ -8,8 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _3sgrMath.Properties {
-    using System;    
+namespace _3sgr.Datacap.CustomAction.MathProcessing.Properties {
+    using System;
+    using System.Reflection;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -20,14 +23,14 @@ namespace _3sgrMath.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ErrorEx {
+    internal class Templates {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ErrorEx() {
+        internal Templates() {
         }
         
         /// <summary>
@@ -37,7 +40,7 @@ namespace _3sgrMath.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_3sgrMath.Properties.ErrorEx", typeof(ErrorEx).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Convertion.Properties.Templates", typeof(Templates).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -59,47 +62,83 @@ namespace _3sgrMath.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ***Fatal Error***.
+        ///   Looks up a localized string similar to ^/*-+()={}.
         /// </summary>
-        internal static string Fatal {
+        internal static string ArithmeticOperations {
             get {
-                return ResourceManager.GetString("Fatal", resourceCulture);
+                return ResourceManager.GetString("ArithmeticOperations", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ***Repetition of identifier in unauthorized combination***.
+        ///   Looks up a localized string similar to ,.
         /// </summary>
-        internal static string IllegalTwins {
+        internal static string Coma {
             get {
-                return ResourceManager.GetString("IllegalTwins", resourceCulture);
+                return ResourceManager.GetString("Coma", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ***Don&apos;t found the data***.
+        ///   Looks up a localized string similar to ..
         /// </summary>
-        internal static string NoDat {
+        internal static string Dot {
             get {
-                return ResourceManager.GetString("NoDat", resourceCulture);
+                return ResourceManager.GetString("Dot", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ***Don&apos;t found fonction ID***.
+        ///   Looks up a localized string similar to ~~.
         /// </summary>
-        internal static string NoFunc {
+        internal static string Eliminator {
             get {
-                return ResourceManager.GetString("NoFunc", resourceCulture);
+                return ResourceManager.GetString("Eliminator", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ***Syntax Error***.
+        ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string Syntax {
+        internal static string Empty {
             get {
-                return ResourceManager.GetString("Syntax", resourceCulture);
+                return ResourceManager.GetString("Empty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ~|\?.
+        /// </summary>
+        internal static string ForbiddenSymbols {
+            get {
+                return ResourceManager.GetString("ForbiddenSymbols", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to |.
+        /// </summary>
+        internal static string Line {
+            get {
+                return ResourceManager.GetString("Line", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  ().
+        /// </summary>
+        internal static string Separators {
+            get {
+                return ResourceManager.GetString("Separators", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  .
+        /// </summary>
+        internal static string Space {
+            get {
+                return ResourceManager.GetString("Space", resourceCulture);
             }
         }
     }

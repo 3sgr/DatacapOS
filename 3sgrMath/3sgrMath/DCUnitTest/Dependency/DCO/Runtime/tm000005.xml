@@ -1,0 +1,280 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<P id="TM000005">
+<F id="Vendor">
+	<V n="TYPE">Vendor</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">1</V>
+	<V n="PreVerify Val">&lt;New&gt;</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Vendor</V>
+</F>
+<F id="Vendor_Number">
+	<V n="TYPE">Vendor_Number</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">1</V>
+	<V n="MESSAGE">The Vendor_Number field contains 0 characters. The minimum number of characters allowed is 1.</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Vendor Number</V>
+</F>
+<F id="Remittance_Zip">
+	<V n="TYPE">Remittance_Zip</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Postal code</V>
+</F>
+<F id="Invoice_Number">
+	<V n="TYPE">Invoice_Number</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="MESSAGE">The Invoice_Number field contains 0 characters. The minimum number of characters allowed is 2.</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Invoice Number</V>
+</F>
+<F id="Invoice_Date">
+	<V n="TYPE">Invoice_Date</V>
+	<V n="Position">2111,510,2152,543</V>
+	<V n="STATUS">1</V>
+	<V n="OriginalLocale"></V>
+	<V n="MESSAGE">The 02 date in the Invoice_Date field is not a valid date or has an invalid date format.</V>
+	<V n="PreVerify Val">02</V>
+	<V n="PreVerify Pos">2111,510,2152,543</V>
+	<V n="label">Invoice Date</V>
+	<V n="RecognizedText">02</V>
+	<C cn="10" cr="2115,514,2132,539">48</C>
+	<C cn="10" cr="2132,514,2148,538">50</C>
+</F>
+<F id="PO_Number">
+	<V n="TYPE">PO_Number</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">PO Number</V>
+</F>
+<F id="Shipping">
+	<V n="TYPE">Shipping</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Shipping</V>
+</F>
+<F id="Invoice_Type">
+	<V n="TYPE">Invoice_Type</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Invoice Type</V>
+	<V n="RecognizedText">PO</V>
+	<C cn="9" cr="0,0,0,0">80</C>
+	<C cn="9" cr="0,0,0,0">79</C>
+</F>
+<F id="Taxes">
+	<V n="TYPE">Taxes</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Taxes</V>
+	<F id="TaxLineitem1">
+		<V n="TYPE">TaxLineitem</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">0,0,0,0</V>
+		<V n="label">Tax Lineitem</V>
+		<F id="Tax_Type">
+			<V n="TYPE">Tax_Type</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val">Sales</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Type</V>
+			<V n="RecognizedText">Sales</V>
+			<C cn="10" cr="0,0,0,0">83</C>
+			<C cn="10" cr="0,0,0,0">97</C>
+			<C cn="10" cr="0,0,0,0">108</C>
+			<C cn="10" cr="0,0,0,0">101</C>
+			<C cn="10" cr="0,0,0,0">115</C>
+		</F>
+		<F id="Tax_Value">
+			<V n="TYPE">Tax_Value</V>
+			<V n="STATUS">0</V>
+			<V n="Position">2170,2482,2255,2514</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">77.39</V>
+			<V n="PreVerify Pos">2170,2482,2255,2514</V>
+			<V n="label">Tax Value</V>
+			<V n="RecognizedText">77.39</V>
+			<C cn="10" cr="2174,2486,2190,2510">55</C>
+			<C cn="10" cr="2192,2486,2207,2510">55</C>
+			<C cn="10" cr="2211,2507,2214,2510">46</C>
+			<C cn="10" cr="2218,2486,2234,2510">51</C>
+			<C cn="10" cr="2236,2486,2251,2510">57</C>
+		</F>
+	</F>
+	<F id="TaxLineitem2">
+		<V n="TYPE">TaxLineitem</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">0,0,0,0</V>
+		<V n="label">Tax Lineitem</V>
+		<F id="Tax_Type">
+			<V n="TYPE">Tax_Type</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val">VAT</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Type</V>
+			<V n="RecognizedText">VAT</V>
+			<C cn="10" cr="0,0,0,0">86</C>
+			<C cn="10" cr="0,0,0,0">65</C>
+			<C cn="10" cr="0,0,0,0">84</C>
+		</F>
+		<F id="Tax_Value">
+			<V n="TYPE">Tax_Value</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Value</V>
+		</F>
+	</F>
+	<F id="TaxLineitem3">
+		<V n="TYPE">TaxLineitem</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">0,0,0,0</V>
+		<V n="label">Tax Lineitem</V>
+		<F id="Tax_Type">
+			<V n="TYPE">Tax_Type</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val">GST</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Type</V>
+			<V n="RecognizedText">GST</V>
+			<C cn="10" cr="0,0,0,0">71</C>
+			<C cn="10" cr="0,0,0,0">83</C>
+			<C cn="10" cr="0,0,0,0">84</C>
+		</F>
+		<F id="Tax_Value">
+			<V n="TYPE">Tax_Value</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Value</V>
+		</F>
+	</F>
+</F>
+<F id="Tax">
+	<V n="TYPE">Tax</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="Locale Checked">Yes</V>
+	<V n="PreVerify Val">77.39</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Tax</V>
+	<V n="RecognizedText">77.39</V>
+	<C cn="10" cr="0,0,0,0">55</C>
+	<C cn="10" cr="0,0,0,0">55</C>
+	<C cn="10" cr="0,0,0,0">46</C>
+	<C cn="10" cr="0,0,0,0">51</C>
+	<C cn="10" cr="0,0,0,0">57</C>
+</F>
+<F id="Invoice_Total">
+	<V n="TYPE">Invoice_Total</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">1</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Invoice Total</V>
+</F>
+<F id="Add_New_Fingerprint">
+	<V n="TYPE">Add_New_Fingerprint</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Add New Fingerprint</V>
+</F>
+<F id="Routing_Instructions">
+	<V n="TYPE">Routing_Instructions</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="Batch Profiler Operator">admin</V>
+	<V n="Batch Profiler Station">1.0</V>
+	<V n="Batch Profiler Time">4/13/2017 6:52:47 PM</V>
+	<V n="PreVerify Val">None</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Routing Instructions</V>
+	<V n="RecognizedText">None</V>
+	<C cn="9" cr="0,0,0,0">78</C>
+	<C cn="9" cr="0,0,0,0">111</C>
+	<C cn="9" cr="0,0,0,0">110</C>
+	<C cn="9" cr="0,0,0,0">101</C>
+</F>
+<F id="Browse">
+	<V n="TYPE">Browse</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Browse</V>
+	<F id="Page_No1">
+		<V n="TYPE">Page_No</V>
+		<V n="STATUS">0</V>
+		<V n="Position">90,90,210,210</V>
+		<V n="IMAGEFILE">tm000005.tif</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">90,90,210,210</V>
+		<V n="label">Page No</V>
+		<F id="TIFF">
+			<V n="IMAGEFILE">tm000005.tif</V>
+			<V n="Position">100,100,200,200</V>
+			<V n="STATUS">0</V>
+			<V n="TYPE">TIFF</V>
+			<V n="PreVerify Val">tm000005.tif</V>
+			<V n="PreVerify Pos">100,100,200,200</V>
+			<V n="label">TIFF</V>
+			<V n="RecognizedText">tm000005.tif</V>
+			<C cn="10" cr="0,0,0,0">116</C>
+			<C cn="10" cr="0,0,0,0">109</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">53</C>
+			<C cn="10" cr="0,0,0,0">46</C>
+			<C cn="10" cr="0,0,0,0">116</C>
+			<C cn="10" cr="0,0,0,0">105</C>
+			<C cn="10" cr="0,0,0,0">102</C>
+		</F>
+	</F>
+</F>
+<F id="Details">
+	<V n="TYPE">Details</V>
+	<V n="Position">0,0,2555,3305</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,2555,3305</V>
+	<V n="label">Details</V>
+</F>
+<F id="ExportImage">
+	<V n="TYPE">ExportImage</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">-1</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">ExportImage</V>
+</F>
+</P>

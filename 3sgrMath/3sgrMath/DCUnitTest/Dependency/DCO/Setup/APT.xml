@@ -1,0 +1,464 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<S>
+	<B type="APT">
+		<V n="ID">0</V>
+		<V n="TYPE">Batch</V>
+		<V n="STATUS">0</V>
+		<V n="MIN TYPES">0</V>
+		<V n="MAX TYPES">0</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;1&quot; rs=&quot;1&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;5&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;7&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;10&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;13&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;18&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;19&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;17&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;27&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;28&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;29&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;30&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<P type="Other" pos="0" min="0" max="0"/>
+		<D type="Invoice" pos="0" min="0" max="0"/>
+		<D type="Separator" pos="0" min="0" max="0"/>
+	</B>
+	<D type="Invoice">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;1&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;5&quot; rs=&quot;7&quot; /&gt;&lt;r id=&quot;4&quot; rs=&quot;16&quot; /&gt;&lt;r id=&quot;6&quot; rs=&quot;28&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;33&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<P type="Main_Page" pos="1" min="1" max="1"/>
+		<P type="Trailing_Page" pos="0" min="0" max="0"/>
+		<P type="Attachment_Separator" pos="0" min="0" max="0"/>
+		<P type="Attachment" pos="0" min="0" max="0"/>
+	</D>
+	<D type="Separator">
+		<V n="ID">0</V>
+		<V n="TYPE">Document</V>
+		<V n="STATUS">0</V>
+		<V n="DOC DATA">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<P type="Document_Separator" pos="0" min="0" max="0"/>
+	</D>
+	<P type="Other">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;1&quot; rs=&quot;25&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<V n="b_tp">0</V>
+		<V n="b_or">2</V>
+	</P>
+	<P type="Main_Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;1&quot; rs=&quot;4&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;7&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;5&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;2&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;12&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;21&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;10&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;15&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;17&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;9&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;23&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;26&quot; /&gt;&lt;r id=&quot;7&quot; rs=&quot;16&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;28&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;31&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<V n="c_lc">-11</V>
+		<V n="c_fpr">ON</V>
+		<V n="c_tm">REJECT_ALTERNATIVES</V>
+		<V n="c_ft">MACHINETYPE</V>
+		<V n="c_rs">VOTER</V>
+		<V n="c_sm">0</V>
+		<V n="c_fp">ON</V>
+		<V n="s_checkOFF">1</V>
+		<F type="Vendor" pos="0" min="0" max="0"/>
+		<F type="Vendor_Number" pos="0" min="0" max="0"/>
+		<F type="Remittance_Zip" pos="0" min="0" max="0"/>
+		<F type="Invoice_Number" pos="0" min="0" max="0"/>
+		<F type="Invoice_Date" pos="0" min="0" max="0"/>
+		<F type="PO_Number" pos="0" min="0" max="0"/>
+		<F type="Shipping" pos="0" min="0" max="0"/>
+		<F type="Invoice_Type" pos="0" min="0" max="0"/>
+		<F type="Taxes" pos="0" min="1" max="1"/>
+		<F type="Tax" pos="0" min="0" max="0"/>
+		<F type="Invoice_Total" pos="0" min="0" max="0"/>
+		<F type="Add_New_Fingerprint" pos="0" min="0" max="0"/>
+		<F type="Routing_Instructions" pos="0" min="0" max="0"/>
+		<F type="Browse" pos="0" min="1" max="1"/>
+		<F type="Details" pos="0" min="1" max="1"/>
+		<F type="ExportImage" pos="0" min="0" max="0"/>
+	</P>
+	<P type="Document_Separator">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Trailing_Page">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;2&quot; rs=&quot;2&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;4&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<V n="c_lc">-11</V>
+		<V n="c_fpr">ON</V>
+		<V n="c_tm">REJECT_ALTERNATIVES</V>
+		<V n="c_ft">MACHINETYPE</V>
+		<V n="c_rs">VOTER</V>
+		<V n="c_sm">0</V>
+		<V n="c_fp">ON</V>
+	</P>
+	<P type="Attachment_Separator">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<P type="Attachment">
+		<V n="ID">0</V>
+		<V n="TYPE">Page</V>
+		<V n="STATUS">0</V>
+		<V n="IMAGEFILE"></V>
+		<V n="DATAFILE"></V>
+		<V n="TEMPLATE IMAGE"></V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</P>
+	<F type="Invoice_Number">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="POSITION">0,0,0,0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;3&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;6&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Invoice_Date">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;4&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;3&quot; rs=&quot;6&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="PO_Number">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;5&quot; rs=&quot;11&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Vendor">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;4&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;13&quot; /&gt;&lt;r id=&quot;9&quot; rs=&quot;7&quot; /&gt;&lt;r id=&quot;6&quot; rs=&quot;16&quot; /&gt;&lt;r id=&quot;3&quot; rs=&quot;28&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<V n="Lookup">&lt;SQL flist=&apos;Vendor,Remittance_Zip,Vendor_Number&apos; dsn=&quot;*/lookupdb:cs&quot;&gt;SELECT VendorName,VendorZip,VendorID FROM VendorTable WHERE VendorName like &apos;@@Vendor@@%&apos;&lt;/SQL&gt;</V>
+	</F>
+	<F type="Vendor_Number">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;5&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;18&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Remittance_Zip">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;6&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;9&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Tax">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;6&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;16&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Shipping">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;8&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;6&quot; rs=&quot;9&quot; /&gt;&lt;r id=&quot;7&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;16&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Routing_Instructions">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;13&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;23&quot; /&gt;&lt;r id=&quot;17&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;24&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<V n="DICT">DictRouting_Instructions</V>
+	</F>
+	<F type="Invoice_Total">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;16&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;5&quot; rs=&quot;9&quot; /&gt;&lt;r id=&quot;12&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;14&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Add_New_Fingerprint">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<V n="DICT">DictAdd_New_Fingerprint</V>
+	</F>
+	<F type="Invoice_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;4&quot; rs=&quot;28&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<V n="DICT">DictInvoice_Type</V>
+	</F>
+	<F type="Browse">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;1&quot; rs=&quot;22&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<F type="Page_No" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Lineitem">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;10&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;20&quot; /&gt;&lt;r id=&quot;3&quot; rs=&quot;15&quot; /&gt;&lt;r id=&quot;4&quot; rs=&quot;7&quot; /&gt;&lt;r id=&quot;5&quot; rs=&quot;16&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;29&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<F type="ItemID" pos="0" min="0" max="0"/>
+		<F type="ItemDesc" pos="0" min="0" max="0"/>
+		<F type="Qty" pos="0" min="0" max="0"/>
+		<F type="Price" pos="0" min="0" max="0"/>
+		<F type="LineTotal" pos="0" min="0" max="0"/>
+		<F type="POLineNum" pos="0" min="0" max="0"/>
+	</F>
+	<F type="ItemID">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;11&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;4&quot; rs=&quot;15&quot; /&gt;&lt;r id=&quot;6&quot; rs=&quot;7&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="LineTotal">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;15&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;20&quot; /&gt;&lt;r id=&quot;5&quot; rs=&quot;9&quot; /&gt;&lt;r id=&quot;11&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;4&quot; rs=&quot;15&quot; /&gt;&lt;r id=&quot;6&quot; rs=&quot;7&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Qty">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;13&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;20&quot; /&gt;&lt;r id=&quot;3&quot; rs=&quot;9&quot; /&gt;&lt;r id=&quot;9&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;4&quot; rs=&quot;15&quot; /&gt;&lt;r id=&quot;6&quot; rs=&quot;7&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ItemDesc">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;12&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;8&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;4&quot; rs=&quot;15&quot; /&gt;&lt;r id=&quot;6&quot; rs=&quot;7&quot; /&gt;&lt;r id=&quot;1&quot; rs=&quot;33&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Price">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;14&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;20&quot; /&gt;&lt;r id=&quot;4&quot; rs=&quot;9&quot; /&gt;&lt;r id=&quot;10&quot; rs=&quot;6&quot; /&gt;&lt;r id=&quot;4&quot; rs=&quot;15&quot; /&gt;&lt;r id=&quot;6&quot; rs=&quot;7&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Details">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="MIN">0</V>
+		<V n="MAX">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;9&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;12&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;15&quot; /&gt;&lt;r id=&quot;3&quot; rs=&quot;7&quot; /&gt;&lt;r id=&quot;3&quot; rs=&quot;33&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+		<F type="Lineitem" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Page_No">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="TIFF" pos="0" min="0" max="0"/>
+	</F>
+	<F type="TIFF">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="ExportImage">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">-1</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;8&quot; rs=&quot;7&quot; /&gt;&lt;r id=&quot;3&quot; rs=&quot;16&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="POLineNum">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;7&quot; rs=&quot;7&quot; /&gt;&lt;r id=&quot;5&quot; rs=&quot;28&quot; /&gt;&lt;r id=&quot;20&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;31&quot; /&gt;&lt;r id=&quot;2&quot; rs=&quot;26&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Taxes">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;18&quot; rs=&quot;11&quot; /&gt;&lt;/in&gt;&lt;out&gt;&lt;r id=&quot;14&quot; rs=&quot;6&quot; /&gt;&lt;/out&gt;</V>
+		<F type="TaxLineitem" pos="0" min="0" max="0"/>
+	</F>
+	<F type="TaxLineitem">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+		<F type="Tax_Type" pos="0" min="0" max="0"/>
+		<F type="Tax_Value" pos="0" min="0" max="0"/>
+	</F>
+	<F type="Tax_Type">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in /&gt;&lt;out /&gt;</V>
+	</F>
+	<F type="Tax_Value">
+		<V n="ID">0</V>
+		<V n="TYPE">Field</V>
+		<V n="STATUS">0</V>
+		<V n="MIN_TYPES">0</V>
+		<V n="MAX_TYPES">0</V>
+		<V n="length"></V>
+		<V n="ReqConf">8</V>
+		<V n="rules">&lt;in&gt;&lt;r id=&quot;19&quot; rs=&quot;11&quot; /&gt;&lt;r id=&quot;15&quot; rs=&quot;6&quot; /&gt;&lt;/in&gt;&lt;out /&gt;</V>
+	</F>
+	<DICT n="YesNo">
+		<W v="No">No</W>
+		<W v="Yes">Yes</W>
+	</DICT>
+	<DICT n="InvoiceType">
+		<W v="PO">PO</W>
+		<W v="Non-PO">Non-PO</W>
+		<W v="Credit">Credit</W>
+	</DICT>
+	<DICT n="RoutingInstructions">
+		<W v="None">None</W>
+		<W v="Delete">Delete</W>
+		<W v="Rescan">Rescan</W>
+		<W v="Review">Review</W>
+	</DICT>
+	<DICT n="DictInvoice_Type">
+		<W v="PO">PO</W>
+		<W v="Non-PO">Non-PO</W>
+		<W v="Credit">Credit</W>
+	</DICT>
+	<DICT n="DictAdd_New_Fingerprint">
+		<W v="No">No</W>
+		<W v="Yes">Yes</W>
+	</DICT>
+	<DICT n="DictRouting_Instructions">
+		<W v="None">None</W>
+		<W v="Delete">Delete</W>
+		<W v="Rescan">Rescan</W>
+		<W v="Review">Review</W>
+	</DICT>
+</S>

@@ -1,0 +1,522 @@
+<?xml-stylesheet type="text/xsl" href="..\..\dco.xsl"?>
+<P id="TM000006">
+<F id="Vendor">
+	<V n="TYPE">Vendor</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val">ABC Apothicare</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Vendor</V>
+	<V n="MESSAGE">The character string &quot;&lt;New&gt;&quot; is not contained in the character string &quot;ABC Apothicare&quot; that was found in the Vendor field.</V>
+	<V n="RecognizedText">ABC Apothicare</V>
+	<C cn="10" cr="0,0,0,0">65</C>
+	<C cn="10" cr="0,0,0,0">66</C>
+	<C cn="10" cr="0,0,0,0">67</C>
+	<C cn="10" cr="0,0,0,0">32</C>
+	<C cn="10" cr="0,0,0,0">65</C>
+	<C cn="10" cr="0,0,0,0">112</C>
+	<C cn="10" cr="0,0,0,0">111</C>
+	<C cn="10" cr="0,0,0,0">116</C>
+	<C cn="10" cr="0,0,0,0">104</C>
+	<C cn="10" cr="0,0,0,0">105</C>
+	<C cn="10" cr="0,0,0,0">99</C>
+	<C cn="10" cr="0,0,0,0">97</C>
+	<C cn="10" cr="0,0,0,0">114</C>
+	<C cn="10" cr="0,0,0,0">101</C>
+</F>
+<F id="Vendor_Number">
+	<V n="TYPE">Vendor_Number</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val">TS33912</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Vendor Number</V>
+	<V n="RecognizedText">TS33912</V>
+	<C cn="10" cr="0,0,0,0">84</C>
+	<C cn="10" cr="0,0,0,0">83</C>
+	<C cn="10" cr="0,0,0,0">51</C>
+	<C cn="10" cr="0,0,0,0">51</C>
+	<C cn="10" cr="0,0,0,0">57</C>
+	<C cn="10" cr="0,0,0,0">49</C>
+	<C cn="10" cr="0,0,0,0">50</C>
+</F>
+<F id="Remittance_Zip">
+	<V n="TYPE">Remittance_Zip</V>
+	<V n="Position">1855,426,2188,471</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val">00 11 33 55 77</V>
+	<V n="PreVerify Pos">1855,426,2188,471</V>
+	<V n="label">Postal code</V>
+	<V n="RecognizedText">00 11 33 55 77</V>
+	<C cn="10" cr="1859,430,1882,467">48</C>
+	<C cn="10" cr="1886,430,1910,467">48</C>
+	<C cn="9" cr="0,0,0,0">32</C>
+	<C cn="10" cr="1931,430,1945,466">49</C>
+	<C cn="10" cr="1956,430,1969,466">49</C>
+	<C cn="9" cr="0,0,0,0">32</C>
+	<C cn="10" cr="1994,430,2017,467">51</C>
+	<C cn="10" cr="2022,430,2045,467">51</C>
+	<C cn="9" cr="0,0,0,0">32</C>
+	<C cn="10" cr="2064,431,2087,467">53</C>
+	<C cn="10" cr="2092,431,2115,467">53</C>
+	<C cn="9" cr="0,0,0,0">32</C>
+	<C cn="10" cr="2133,431,2156,466">55</C>
+	<C cn="10" cr="2161,431,2184,466">55</C>
+</F>
+<F id="Invoice_Number">
+	<V n="TYPE">Invoice_Number</V>
+	<V n="Position">1838,559,2020,604</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val">INV-555</V>
+	<V n="PreVerify Pos">1838,559,2020,604</V>
+	<V n="label">Invoice Number</V>
+	<V n="RecognizedText">INV-555</V>
+	<C cn="10" cr="1842,563,1847,599">73</C>
+	<C cn="10" cr="1855,563,1884,599">78</C>
+	<C cn="10" cr="1888,563,1921,599">86</C>
+	<C cn="10" cr="1920,584,1934,588">45</C>
+	<C cn="10" cr="1937,564,1960,600">53</C>
+	<C cn="10" cr="1965,564,1988,600">53</C>
+	<C cn="10" cr="1993,564,2016,600">53</C>
+</F>
+<F id="Invoice_Date">
+	<V n="TYPE">Invoice_Date</V>
+	<V n="Position">1839,642,2079,687</V>
+	<V n="STATUS">0</V>
+	<V n="OriginalLocale"></V>
+	<V n="hr_locale">en-GB</V>
+	<V n="PreVerify Val">2011/12/19</V>
+	<V n="PreVerify Pos">1839,642,2079,687</V>
+	<V n="label">Invoice Date</V>
+	<V n="RecognizedText">2011/12/19</V>
+	<C cn="10" cr="1843,646,1856,682">50</C>
+	<C cn="10" cr="1868,646,1891,683">48</C>
+	<C cn="10" cr="1893,646,1908,683">49</C>
+	<C cn="10" cr="1912,646,1926,682">49</C>
+	<C cn="10" cr="1936,646,1960,682">47</C>
+	<C cn="10" cr="1963,646,1977,683">49</C>
+	<C cn="10" cr="1978,646,2002,682">50</C>
+	<C cn="10" cr="2007,646,2030,683">47</C>
+	<C cn="10" cr="2038,646,2051,682">49</C>
+	<C cn="10" cr="2062,646,2075,682">57</C>
+</F>
+<F id="PO_Number">
+	<V n="TYPE">PO_Number</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">PO Number</V>
+</F>
+<F id="Shipping">
+	<V n="TYPE">Shipping</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Shipping</V>
+</F>
+<F id="Invoice_Type">
+	<V n="TYPE">Invoice_Type</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Invoice Type</V>
+	<V n="RecognizedText">PO</V>
+	<C cn="9" cr="0,0,0,0">80</C>
+	<C cn="9" cr="0,0,0,0">79</C>
+</F>
+<F id="Taxes">
+	<V n="TYPE">Taxes</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Taxes</V>
+	<F id="TaxLineitem1">
+		<V n="TYPE">TaxLineitem</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">0,0,0,0</V>
+		<V n="label">Tax Lineitem</V>
+		<F id="Tax_Type">
+			<V n="TYPE">Tax_Type</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val">Sales</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Type</V>
+			<V n="RecognizedText">Sales</V>
+			<C cn="10" cr="0,0,0,0">83</C>
+			<C cn="10" cr="0,0,0,0">97</C>
+			<C cn="10" cr="0,0,0,0">108</C>
+			<C cn="10" cr="0,0,0,0">101</C>
+			<C cn="10" cr="0,0,0,0">115</C>
+		</F>
+		<F id="Tax_Value">
+			<V n="TYPE">Tax_Value</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Value</V>
+		</F>
+	</F>
+	<F id="TaxLineitem2">
+		<V n="TYPE">TaxLineitem</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">0,0,0,0</V>
+		<V n="label">Tax Lineitem</V>
+		<F id="Tax_Type">
+			<V n="TYPE">Tax_Type</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val">VAT</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Type</V>
+			<V n="RecognizedText">VAT</V>
+			<C cn="10" cr="0,0,0,0">86</C>
+			<C cn="10" cr="0,0,0,0">65</C>
+			<C cn="10" cr="0,0,0,0">84</C>
+		</F>
+		<F id="Tax_Value">
+			<V n="TYPE">Tax_Value</V>
+			<V n="STATUS">0</V>
+			<V n="Position">1599,1531,1817,1586</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">20.00</V>
+			<V n="PreVerify Pos">1599,1531,1817,1586</V>
+			<V n="label">Tax Value</V>
+			<V n="RecognizedText">20.00</V>
+			<C cn="10" cr="1618,1536,1642,1572">50</C>
+			<C cn="10" cr="1647,1536,1671,1572">48</C>
+			<C cn="10" cr="1677,1567,1682,1579">46</C>
+			<C cn="10" cr="1689,1536,1712,1572">48</C>
+			<C cn="10" cr="1717,1536,1740,1572">48</C>
+		</F>
+	</F>
+	<F id="TaxLineitem3">
+		<V n="TYPE">TaxLineitem</V>
+		<V n="STATUS">0</V>
+		<V n="Position">0,0,0,0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">0,0,0,0</V>
+		<V n="label">Tax Lineitem</V>
+		<F id="Tax_Type">
+			<V n="TYPE">Tax_Type</V>
+			<V n="STATUS">0</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="PreVerify Val">GST</V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">Tax Type</V>
+			<V n="RecognizedText">GST</V>
+			<C cn="10" cr="0,0,0,0">71</C>
+			<C cn="10" cr="0,0,0,0">83</C>
+			<C cn="10" cr="0,0,0,0">84</C>
+		</F>
+		<F id="Tax_Value">
+			<V n="TYPE">Tax_Value</V>
+			<V n="STATUS">0</V>
+			<V n="Position">1626,1631,1817,1686</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">7.50</V>
+			<V n="PreVerify Pos">1626,1631,1817,1686</V>
+			<V n="label">Tax Value</V>
+			<V n="RecognizedText">7.50</V>
+			<C cn="10" cr="1647,1636,1670,1672">55</C>
+			<C cn="10" cr="1676,1667,1681,1679">46</C>
+			<C cn="10" cr="1688,1636,1711,1672">53</C>
+			<C cn="10" cr="1716,1636,1740,1672">48</C>
+		</F>
+	</F>
+</F>
+<F id="Tax">
+	<V n="TYPE">Tax</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="Locale Checked">Yes</V>
+	<V n="PreVerify Val">27.50</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Tax</V>
+	<V n="RecognizedText">27.50</V>
+	<C cn="10" cr="0,0,0,0">50</C>
+	<C cn="10" cr="0,0,0,0">55</C>
+	<C cn="10" cr="0,0,0,0">46</C>
+	<C cn="10" cr="0,0,0,0">53</C>
+	<C cn="10" cr="0,0,0,0">48</C>
+</F>
+<F id="Invoice_Total">
+	<V n="TYPE">Invoice_Total</V>
+	<V n="Position">1953,1732,2151,1783</V>
+	<V n="STATUS">1</V>
+	<V n="Locale Checked">Yes</V>
+	<V n="PreVerify Val">3009.00</V>
+	<V n="PreVerify Pos">1953,1732,2151,1783</V>
+	<V n="label">Invoice Total</V>
+	<V n="RecognizedText">3009.00</V>
+	<C cn="10" cr="1957,1736,1980,1772">51</C>
+	<C cn="10" cr="1998,1736,2022,1772">48</C>
+	<C cn="10" cr="2026,1736,2049,1772">48</C>
+	<C cn="10" cr="2054,1736,2077,1772">57</C>
+	<C cn="10" cr="2084,1767,2089,1779">46</C>
+	<C cn="10" cr="2095,1736,2119,1772">48</C>
+	<C cn="10" cr="2123,1736,2147,1772">48</C>
+</F>
+<F id="Add_New_Fingerprint">
+	<V n="TYPE">Add_New_Fingerprint</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Add New Fingerprint</V>
+</F>
+<F id="Routing_Instructions">
+	<V n="TYPE">Routing_Instructions</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="Batch Profiler Operator">admin</V>
+	<V n="Batch Profiler Station">1.0</V>
+	<V n="Batch Profiler Time">4/13/2017 6:52:47 PM</V>
+	<V n="PreVerify Val">None</V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Routing Instructions</V>
+	<V n="RecognizedText">None</V>
+	<C cn="9" cr="0,0,0,0">78</C>
+	<C cn="9" cr="0,0,0,0">111</C>
+	<C cn="9" cr="0,0,0,0">110</C>
+	<C cn="9" cr="0,0,0,0">101</C>
+</F>
+<F id="Browse">
+	<V n="TYPE">Browse</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">0</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">Browse</V>
+	<F id="Page_No1">
+		<V n="TYPE">Page_No</V>
+		<V n="STATUS">0</V>
+		<V n="Position">90,90,210,210</V>
+		<V n="IMAGEFILE">tm000006.tif</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">90,90,210,210</V>
+		<V n="label">Page No</V>
+		<F id="TIFF">
+			<V n="IMAGEFILE">tm000006.tif</V>
+			<V n="Position">100,100,200,200</V>
+			<V n="STATUS">0</V>
+			<V n="TYPE">TIFF</V>
+			<V n="PreVerify Val">tm000006.tif</V>
+			<V n="PreVerify Pos">100,100,200,200</V>
+			<V n="label">TIFF</V>
+			<V n="RecognizedText">tm000006.tif</V>
+			<C cn="10" cr="0,0,0,0">116</C>
+			<C cn="10" cr="0,0,0,0">109</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">48</C>
+			<C cn="10" cr="0,0,0,0">54</C>
+			<C cn="10" cr="0,0,0,0">46</C>
+			<C cn="10" cr="0,0,0,0">116</C>
+			<C cn="10" cr="0,0,0,0">105</C>
+			<C cn="10" cr="0,0,0,0">102</C>
+		</F>
+	</F>
+</F>
+<F id="Details">
+	<V n="TYPE">Details</V>
+	<V n="Position">0,1088,2210,3082</V>
+	<V n="STATUS">0</V>
+	<V n="LineItemPos">0,1089,2211,1151</V>
+	<V n="POS-ItemDesc">166,1095,488,1151</V>
+	<V n="POS-Qty">929,1089,1210,1144</V>
+	<V n="POS-Price">1328,1096,1429,1146</V>
+	<V n="POS-LineTotal">1953,1096,2151,1146</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,1088,2210,3082</V>
+	<V n="label">Details</V>
+	<F id="Lineitem0">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">170,1100,2147,1146</V>
+		<V n="STATUS">0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">170,1100,2147,1146</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position"></V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos"></V>
+			<V n="label">ItemID</V>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">165,1095,488,1151</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">3 paquet gaze</V>
+			<V n="PreVerify Pos">165,1095,488,1151</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">3 paquet gaze</V>
+			<C cn="10" cr="170,1100,193,1136">51</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="1" cr="213,1109,235,1146">112</C>
+			<C cn="1" cr="239,1109,263,1136">97</C>
+			<C cn="1" cr="267,1109,289,1146">113</C>
+			<C cn="1" cr="296,1109,317,1136">117</C>
+			<C cn="1" cr="322,1109,347,1136">101</C>
+			<C cn="1" cr="349,1101,362,1136">116</C>
+			<C cn="9" cr="0,0,0,0">32</C>
+			<C cn="10" cr="378,1109,400,1146">103</C>
+			<C cn="10" cr="406,1109,429,1136">97</C>
+			<C cn="10" cr="433,1109,456,1136">122</C>
+			<C cn="10" cr="459,1109,483,1136">101</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">941,1096,1094,1140</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">18000</V>
+			<V n="PreVerify Pos">941,1096,1094,1140</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">18000</V>
+			<C cn="10" cr="945,1100,958,1136">49</C>
+			<C cn="10" cr="969,1100,993,1136">56</C>
+			<C cn="10" cr="1011,1100,1034,1136">48</C>
+			<C cn="10" cr="1039,1100,1062,1136">48</C>
+			<C cn="10" cr="1067,1100,1090,1136">48</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1328,1096,1428,1147</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">0.12</V>
+			<V n="PreVerify Pos">1328,1096,1428,1147</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">0.12</V>
+			<C cn="10" cr="1332,1100,1355,1136">48</C>
+			<C cn="10" cr="1362,1131,1367,1143">46</C>
+			<C cn="10" cr="1377,1100,1390,1136">49</C>
+			<C cn="10" cr="1401,1100,1424,1137">50</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">1952,1097,2151,1148</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">2160.00</V>
+			<V n="PreVerify Pos">1952,1097,2151,1148</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">2160.00</V>
+			<C cn="10" cr="1956,1101,1980,1137">50</C>
+			<C cn="10" cr="2002,1101,2015,1137">49</C>
+			<C cn="10" cr="2026,1101,2050,1137">54</C>
+			<C cn="10" cr="2054,1101,2078,1137">48</C>
+			<C cn="10" cr="2085,1132,2090,1144">46</C>
+			<C cn="10" cr="2096,1101,2120,1137">48</C>
+			<C cn="10" cr="2124,1101,2147,1137">48</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+		</F>
+	</F>
+	<F id="Lineitem1">
+		<V n="TYPE">Lineitem</V>
+		<V n="Position">171,1216,2147,1260</V>
+		<V n="STATUS">0</V>
+		<V n="PreVerify Val"></V>
+		<V n="PreVerify Pos">171,1216,2147,1260</V>
+		<V n="label">Lineitem</V>
+		<F id="ItemID">
+			<V n="TYPE">ItemID</V>
+			<V n="Position"></V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos"></V>
+			<V n="label">ItemID</V>
+		</F>
+		<F id="ItemDesc">
+			<V n="TYPE">ItemDesc</V>
+			<V n="Position">167,1212,309,1257</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">bande</V>
+			<V n="PreVerify Pos">167,1212,309,1257</V>
+			<V n="label">Description</V>
+			<V n="RecognizedText">bande</V>
+			<C cn="10" cr="171,1216,194,1253">98</C>
+			<C cn="10" cr="197,1226,221,1253">97</C>
+			<C cn="10" cr="227,1226,248,1252">110</C>
+			<C cn="10" cr="253,1216,276,1253">100</C>
+			<C cn="10" cr="281,1226,305,1253">101</C>
+		</F>
+		<F id="Qty">
+			<V n="TYPE">Qty</V>
+			<V n="Position">936,1212,969,1256</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val">4</V>
+			<V n="PreVerify Pos">936,1212,969,1256</V>
+			<V n="label">Qty</V>
+			<V n="RecognizedText">4</V>
+			<C cn="10" cr="940,1216,965,1252">52</C>
+		</F>
+		<F id="Price">
+			<V n="TYPE">Price</V>
+			<V n="Position">1328,1212,1429,1263</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">50.0</V>
+			<V n="PreVerify Pos">1328,1212,1429,1263</V>
+			<V n="label">Price</V>
+			<V n="RecognizedText">50.0</V>
+			<C cn="10" cr="1332,1217,1355,1253">53</C>
+			<C cn="10" cr="1360,1216,1383,1253">48</C>
+			<C cn="10" cr="1390,1247,1395,1259">46</C>
+			<C cn="10" cr="1401,1216,1425,1253">48</C>
+		</F>
+		<F id="LineTotal">
+			<V n="TYPE">LineTotal</V>
+			<V n="Position">1994,1213,2151,1264</V>
+			<V n="STATUS">0</V>
+			<V n="Locale Checked">Yes</V>
+			<V n="PreVerify Val">200.00</V>
+			<V n="PreVerify Pos">1994,1213,2151,1264</V>
+			<V n="label">Line Total</V>
+			<V n="RecognizedText">200.00</V>
+			<C cn="10" cr="1998,1217,2022,1253">50</C>
+			<C cn="10" cr="2027,1217,2050,1254">48</C>
+			<C cn="10" cr="2054,1217,2078,1254">48</C>
+			<C cn="10" cr="2085,1248,2090,1260">46</C>
+			<C cn="10" cr="2096,1217,2120,1254">48</C>
+			<C cn="10" cr="2124,1217,2147,1254">48</C>
+		</F>
+		<F id="POLineNum">
+			<V n="TYPE">POLineNum</V>
+			<V n="Position">0,0,0,0</V>
+			<V n="STATUS">0</V>
+			<V n="PreVerify Val"></V>
+			<V n="PreVerify Pos">0,0,0,0</V>
+			<V n="label">PO Line No</V>
+		</F>
+	</F>
+</F>
+<F id="ExportImage">
+	<V n="TYPE">ExportImage</V>
+	<V n="Position">0,0,0,0</V>
+	<V n="STATUS">-1</V>
+	<V n="PreVerify Val"></V>
+	<V n="PreVerify Pos">0,0,0,0</V>
+	<V n="label">ExportImage</V>
+</F>
+</P>

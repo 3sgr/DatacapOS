@@ -9,7 +9,7 @@ You need to register dlls listed in this folder using the following bat files:
 	iRRX.dll
 - To Register COM use : Regsvr.bat
 - To Unregister COM: UnRegsvr.bat
-After registering the dlls add them via COM reference in Visual Studio for COM dlls and add dcsmart.dll and iRRX.dll as .dll
+After registering the dlls add them via COM reference in Visual Studio
 
 In addition you need to supply a valid format DCO files:
 -Setup DCO to:
