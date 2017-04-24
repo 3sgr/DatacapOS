@@ -117,13 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DCOResultVar" xml:space="preserve">
-    <value>PFSuccess</value>
+  <data name="Fatal" xml:space="preserve">
+    <value>***Fatal Error***</value>
   </data>
-  <data name="False" xml:space="preserve">
-    <value>False</value>
+  <data name="IllegalTwins" xml:space="preserve">
+    <value>***Repetition of identifier in unauthorized combination***</value>
   </data>
-  <data name="True" xml:space="preserve">
-    <value>True</value>
+  <data name="NoDat" xml:space="preserve">
+    <value>***Don't found the data***</value>
+  </data>
+  <data name="NoFunc" xml:space="preserve">
+    <value>***Don't found fonction ID***</value>
+  </data>
+  <data name="Syntax" xml:space="preserve">
+    <value>***Syntax Error***</value>
   </data>
 </root>
