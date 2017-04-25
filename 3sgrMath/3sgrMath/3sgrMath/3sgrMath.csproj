@@ -79,7 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="3sgrMath.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="DatacapFunctions.cs" />
     <Compile Include="MathematicalFunctions.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

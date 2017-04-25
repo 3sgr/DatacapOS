@@ -159,7 +159,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
 
         #region CustomProperties
 
-        public bool Changed;
+        public bool Changed = true;
         private XmlDocument _masterDoc;
         #endregion
 

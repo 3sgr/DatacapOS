@@ -38,8 +38,8 @@ namespace DCUnitTest
             };
             foreach (var kvp in testCases)
             {
-                var formula = "";
-                var target = "";
+                string formula;
+                string target;
                 var res = oActions.TestForAssignement(kvp.Key, out target, out formula);
                     Assert.AreEqual(res, Convert.ToBoolean(kvp.Value[2]));
 
@@ -61,10 +61,11 @@ namespace DCUnitTest
         [TestMethod]
         public void CountNodes()
         {
-            oActions.CountXmlNodes("*//P");
-            oActions.SumXmlNodes("sum(//B/D/P/V[@n='STATUS']/text())");
-            oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())");
-            oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']");
+            var r = oActions.CountXmlNodes("*//P");
+            var s = oActions.SumXmlNodes("sum(//B/D/P/V[@n='STATUS']/text())");
+            s = oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())");
+            s = oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']");
+            s = "";
         }
     }
 }
