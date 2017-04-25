@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _3sgrMath {
+namespace SSSGroup.Datacap.CustomActions._3sgrMath.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace _3sgrMath {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Messages {
+    internal class Const {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Messages() {
+        internal Const() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace _3sgrMath {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_3sgrMath.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SSSGroup.Datacap.CustomActions._3sgrMath.Resources.Const", typeof(Const).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,38 +61,47 @@ namespace _3sgrMath {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There was an exception: &apos;{0}&apos;.
+        ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string Exception {
+        internal static string DataFileAttributeSelectNodes {
             get {
-                return ResourceManager.GetString("Exception", resourceCulture);
+                return ResourceManager.GetString("DataFileAttributeSelectNodes", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Completed running &apos;ProcessFormula&apos; action..
+        ///   Looks up a localized string similar to ProcessFormulaCallSuccess.
         /// </summary>
-        internal static string PFEnd {
+        internal static string DCOResultVar {
             get {
-                return ResourceManager.GetString("PFEnd", resourceCulture);
+                return ResourceManager.GetString("DCOResultVar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Starting processing formula:&apos;{0}&apos;.
+        ///   Looks up a localized string similar to .//P[V/@n=&apos;DATAFILE&apos;].
         /// </summary>
-        internal static string PFProcessing {
+        internal static string DefaultSelectNodes {
             get {
-                return ResourceManager.GetString("PFProcessing", resourceCulture);
+                return ResourceManager.GetString("DefaultSelectNodes", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Running &apos;ProcessFormula&apos; action.
+        ///   Looks up a localized string similar to False.
         /// </summary>
-        internal static string PFStart {
+        internal static string False {
             get {
-                return ResourceManager.GetString("PFStart", resourceCulture);
+                return ResourceManager.GetString("False", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to True.
+        /// </summary>
+        internal static string True {
+            get {
+                return ResourceManager.GetString("True", resourceCulture);
             }
         }
     }

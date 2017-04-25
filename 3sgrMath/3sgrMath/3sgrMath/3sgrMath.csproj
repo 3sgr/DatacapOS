@@ -8,7 +8,7 @@
     <ProjectGuid>{241C94A7-A0C0-4C05-8563-01A1196AB9F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_3sgrMath</RootNamespace>
+    <RootNamespace>SSSGroup.Datacap.CustomActions._3sgrMath</RootNamespace>
     <AssemblyName>3sgrMath</AssemblyName>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>
@@ -79,8 +79,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="3sgrMath.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="MathematicalFunctions.cs" />
-    <Compile Include="Messages.Designer.cs">
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Const.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Const.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Messages.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Messages.resx</DependentUpon>
@@ -94,6 +105,10 @@
     <Compile Include="RRX.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Resources\TheRRX.rrx">
       <SubType>Designer</SubType>
     </None>
@@ -137,7 +152,11 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Messages.resx">
+    <EmbeddedResource Include="Resources\Const.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Const1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Messages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -166,12 +185,6 @@
   <ItemGroup>
     <Content Include="Dependencies\dcsmart.dll" />
     <Content Include="Dependencies\iRRX.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FormulaProcessor\FormulaProcessor.csproj">
-      <Project>{a671f3bf-7428-4132-b5c6-76385cdfde50}</Project>
-      <Name>FormulaProcessor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SSSGroup.Datacap.CustomActions._3sgrMath.Properties {
+namespace SSSGroup.Datacap.CustomActions._3sgrMath.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class Messages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Messages() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SSSGroup.Datacap.CustomActions._3sgrMath.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SSSGroup.Datacap.CustomActions._3sgrMath.Resources.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,34 +61,38 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is string from default local for the .NET actions.
+        ///   Looks up a localized string similar to There was an exception: &apos;{0}&apos;.
         /// </summary>
-        internal static string SampleStringNET {
+        internal static string Exception {
             get {
-                return ResourceManager.GetString("SampleStringNET", resourceCulture);
+                return ResourceManager.GetString("Exception", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;rrx&gt;
-        ///&lt;!-- === .NET Action Definition and Help === --&gt;
-        ///&lt;!-- Licensed Materials - Property of IBM
-        ///
-        /// 5725-C15
-        /// © Copyright IBM Corp. 1994, 2014 All Rights Reserved
-        /// US Government Users Restricted Rights - Use, duplication or
-        /// disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
-        /// --&gt;
-        ///
-        ///&lt;!-- format: &lt;net ref=&quot;C#Namespace.Class&quot;&gt; --&gt;
-        ///&lt;net ref=&quot;_3sgrMath.Actions&quot;&gt;
-        ///  
-        ///  &lt;!-- Actions and Properties defined here are displayed in alphabetical order in DStudio --&gt;
-        ///  &lt;!-- An example custom act [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Completed running &apos;ProcessFormula&apos; action..
         /// </summary>
-        internal static string TheRRX {
+        internal static string PFEnd {
             get {
-                return ResourceManager.GetString("TheRRX", resourceCulture);
+                return ResourceManager.GetString("PFEnd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Starting processing formula:&apos;{0}&apos;.
+        /// </summary>
+        internal static string PFProcessing {
+            get {
+                return ResourceManager.GetString("PFProcessing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Running &apos;ProcessFormula&apos; action.
+        /// </summary>
+        internal static string PFStart {
+            get {
+                return ResourceManager.GetString("PFStart", resourceCulture);
             }
         }
     }

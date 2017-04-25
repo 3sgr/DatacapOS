@@ -1,24 +1,29 @@
 ﻿//
-// Licensed Materials - Property of IBM
+//Copyright(c) 2017 SSS Group Ltd.
+//3sgr.com
 //
-// 5725-C15
-// © Copyright IBM Corp. 1994, 2014 All Rights Reserved
-// US Government Users Restricted Rights - Use, duplication or
-// disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+//Permission is hereby granted, free of charge, to any person obtaining a copy
+//of this software and associated documentation files (the "Software"), to deal
+//in the Software without restriction, including without limitation the rights
+//to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//copies of the Software, and to permit persons to whom the Software is
+//furnished to do so, subject to the following conditions:
 //
-// This is an example of a .NET action for IBM Datacap using .NET 4.0.
-// The compliled DLL needs to be placed into the RRS directory.
-// The DLL does not need to be registered.  
-// Datacap studio will find the RRX file that is embedded in the DLL, you do not need to place the RRX in the RRS directory.
-// If you add references to other DLLs, such as 3rd party, you may need to place those DLLs in C:\RRS so they are found at runtime.
-// If Datacap references are not found at compile time, add a reference path of C:\Datacap\DCShared\NET to the project to locate the DLLs while building.
-// This template has been tested with IBM Datacap 9.0.  
+//The above copyright notice and this permission notice shall be included in all
+//copies or substantial portions of the Software.
+//
+
 
 using System;
 using System.Diagnostics;
+using System.IO;
 using System.Reflection;
+using System.Text;
+using System.Xml;
+using System.Xml.XPath;
+using SSSGroup.Datacap.CustomActions._3sgrMath.Resources;
 
-namespace _3sgrMath
+namespace SSSGroup.Datacap.CustomActions._3sgrMath
 {
     /// <summary>
     /// Class difinition is split into multiple .cs files based on logical purpose of the code
@@ -152,6 +157,11 @@ namespace _3sgrMath
 
         #endregion
 
+        #region CustomProperties
+
+        public bool Changed;
+        private XmlDocument _masterDoc;
+        #endregion
 
         //implementation of the Dispose method to release managed resources
         public void Dispose()
@@ -179,7 +189,7 @@ namespace _3sgrMath
                 WriteLog(Messages.PFStart);
                 WriteLog(string.Format(Messages.PFProcessing,formula));
                 CurrentDCO.Variable[Const.DCOResultVar] = Const.False;
-                CallFormulaProcessor(ReadSmartParameter(formula));
+                //CallFormulaProcessor(ReadSmartParameter(formula));
 
                 CurrentDCO.Variable[Const.DCOResultVar] = Const.True;
             }
@@ -196,6 +206,7 @@ namespace _3sgrMath
             }
             return true;
         }
+        
         /// <summary/>
         /// This is an example custom .NET action that takes multiple parameters with multiple types.
         /// The parameter order and types must match the definition in the RRX file.
@@ -217,5 +228,6 @@ namespace _3sgrMath
             }
         }
         #endregion
+        
     }
 }

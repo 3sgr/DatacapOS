@@ -56,7 +56,6 @@
     <Compile Include="Mockups\myDCLOgxLib.cs" />
     <Compile Include="Mockups\myDCO.cs" />
     <Compile Include="Mockups\MyRRState.cs" />
-    <Compile Include="DCUnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_3sgrMathActionsTest.cs" />
   </ItemGroup>
@@ -105,10 +104,6 @@
     <ProjectReference Include="..\3sgrMath\3sgrMath.csproj">
       <Project>{241c94a7-a0c0-4c05-8563-01a1196ab9f9}</Project>
       <Name>3sgrMath</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FormulaProcessor\FormulaProcessor.csproj">
-      <Project>{a671f3bf-7428-4132-b5c6-76385cdfde50}</Project>
-      <Name>FormulaProcessor</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
