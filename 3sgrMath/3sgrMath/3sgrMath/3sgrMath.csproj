@@ -79,12 +79,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="3sgrMath.cs" />
-    <Compile Include="Const.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Const.resx</DependentUpon>
-    </Compile>
-    <Compile Include="DatacapFunctions.cs" />
     <Compile Include="MathematicalFunctions.cs" />
     <Compile Include="Messages.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -143,10 +137,6 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Const.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Const.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Messages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Messages.Designer.cs</LastGenOutput>
