@@ -119,8 +119,15 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
         //TODO: Replace with actual implementation
         public bool TestForAssignement(string theory, out string target, out string formula)
         {
+            //TODO: Enhance to process '=' inside string
             target = "";
-            formula = "";
+            formula = theory.Trim();
+            if (!formula.Contains('='))
+                return false;
+            var ar = formula.Split('=');
+            if (ar[0].Trim().Length <= 0 || ar[1].Trim().Length <= 0) return false;
+            target = ar[0].Trim();
+            formula = ar[1].Trim();
             return true;
         }
     }
