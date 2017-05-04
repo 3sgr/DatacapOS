@@ -52,6 +52,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BaseTestClass.cs" />
+    <Compile Include="DataTypeTester.cs" />
+    <Compile Include="FormulaProcessorTester.cs" />
     <Compile Include="Mockups\MyBPilotCtrl.cs" />
     <Compile Include="Mockups\myDCLOgxLib.cs" />
     <Compile Include="Mockups\myDCO.cs" />
@@ -104,6 +106,10 @@
     <ProjectReference Include="..\3sgrMath\3sgrMath.csproj">
       <Project>{241c94a7-a0c0-4c05-8563-01a1196ab9f9}</Project>
       <Name>3sgrMath</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormulaProcessor\FormulaProcessor.csproj">
+      <Project>{8ec0d2cf-f72d-4353-bc55-0d99cdd86700}</Project>
+      <Name>FormulaProcessor</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
