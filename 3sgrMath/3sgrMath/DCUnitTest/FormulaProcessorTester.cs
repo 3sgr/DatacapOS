@@ -22,6 +22,10 @@ namespace DCUnitTest
             {" 3 + 2 ", "5"},
             {" 3+2 ", "5"},
             {"3+2+1+(11+12+13)", "42"},
+            {"(3+2+1+(11+12+13))", "42"},
+            {"((3+2+1+(11+12+13)))", "42"},
+            {"3-2", "1"},
+            {"3*2", "6"},
         };
 
        [TestMethod]
@@ -46,7 +50,7 @@ namespace DCUnitTest
             {
                 try
                 {
-                    Debug.WriteLine($"testing formula:'{test.Key}' result:{test.Value}");
+                    Debug.WriteLine($"testing formula:'{test.Key}' expected result:{test.Value}");
                     var ps = new Parser(test.Key);
                     Assert.AreEqual(ps.SubstringPush(), test.Value);
                     Debug.WriteLine("Success");
@@ -56,7 +60,6 @@ namespace DCUnitTest
                     Debug.WriteLine($"Failed. Exception:{ex.Message}");
                     throw;
                 }
-                
             }
         }
     }

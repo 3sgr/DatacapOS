@@ -32,17 +32,17 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         }
         public static Func<int, int> Multiplication(object a, object b, out string res)
         {
-            res = ((dynamic)a - (dynamic)b).ToString();
+            res = ((dynamic)a * (dynamic)b).ToString();
             return null;
         }
         public static Func<int, int> Division(object a, object b, out string res)
         {
-            res = ((dynamic)a - (dynamic)b).ToString();
+            res = ((dynamic)a / (dynamic)b).ToString();
             return null;
         }
         public static Func<int, int> Exponentiation(object a, object b, out string res)
         {
-            res = ((dynamic)a - (dynamic)b).ToString();
+            res = ((dynamic)a ^ (dynamic)b).ToString();
             return null;
         }
         #endregion

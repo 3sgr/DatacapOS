@@ -23,5 +23,9 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes
         {
             return a.Value + b.Value;
         }
+        public static int operator *(FTInt a, FTInt b)
+        {
+            return a.Value * b.Value;
+        }
     }
 }
