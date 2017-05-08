@@ -179,6 +179,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     while (i < operations.Length)
                     {
                         i++;
+                        // papuk
                         var ind = operations.IndexOf(op, StringComparison.Ordinal);
                         if (ind <= -1) continue;
                         var first = OperatorPosition(ind - 1, _arichmeticL, operations);
