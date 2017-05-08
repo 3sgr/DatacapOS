@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Globalization;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
@@ -39,7 +38,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
                 Console.WriteLine(xn.InnerText);
             }
         }
-        public int CountXmlNodes(string parameter)
+        public string CountXmlNodes(string parameter)
         {
             GenerateMasterXML();
             var localSmartObj = new dcSmart.SmartNav(this);
@@ -48,7 +47,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
                 var xPath = parameter.StartsWith("@") ? localSmartObj.MetaWord(parameter) : parameter;
                 var doc = new XPathDocument(new XmlNodeReader(_masterDoc));
                 var docNav = doc.CreateNavigator();
-                return docNav.Select(xPath).Count;
+                return docNav.Select(xPath).Count.ToString();
             }
             catch (Exception ex)
             {
@@ -56,21 +55,18 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
                 // from being thrown back to RRS.
                 WriteLog(string.Format(Messages.Exception,ex.Message));
             }
-            return 0;
+            return "0";
         }
-        public string SumXmlNodes(string parameter)
+        public string SumXmlNodes(string xPath)
         {
             GenerateMasterXML();
-            var localSmartObj = new dcSmart.SmartNav(this);
-
             try
             {
-                var xPath = parameter.StartsWith("@") ? localSmartObj.MetaWord(parameter) : parameter;
                 var doc = new XPathDocument(new XmlNodeReader(_masterDoc));
                 var docNav = doc.CreateNavigator();
                 var q = docNav.Compile(xPath);
                 var o = docNav.Evaluate(q);
-                return o?.ToString() ?? string.Empty;
+                return o?.ToString() ?? "0";
             }
             catch (Exception ex)
             {
@@ -78,22 +74,20 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
                 // from being thrown back to RRS.
                 WriteLog(string.Format(Messages.Exception, ex.Message));
             }
-            return string.Empty;
+            return "0";
         }
-        public string SumASCII(string parameter)
+        /// <summary>
+        /// Action to handle sumASCII funciton
+        /// </summary>
+        /// <param name="xPath"></param>
+        /// <returns></returns>
+        public string SumASCII(string xPath)
         {
-            GenerateMasterXML();
-            var localSmartObj = new dcSmart.SmartNav(this);
+            GenerateMasterXML();            
             try
             {
-                var xPath = parameter.StartsWith("@") ? localSmartObj.MetaWord(parameter) : parameter;
                 var selection = _masterDoc.SelectNodes(xPath);
-                double sum = 0;
-                foreach (XmlNode node in selection)
-                {
-                    var str = ConvertFromASCII(node);
-                    sum += string.IsNullOrEmpty(str) ? 0 : Convert.ToDouble(str);
-                }
+                var sum = (from XmlNode node in selection select ConvertFromASCII(node) into str select string.IsNullOrEmpty(str) ? 0 : Convert.ToDouble(str)).Sum();
                 return sum.ToString(CultureInfo.InvariantCulture);
             }
             catch (Exception ex)
@@ -105,7 +99,13 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
             return string.Empty;
         }
 
-        private string ConvertFromASCII(XmlNode node)
+        public string SmartParameter(string parameter)
+        {
+            var localSmartObj = new dcSmart.SmartNav(this);
+            return  parameter.StartsWith("@") ? localSmartObj.MetaWord(parameter) : parameter;
+        }
+
+        private static string ConvertFromASCII(XmlNode node)
         {
             var sb = new StringBuilder();
             var xmlNodeList = node.SelectNodes("./ C");

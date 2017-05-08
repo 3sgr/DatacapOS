@@ -186,6 +186,12 @@
     <Content Include="Dependencies\dcsmart.dll" />
     <Content Include="Dependencies\iRRX.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FormulaProcessor\FormulaProcessor.csproj">
+      <Project>{8EC0D2CF-F72D-4353-BC55-0D99CDD86700}</Project>
+      <Name>FormulaProcessor</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

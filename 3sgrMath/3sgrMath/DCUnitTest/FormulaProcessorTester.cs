@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SSSGroup.Datacap.CustomActions.FormulaProcessor;
 
@@ -31,15 +27,15 @@ namespace DCUnitTest
        [TestMethod]
         public void FormulaReduceTest()
         {
-            var ps = new Parser("\"3\"+\"2\"+\"2\"");
+            var ps = new Parser { MainFormula = "\"3\"+\"2\"+\"2\"" };
             Assert.AreEqual(ps.MainFormula, "(?1+?2+?3)");
-            ps = new Parser("3+2+2");
+            ps = new Parser { MainFormula = "3+2+2" };
             Assert.AreEqual(ps.MainFormula, "(?1+?2+?3)");
-            ps = new Parser("(3+2+2)");
+            ps = new Parser { MainFormula = "(3+2+2)" };
             Assert.AreEqual(ps.MainFormula, "(?1+?2+?3)");
-            ps = new Parser("( 3 + 2 + 2 )");
+            ps = new Parser { MainFormula = "( 3 + 2 + 2 )" };
             Assert.AreEqual(ps.MainFormula, "(?1+?2+?3)");
-            ps = new Parser("3+2+1+(11+12+13)");
+            ps = new Parser { MainFormula = "3+2+1+(11+12+13)" };
             Assert.AreEqual(ps.MainFormula, "(?1+?2+?3+(?4+?5+?6))");
         }
        
@@ -51,7 +47,7 @@ namespace DCUnitTest
                 try
                 {
                     Debug.WriteLine($"testing formula:'{test.Key}' expected result:{test.Value}");
-                    var ps = new Parser(test.Key);
+                    var ps = new Parser {MainFormula = test.Key};
                     Assert.AreEqual(ps.SubstringPush(), test.Value);
                     Debug.WriteLine("Success");
                 }

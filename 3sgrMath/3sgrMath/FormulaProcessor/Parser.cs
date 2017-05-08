@@ -17,22 +17,35 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             // The character positioning data in the search string  
             _idNumber; // The last number of the variable identifier  
 
-        private readonly string _copyFormula; // The character positioning data in the search string 
-
         private readonly Arithmetic _ar = new Arithmetic(); //Derived Copy of the arithmetic calculation Class
         private readonly FormatTranslator _ft = new FormatTranslator(); //Derived Copy of the operators fomating Class
 
-        public string MainFormula// The character positioning data in the search string 
-        { get; private set; }
+        #region Strings
+        //private string _inParentheses = Templates.Empty;
+        private string _value = Templates.Empty;
+        private List<string> _arithmetic;
+        private List<string> _logical;
+        private List<string> _operations;
+        private List<string> _arichmeticL;
+        private List<string> _arichmeticR;
+        private Dictionary<string, Func<string, string>> _fList;
+        #endregion
+        private string _mainFormula;
+        public string MainFormula // The character positioning data in the search string 
+        {
+            get { return _mainFormula; }
+            set { _mainFormula = value; Parse();}
+        }
 
+        public Parser(Dictionary<string, Func<string, string>> fList = null)
+        {
+            _fList = fList;
+        }
         /// <summary>
         ///     Constructor of Parser Class
         /// </summary>
-        /// <param name="formula">The parent formula, written in the form of a text string </param>
-        public Parser(string formula)
+        private void Parse()
         {
-            MainFormula = formula;// The primary formula processing field
-            _copyFormula = formula; // The primary formula copy
             _iDic.Clear();
             _arithmetic = new List<string>(Templates.ArithmeticOperations.Split(','));
             _logical = new List<string>(Templates.LogicalOperators.Split(','));
@@ -40,7 +53,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             var specialEnd = Templates.Suffix.Split(',');
 
             _operations = new List<string>(_arithmetic);
-       //     _operations.AddRange(_arithmetic);
+            //     _operations.AddRange(_arithmetic);
             _operations.AddRange(_logical);
             _operations.AddRange(specialBegin);
 
@@ -61,10 +74,10 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             _subStart = 0;
             _subEnd = 0;
             var i = 0;
-            while (i < MainFormula.Length)
+            while (i < _mainFormula.Length)
             {
-                if (_arithmetic.Contains(MainFormula[i].ToString()) || Templates.Separators[0].Equals(MainFormula[i]) ||
-                    Templates.Separators[1].Equals(MainFormula[i]))
+                if (_arithmetic.Contains(_mainFormula[i].ToString()) || Templates.Separators[0].Equals(_mainFormula[i]) ||
+                    Templates.Separators[1].Equals(_mainFormula[i]))
                 {
                     //Check if we encounter any of the allowed special operands/brackets
                     if (_subStart < _subEnd) //Time to extract
@@ -84,20 +97,20 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     _subEnd = i;
                 }
             }
-            if (_subStart < _subEnd && _subEnd<=MainFormula.Length) //Time to extract
+            if (_subStart < _subEnd && _subEnd<=_mainFormula.Length) //Time to extract
             {
                 SubstituteOperand(_subStart, _subEnd);
             }            
         }
         private int SubstituteOperand(int start,int end)
         {
-            var s = MainFormula.Substring(start, end-start).Trim();
+            var s = _mainFormula.Substring(start, end-start).Trim();
             var sO = SetCurrentID(); //Change the currently number
             _iDic.Add(sO, s); // Add to coolection
-            var difference = MainFormula.Length;
-            MainFormula = MainFormula.Remove(start, end-start);
-            MainFormula = MainFormula.Insert(start, sO);
-            difference = difference - MainFormula.Length;
+            var difference = _mainFormula.Length;
+            _mainFormula = _mainFormula.Remove(start, end-start);
+            _mainFormula = _mainFormula.Insert(start, sO);
+            difference = difference - _mainFormula.Length;
             return difference;
         }
 
@@ -105,13 +118,18 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         ///     The main program module for syntactic parsing of the formula as a substrings combination
         /// </summary>
         /// <returns></returns>
-        public string SubstringPush()
+        public string SubstringPush(string newFormula = "")
         {
-            var i = 0;
-            while (i < MainFormula.Length)
+            if (!string.IsNullOrEmpty(newFormula))
             {
-                if (MainFormula[i] == Templates.Separators[0]) _parenthesOpens.Push(i);
-                if (MainFormula[i] == Templates.Separators[1])
+                _mainFormula = newFormula;
+                Parse();
+            }
+            var i = 0;
+            while (i < _mainFormula.Length)
+            {
+                if (_mainFormula[i] == Templates.Separators[0]) _parenthesOpens.Push(i);
+                if (_mainFormula[i] == Templates.Separators[1])
                 {
                     try
                     {
@@ -122,9 +140,9 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                         throw new FTException(ErrorEx.Empty);
                     }
                     _next = i;
-                    _value = ParenthesesAnalisys(MainFormula.Substring(_subStart, _next - _subStart + 1));
-                    MainFormula = MainFormula.Remove(_subStart, _next - _subStart + 1);
-                    MainFormula = MainFormula.Insert(_subStart, _value);
+                    _value = ParenthesesAnalisys(_mainFormula.Substring(_subStart, _next - _subStart + 1));
+                    _mainFormula = _mainFormula.Remove(_subStart, _next - _subStart + 1);
+                    _mainFormula = _mainFormula.Insert(_subStart, _value);
                     i = _subStart;
                 }
                 i = i + 1;
@@ -133,7 +151,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             {
                 throw new FTException(ErrorEx.Balance);
             }
-            return _iDic[MainFormula];
+            return _iDic[_mainFormula];
         }
 
         /// <summary>
@@ -144,17 +162,15 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         public string ParenthesesAnalisys(string s)
         {
             // It is a Function
-            if ((0 < _subStart) && !OperatorPresent(_subStart - 1, _operations, MainFormula))
-                if (OperatorPosition(_subStart - 1, _operations, MainFormula) >= 0)
-                {
-                    var n = OperatorPosition(_subStart - 1, _operations, MainFormula);
-                    var ss = MainFormula.Substring(n + 1, _subStart - n - 1);
-                    _subStart = n + 1;
-                    return FunctionResult(ss, s);
-                }
+            if ((0 >= _subStart) || OperatorPresent(_subStart - 1, _operations, _mainFormula))
+                return OperatorContain(s, _logical) ? LogicalResult(s) : ArithmeticResult(s);
+            if (OperatorPosition(_subStart - 1, _operations, _mainFormula) < 0)
+                return OperatorContain(s, _logical) ? LogicalResult(s) : ArithmeticResult(s);
+            var n = OperatorPosition(_subStart - 1, _operations, _mainFormula);
+            var ss = _mainFormula.Substring(n + 1, _subStart - n - 1);
+            _subStart = n + 1;
+            return FunctionResult(ss, s);
             //It is not Function
-            if (OperatorContain(s, _logical)) return LogicalResult(s);
-            return ArithmeticResult(s);
         }
 
         // Dummy
@@ -179,7 +195,6 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     while (i < operations.Length)
                     {
                         i++;
-                        // papuk
                         var ind = operations.IndexOf(op, StringComparison.Ordinal);
                         if (ind <= -1) continue;
                         var first = OperatorPosition(ind - 1, _arichmeticL, operations);
@@ -213,19 +228,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         private readonly Stack<int> _parenthesOpens = new Stack<int>(0);
             // The current balance of parentheses in the stack
 
-        #endregion
-
-        #region Strings
-
-        //private string _inParentheses = Templates.Empty;
-        private string _value = Templates.Empty;
-        private readonly List<string> _arithmetic;
-        private readonly List<string> _logical;
-        private readonly List<string> _operations;
-        private readonly List<string> _arichmeticL;
-        private readonly List<string> _arichmeticR;
-
-        #endregion
+        #endregion        
 
         #region Twins&Functions
 
@@ -237,6 +240,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         };
 
         private readonly string[] _functionsID = {"sqrt", "ln", "exp", "abs", "sin", "cos", "asin", "acos"};
+        
 
         #endregion
 
@@ -271,14 +275,14 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
 
         public void LegalTwinsCorrection()
         {
-            if (MainFormula.StartsWith(Templates.Separators[0].ToString()) &&
-                MainFormula.StartsWith(Templates.Separators[0].ToString())) return;
-            MainFormula = Templates.Separators[0] + MainFormula + Templates.Separators[1];
+            if (_mainFormula.StartsWith(Templates.Separators[0].ToString()) &&
+                _mainFormula.StartsWith(Templates.Separators[0].ToString())) return;
+            _mainFormula = Templates.Separators[0] + _mainFormula + Templates.Separators[1];
             _iDic.Add("0", "0");
             _iDic.Add("-1", "-1");
             for (var i = 0; i < _lTwins.Length/2; i++)
             {
-                MainFormula = MainFormula.Replace(_lTwins[i, 0], _lTwins[i, 1]);
+                _mainFormula = _mainFormula.Replace(_lTwins[i, 0], _lTwins[i, 1]);
             }
             foreach (var t in _functionsID)
             {
@@ -291,10 +295,6 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     throw new FTException(ErrorEx.IllegalFunctions);
                 }
             }
-        }
-        public string GetStr()
-        {
-            return _copyFormula;
         }
         #endregion
     }

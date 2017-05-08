@@ -67,5 +67,15 @@ namespace DCUnitTest
             s = oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']");
             s = "";
         }
+
+        [TestMethod]
+        public void FormulaParserTest()
+        {
+            var r = oActions.ProcessFormula("@P.TotalPages = count(*//P)");
+            var s = oActions.SumXmlNodes("sum(//B/D/P/V[@n='STATUS']/text())");
+            s = oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())");
+            s = oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']");
+            s = "";
+        }
     }
 }

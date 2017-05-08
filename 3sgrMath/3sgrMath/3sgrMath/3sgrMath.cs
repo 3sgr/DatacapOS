@@ -15,12 +15,12 @@
 
 
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Reflection;
-using System.Text;
 using System.Xml;
-using System.Xml.XPath;
+using dcSmart;
+using SSSGroup.Datacap.CustomActions.FormulaProcessor;
 using SSSGroup.Datacap.CustomActions._3sgrMath.Resources;
 
 namespace SSSGroup.Datacap.CustomActions._3sgrMath
@@ -31,10 +31,17 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
     /// </summary>
     public partial class Actions // This class must be a base class for .NET 4.0 Actions.
     {
+        Dictionary<string, Func<string, string>> _customFunctions;
+
+        public Actions()
+        {
+            _customFunctions = new Dictionary<string, Func<string, string>> { { "count", CountXmlNodes }, { "sum", SumXmlNodes }, { "sumASCII", SumASCII }, { "smartParameter", SmartParameter } };
+        }
+
         #region ExpectedByRRS
         /// <summary/>
         ~Actions()
-        {
+        {            
             DatacapRRCleanupTime = true;
         }
 
@@ -186,15 +193,28 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
         {
             try
             {
+                CurrentDCO.Variable[Const.DCOResultVar] = Const.True;
+                var localSmartObj = new SmartNav(this);
                 WriteLog(Messages.PFStart);
                 WriteLog(string.Format(Messages.PFProcessing,formula));
-                CurrentDCO.Variable[Const.DCOResultVar] = Const.False;
-                //CallFormulaProcessor(ReadSmartParameter(formula));
-
-                CurrentDCO.Variable[Const.DCOResultVar] = Const.True;
+                string eval;
+                string target;
+                var ps = new Parser(_customFunctions);
+                if (TestForAssignement(formula, out target, out eval))
+                    //we have an assignement to be made
+                {
+                    
+                    localSmartObj.DCONavSetValue(target, ps.SubstringPush(eval));
+                }
+                else
+                {
+                    return Convert.ToBoolean(ps.SubstringPush(formula));
+                }
             }
             catch (Exception ex)
             {
+                CurrentDCO.Variable[Const.DCOResultVar] = Const.False;
+                //CallFormulaProcessor(ReadSmartParameter(formula));
                 // It is a best practice to have a try catch in every action to prevent any unexpected errors
                 // from being thrown back to RRS.
                 WriteLog(string.Format(Messages.Exception,ex.Message));
