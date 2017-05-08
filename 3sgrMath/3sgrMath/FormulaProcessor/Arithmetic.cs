@@ -16,7 +16,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                 case "*": Multiplication (baseFormat.Factory(left), baseFormat.Factory(right), out res); break;
                 case "-": Subtraction    (baseFormat.Factory(left), baseFormat.Factory(right), out res); break;
                 case "+": Addition       (baseFormat.Factory(left), baseFormat.Factory(right), out res); break;
-                default: res = Continuation(left, sign, right, baseFormat); break;
+                default: res = ContinuationAr(left, sign, right, baseFormat); break;
             }
             return res;
         }
@@ -46,7 +46,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             return null;
         }
         #endregion
-        public string Continuation(string left, string sign, string right, FormatTranslator baseFormat)
+        public string ContinuationAr(string left, string sign, string right, FormatTranslator baseFormat)
         {
             return "!!!";
         }

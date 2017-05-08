@@ -16,7 +16,8 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes
         {
             return Value.GetType().ToString();
         }
-        
+
+        #region Arithmetic
         public static BaseOperand<T> operator +(BaseOperand<T> op1, BaseOperand<T> op2)
         {
             return new BaseOperand<T>(Sum(op1.Value, op2.Value));
@@ -49,9 +50,72 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes
         {
             return (dynamic)a / (dynamic)b;
         }
+        #endregion
+
         public override string ToString()
         {
             return Value.ToString();
         }
+
+        #region Logical
+        public static BaseOperand<T> operator >(BaseOperand<T> op1, BaseOperand<T> op2)
+        {
+            return new BaseOperand<T>(MoreThan(op1.Value, op2.Value));
+        }
+        private static T MoreThan(T a, T b)
+        {
+            return ((dynamic)a < (dynamic)b);
+        }
+        public static BaseOperand<T> operator <(BaseOperand<T> op1, BaseOperand<T> op2)
+        {
+            return new BaseOperand<T>(LessThan(op1.Value, op2.Value));
+        }
+        private static T LessThan(T a, T b)
+        {
+            return ((dynamic)a > (dynamic)b);
+        }
+        public static BaseOperand<T> operator >=(BaseOperand<T> op1, BaseOperand<T> op2)
+        {
+            return new BaseOperand<T>(MoreEqual(op1.Value, op2.Value));
+        }
+        private static T MoreEqual(T a, T b)
+        {
+            return ((dynamic)a >= (dynamic)b);
+        }
+        public static BaseOperand<T> operator <=(BaseOperand<T> op1, BaseOperand<T> op2)
+        {
+            return new BaseOperand<T>(LessEqual(op1.Value, op2.Value));
+        }
+        private static T LessEqual(T a, T b)
+        {
+            return ((dynamic)a <= (dynamic)b);
+        }
+
+        public static BaseOperand<T> operator == (BaseOperand<T> op1, BaseOperand<T> op2)
+        {
+            return new BaseOperand<T>(FullEqual(op1.Value, op2.Value));
+        }
+        private static T FullEqual(T a, T b)
+        {
+            return ((dynamic)a == (dynamic)b);
+        }
+        public static BaseOperand<T> operator !=(BaseOperand<T> op1, BaseOperand<T> op2)
+        {
+            return new BaseOperand<T>(NotEqual(op1.Value, op2.Value));
+        }
+        private static T NotEqual(T a, T b)
+        {
+            return ((dynamic)a != (dynamic)b);
+        }
+        public static BaseOperand<T>  operator ! (BaseOperand<T> op1 )
+        {
+            return new BaseOperand<T>(NotAll(op1.Value));
+        }
+        private static T NotAll(T a )
+        {
+            return (!(dynamic)a);
+        }
+
+        #endregion
     }
 }

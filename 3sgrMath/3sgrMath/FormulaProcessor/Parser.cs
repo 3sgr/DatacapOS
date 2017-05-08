@@ -40,7 +40,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             var specialEnd = Templates.Suffix.Split(',');
 
             _operations = new List<string>(_arithmetic);
-            _operations.AddRange(_arithmetic);
+       //     _operations.AddRange(_arithmetic);
             _operations.AddRange(_logical);
             _operations.AddRange(specialBegin);
 
@@ -231,7 +231,8 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         private readonly string[,] _lTwins =
         {
             {"(+", "("}, {"(-", "(0-"}, {"*+", "*"}, {"*-", "*(-1)*"}, {"^+", "^"},
-            {"++", "+"}, {"-+", "-"}, {"+-", "-"}
+            {"++", "+"}, {"-+", "-"}, {"+-", "-"}, {"()", ""}, 
+            {"=<", "<="},{"=>", ">="},{"><", "<>"}
         };
 
         private readonly string[] _functionsID = {"sqrt", "ln", "exp", "abs", "sin", "cos", "asin", "acos"};

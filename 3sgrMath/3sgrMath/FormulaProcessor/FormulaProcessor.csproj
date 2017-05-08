@@ -49,6 +49,7 @@
     <Compile Include="DataTypes\FTString.cs" />
     <Compile Include="DataTypes\BaseOperand.cs" />
     <Compile Include="DataTypes\FTDouble.cs" />
+    <Compile Include="Logical.cs" />
     <Compile Include="Resources\ErrorEx.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
