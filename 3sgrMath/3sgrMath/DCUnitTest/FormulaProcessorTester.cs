@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
 using System.Text.RegularExpressions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SSSGroup.Datacap.CustomActions.FormulaProcessor;
@@ -28,6 +26,9 @@ namespace DCUnitTest
             {"((3+2+1+(11+12+13)))", "42"},
             {"3-2", "1"},
             {"3*2", "6"},
+            {"2-3", "-1"},
+            {"2^3", "1"}, // ^ is bitwise XOR
+            {"2*2==2+2", "True"}
         };
         public Dictionary<string, string> FormulaReduceDataSet = new Dictionary<string, string>()
         {
@@ -57,7 +58,7 @@ namespace DCUnitTest
             }
         }
         [TestMethod]
-        public void FormulaReduceTest()
+        public void FormulaParceTest()
         {
             foreach (var test in FormulaReduceDataSet)
             {
