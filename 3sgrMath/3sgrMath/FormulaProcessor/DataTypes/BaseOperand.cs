@@ -1,10 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
+using SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources;
 
 namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes
 {
     public class BaseOperand<T>
     {
-        public T Value { get; set; }
+        protected bool Equals(BaseOperand<T> other)
+        {
+            return EqualityComparer<T>.Default.Equals(Value, other.Value);
+        }
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            return obj.GetType() == GetType() && Equals((BaseOperand<T>) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return EqualityComparer<T>.Default.GetHashCode(Value);
+        }
+
+        public T Value { get; }
         public BaseOperand()
         {
         }
@@ -12,110 +30,36 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes
         {
             Value = value;
         }
-        public string GetTypeName()
-        {
-            return Value.GetType().ToString();
-        }
-
         #region Arithmetic
-        public static BaseOperand<T> operator +(BaseOperand<T> op1, BaseOperand<T> op2)
-        {
-            return new BaseOperand<T>(Sum(op1.Value, op2.Value));
-        }
-        public static BaseOperand<T> operator -(BaseOperand<T> op1, BaseOperand<T> op2)
-        {
-            return new BaseOperand<T>(Dif(op1.Value, op2.Value));
-        }
-        public static BaseOperand<T> operator *(BaseOperand<T> op1, BaseOperand<T> op2)
-        {
-            return new BaseOperand<T>(Mul(op1.Value, op2.Value));
-        }
-        public static BaseOperand<T> operator /(BaseOperand<T> op1, BaseOperand<T> op2)
-        {
-            return new BaseOperand<T>(Div(op1.Value, op2.Value));
-        }
-        private static T Sum(T a, T b)
-        {
-            return (dynamic)a + (dynamic)b;
-        }
-        private static T Dif(T a, T b)
-        {
-            return (dynamic)a - (dynamic)b;
-        }
-        private static T Mul(T a, T b)
-        {
-            return (dynamic)a * (dynamic)b;
-        }
-        private static T Div(T a, T b)
-        {
-            return (dynamic)a / (dynamic)b;
-        }
+        
         #endregion
 
         public override string ToString()
         {
             return Value.ToString();
         }
-
-        #region Logical
-        public static BaseOperand<T> operator >(BaseOperand<T> op1, BaseOperand<T> op2)
+    }
+    public class BaseMath
+    {
+        public static string DoMath(dynamic a, dynamic b, string op)
         {
-            return new BaseOperand<T>(MoreThan(op1.Value, op2.Value));
+            try
+            {
+                switch (op)
+                {//TODO: Possiblt add check for valid operation
+                    case "^": return (a.Value ^ b.Value).ToString();
+                    case "/": return (a.Value / b.Value).ToString();
+                    case "*": return (a.Value * b.Value).ToString();
+                    case "-": return (a.Value - b.Value).ToString();
+                    case "+": return (a.Value + b.Value).ToString();
+                    default: throw new InvalidOperationException(string.Format(ErrorEx.InvalidOperation, op, a.Value.GetType(), b.Value.GetType()));
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException(string.Format(ErrorEx.InvalidOperation, op, a.Value.GetType(), b.Value.GetType()),ex);
+            }
+            
         }
-        private static T MoreThan(T a, T b)
-        {
-            return ((dynamic)a < (dynamic)b);
-        }
-        public static BaseOperand<T> operator <(BaseOperand<T> op1, BaseOperand<T> op2)
-        {
-            return new BaseOperand<T>(LessThan(op1.Value, op2.Value));
-        }
-        private static T LessThan(T a, T b)
-        {
-            return ((dynamic)a > (dynamic)b);
-        }
-        public static BaseOperand<T> operator >=(BaseOperand<T> op1, BaseOperand<T> op2)
-        {
-            return new BaseOperand<T>(MoreEqual(op1.Value, op2.Value));
-        }
-        private static T MoreEqual(T a, T b)
-        {
-            return ((dynamic)a >= (dynamic)b);
-        }
-        public static BaseOperand<T> operator <=(BaseOperand<T> op1, BaseOperand<T> op2)
-        {
-            return new BaseOperand<T>(LessEqual(op1.Value, op2.Value));
-        }
-        private static T LessEqual(T a, T b)
-        {
-            return ((dynamic)a <= (dynamic)b);
-        }
-
-        public static BaseOperand<T> operator == (BaseOperand<T> op1, BaseOperand<T> op2)
-        {
-            return new BaseOperand<T>(FullEqual(op1.Value, op2.Value));
-        }
-        private static T FullEqual(T a, T b)
-        {
-            return ((dynamic)a == (dynamic)b);
-        }
-        public static BaseOperand<T> operator !=(BaseOperand<T> op1, BaseOperand<T> op2)
-        {
-            return new BaseOperand<T>(NotEqual(op1.Value, op2.Value));
-        }
-        private static T NotEqual(T a, T b)
-        {
-            return ((dynamic)a != (dynamic)b);
-        }
-        public static BaseOperand<T>  operator ! (BaseOperand<T> op1 )
-        {
-            return new BaseOperand<T>(NotAll(op1.Value));
-        }
-        private static T NotAll(T a )
-        {
-            return (!(dynamic)a);
-        }
-
-        #endregion
     }
 }

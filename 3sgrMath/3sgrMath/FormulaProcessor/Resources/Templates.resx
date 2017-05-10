@@ -129,8 +129,23 @@
   <data name="LogicalOperators" xml:space="preserve">
     <value>&lt;,&gt;,==,&gt;=,&lt;=,!=,&amp;&amp;,||,!</value>
   </data>
+  <data name="OperationsHigh" xml:space="preserve">
+    <value>^</value>
+  </data>
+  <data name="OperationsLow" xml:space="preserve">
+    <value>+,=,-,&lt;,&gt;,==,&gt;=,&lt;=,!=,&amp;&amp;,||,!</value>
+  </data>
+  <data name="OperationsMid" xml:space="preserve">
+    <value>*,/,%</value>
+  </data>
   <data name="Prefix" xml:space="preserve">
     <value>(</value>
+  </data>
+  <data name="RegexFormulaMatch" xml:space="preserve">
+    <value>[/[\]\^\$\|\*\+\!&amp;\-+=&lt;&gt;:;, ]{1,}</value>
+  </data>
+  <data name="RegexParentMatch" xml:space="preserve">
+    <value>([a-zA-Z_][a-zA-Z0-9_]*)\((?:[^()]*|(?&lt;open&gt; \( )|(?&lt;-open&gt; \) ))+(?(open)(?!))\)"</value>
   </data>
   <data name="Separators" xml:space="preserve">
     <value>()</value>

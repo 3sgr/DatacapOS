@@ -61,21 +61,19 @@ namespace DCUnitTest
         [TestMethod]
         public void CountNodes()
         {
-            var r = oActions.CountXmlNodes("*//P");
-            var s = oActions.SumXmlNodes("sum(//B/D/P/V[@n='STATUS']/text())");
-            s = oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())");
-            s = oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']");
-            s = "";
+            Assert.AreEqual("9", oActions.CountXmlNodes("*//P"));
+            Assert.AreEqual("105", oActions.SumXmlNodes("sum(//B/D/P/V[@n='STATUS']/text())"));
+            Assert.AreEqual("113", oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())"));
+            Assert.AreEqual("11643.21", oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']"));
         }
 
         [TestMethod]
         public void FormulaParserTest()
         {
-            var r = oActions.ProcessFormula("@P.TotalPages = count(*//P)");
-            var s = oActions.SumXmlNodes("sum(//B/D/P/V[@n='STATUS']/text())");
-            s = oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())");
-            s = oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']");
-            s = "";
+            Assert.AreEqual(true,oActions.ProcessFormula("@P.TotalPages = count(*//P)"));
+            Assert.AreEqual("105",oActions.SumXmlNodes("sum(//B/D/P/V[@n='STATUS']/text())"));
+            Assert.AreEqual("113",oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())"));
+            Assert.AreEqual("11643.21",oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']"));
         }
     }
 }

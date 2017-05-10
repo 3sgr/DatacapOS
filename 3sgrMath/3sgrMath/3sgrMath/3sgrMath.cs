@@ -199,17 +199,15 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
                 WriteLog(string.Format(Messages.PFProcessing,formula));
                 string eval;
                 string target;
-                var ps = new Parser(_customFunctions);
-                if (TestForAssignement(formula, out target, out eval))
-                    //we have an assignement to be made
-                {
-                    
-                    localSmartObj.DCONavSetValue(target, ps.SubstringPush(eval));
-                }
-                else
-                {
-                    return Convert.ToBoolean(ps.SubstringPush(formula));
-                }
+//                var ps = new Parser(_customFunctions);
+//                if (TestForAssignement(formula, out target, out eval))
+//                {//we have an assignement to be made
+//                    localSmartObj.DCONavSetValue(target, ps.SubstringPush(eval));
+//                }
+//                else
+//                {
+//                    return Convert.ToBoolean(ps.SubstringPush(formula));
+//                }
             }
             catch (Exception ex)
             {

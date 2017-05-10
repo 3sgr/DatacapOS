@@ -22,7 +22,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Templates {
+    public class Templates {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -97,11 +97,56 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ^.
+        /// </summary>
+        public static string OperationsHigh {
+            get {
+                return ResourceManager.GetString("OperationsHigh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to +,=,-,&lt;,&gt;,==,&gt;=,&lt;=,!=,&amp;&amp;,||,!.
+        /// </summary>
+        public static string OperationsLow {
+            get {
+                return ResourceManager.GetString("OperationsLow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to *,/,%.
+        /// </summary>
+        public static string OperationsMid {
+            get {
+                return ResourceManager.GetString("OperationsMid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (.
         /// </summary>
         internal static string Prefix {
             get {
                 return ResourceManager.GetString("Prefix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [/[\]\^\$\|\*\+\!&amp;\-+=&lt;&gt;:;, ]{1,}.
+        /// </summary>
+        public static string RegexFormulaMatch {
+            get {
+                return ResourceManager.GetString("RegexFormulaMatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ([a-zA-Z_][a-zA-Z0-9_]*)\((?:[^()]*|(?&lt;open&gt; \( )|(?&lt;-open&gt; \) ))+(?(open)(?!))\)&quot;.
+        /// </summary>
+        public static string RegexParentMatch {
+            get {
+                return ResourceManager.GetString("RegexParentMatch", resourceCulture);
             }
         }
         
