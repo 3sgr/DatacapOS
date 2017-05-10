@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
 {
-    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, WhiteSpace, DoubleOperator, String, Invalid }
+    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, WhiteSpace, DoubleOperator, Invalid }
     public class Parser
     {
         private readonly IDictionary<string, Operator> _operators = new Dictionary<string, Operator>
