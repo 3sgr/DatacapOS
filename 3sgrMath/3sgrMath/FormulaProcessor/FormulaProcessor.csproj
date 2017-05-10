@@ -43,10 +43,11 @@
   <ItemGroup>
     <Compile Include="Arithmetic.cs" />
     <Compile Include="Calculator.cs" />
+    <Compile Include="DataTypes\BaseOperand.cs" />
     <Compile Include="Expansions.cs" />
     <Compile Include="DataTypes\FormatTranslator.cs" />
     <Compile Include="Functions.cs" />
-    <Compile Include="DataTypes\BaseOperand.cs" />
+    <Compile Include="DataTypes\BaseMath.cs" />
     <Compile Include="Logical.cs" />
     <Compile Include="Operator.cs" />
     <Compile Include="Parser.cs" />
