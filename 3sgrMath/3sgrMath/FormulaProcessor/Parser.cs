@@ -15,7 +15,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             ["-"] = new Operator { Name = "-", Precedence = 5 },
             ["*"] = new Operator { Name = "*", Precedence = 7 },
             ["/"] = new Operator { Name = "/", Precedence = 7 },
-            ["^"] = new Operator { Name = "/", Precedence = 8, RightAssociative = true },
+            ["^"] = new Operator { Name = "^", Precedence = 8, RightAssociative = true },
             [">"] = new Operator { Name = ">", Precedence = 3, RightAssociative = true },
             ["<"] = new Operator { Name = "<", Precedence = 3, RightAssociative = true },
             ["<="] = new Operator { Name = "<=", Precedence = 3, RightAssociative = true },

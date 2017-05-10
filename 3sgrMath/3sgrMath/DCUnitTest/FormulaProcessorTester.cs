@@ -27,12 +27,16 @@ namespace DCUnitTest
             {"3-2", "1"},
             {"3*2", "6"},
             {"2-3", "-1"},
+            {"2+2*2", "6"},
+            {"(2+2)*2", "8"},
             {"2^3", "1"}, // ^ is bitwise XOR
             {"2*2==2+2", "True"}
         };
         public Dictionary<string, string> FormulaReduceDataSet = new Dictionary<string, string>()
         {
             {"\" 3 \"+\" 2 \"+\"2\"", "\" 3 \"\" 2 \"+\"2\"+"},
+            {"2+2*2", "222*+"},
+            {"(2+2)*2", "22+2*"},
             {"1==1", "11=="},
             {"\"3\"+\"2\"+\"2\"", "\"3\"\"2\"+\"2\"+"},
             {"3+2+2", "32+2+" },
@@ -78,7 +82,7 @@ namespace DCUnitTest
                 catch (Exception ex)
                 {
                     Debug.WriteLine($"Failed. Exception:{ex.Message}");
-                    //throw;
+                    throw;
                 }
             }
         }
