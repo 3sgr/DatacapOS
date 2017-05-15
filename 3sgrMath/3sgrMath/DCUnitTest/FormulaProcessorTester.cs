@@ -12,7 +12,7 @@ namespace DCUnitTest
 {
     [TestClass]
     public class FormulaProcessorTester
-    {
+    {        
         public Dictionary<string, string> FormulaFuncDataSet = new Dictionary<string, string>()
         {
             {"pow(2,3)", "8"},
@@ -115,7 +115,7 @@ namespace DCUnitTest
                     {
                         var tokens = parser.Tokenize(reader).ToList();
                         //Console.WriteLine(string.Join("\n", tokens));
-                        var res = Calculator.Evaluate(parser.Sort(tokens), Functions.MathFunctions);
+                        var res = Calculator.Evaluate(parser.Sort(tokens));
                         Assert.AreEqual(test.Value, res);
                         Debug.WriteLine("Success");
                     }
@@ -131,19 +131,6 @@ namespace DCUnitTest
         [TestMethod]
         public void FunctionFormulaTest()
         {
-            var tok = "pow(2,3)";
-            var fName = tok.Remove(tok.IndexOf("("));
-            var fArg = tok.Remove(0, tok.IndexOf("(")+1);
-            fArg = fArg.Remove(fArg.LastIndexOf(")"));
-            tok = "abs(-1)";
-            fName = tok.Remove(tok.IndexOf("("));
-            fArg = tok.Remove(0, tok.IndexOf("(")+1);
-            fArg = fArg.Remove(fArg.LastIndexOf(")"));
-            tok = "Pi()";
-            fName = tok.Remove(tok.IndexOf("("));
-            fArg = tok.Remove(0, tok.IndexOf("(")+1);
-            fArg = fArg.Remove(fArg.LastIndexOf(")"));
-
             foreach (var test in FormulaFuncDataSet)
             {
                 
@@ -156,7 +143,7 @@ namespace DCUnitTest
                         var tokens = parser.Tokenize(reader).ToList();
                         //Console.WriteLine(string.Join("\n", tokens));
                         var sorted = parser.Sort(tokens);
-                        var res = Calculator.Evaluate(sorted, Functions.MathFunctions);
+                        var res = Calculator.Evaluate(sorted);
                         Assert.AreEqual(test.Value, res);
                         Debug.WriteLine("Success");
                     }

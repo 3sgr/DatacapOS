@@ -6,17 +6,18 @@ using System.Text;
 
 namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
 {
-    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, Function, WhiteSpace, DoubleOperator, Invalid }
+    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, Function, WhiteSpace, DoubleOperator, SmartParameter, Invalid }
     
     public class Parser
     {
         public Dictionary<string, Func<string, string>> FunctionsDelegates;
+
         public Parser()
         {
             FunctionsDelegates = new Dictionary<string, Func<string, string>>();
             foreach (var fun in Functions.MathFunctions)
             {
-                FunctionsDelegates.Add(fun.Key,fun.Value);
+                FunctionsDelegates.Add(fun.Key, fun.Value);
             }
         }
         public Parser(Dictionary<string, Func<string, string>> customFunctions)
@@ -32,30 +33,11 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             }
         }
 
-        private readonly IDictionary<string, Operator> _operators = new Dictionary<string, Operator>
-        {
-            ["+"] = new Operator { Name = "+", Precedence = 5 },
-            ["-"] = new Operator { Name = "-", Precedence = 5 },
-            ["*"] = new Operator { Name = "*", Precedence = 7 },
-            ["/"] = new Operator { Name = "/", Precedence = 7 },
-            ["^"] = new Operator { Name = "^", Precedence = 8, RightAssociative = true },
-            [">"] = new Operator { Name = ">", Precedence = 3, RightAssociative = true },
-            ["<"] = new Operator { Name = "<", Precedence = 3, RightAssociative = true },
-            ["<="] = new Operator { Name = "<=", Precedence = 3, RightAssociative = true },
-            ["=<"] = new Operator { Name = "=<", Precedence = 3, RightAssociative = true },
-            [">="] = new Operator { Name = ">=", Precedence = 3, RightAssociative = true },
-            ["=>"] = new Operator { Name = "=>", Precedence = 3, RightAssociative = true },
-            ["=="] = new Operator { Name = "==", Precedence = 3, RightAssociative = true },
-            ["!="] = new Operator { Name = "!=", Precedence = 3, RightAssociative = true },
-            ["&"] = new Operator { Name = "&", Precedence = 4},
-            ["|"] = new Operator { Name = "|", Precedence = 3},
-            ["!"] = new Operator { Name = "!", Precedence = 4, RightAssociative = true }
-        };
         private bool CompareOperators(Operator op1, Operator op2)
         {
             return op1.RightAssociative ? op1.Precedence < op2.Precedence : op1.Precedence <= op2.Precedence;
         }
-        private bool CompareOperators(string op1, string op2) => CompareOperators(_operators[op1], _operators[op2]);
+        private bool CompareOperators(string op1, string op2) => CompareOperators(Coll.Operators[op1], Coll.Operators[op2]);
         private TokenType DetermineType(char cur, char next = ' ')
         {
             var res = TokenType.Invalid;
@@ -64,7 +46,8 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     return TokenType.Variable;
                 if (char.IsWhiteSpace(cur))
                     return TokenType.WhiteSpace;
-
+                if (cur == '@')
+                    return TokenType.SmartParameter;
                 switch (cur)
                 {
                     case ',':
@@ -75,27 +58,24 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     case ')':
                         return TokenType.Parenthesis;
                 }
-                if (_operators.ContainsKey(Convert.ToString(cur)))
-                    res = TokenType.Operator;
-                if (next != ' ')
-                    if (_operators.ContainsKey(Convert.ToString(cur.ToString() + next)))
-                        res = TokenType.DoubleOperator;
+                res = GetOperator(cur, next, res);
             }
             if (res == TokenType.Invalid)
                 throw new Exception("Wrong character");
             return res;
-        }
+        }       
         public IEnumerable<Token> Tokenize(TextReader reader)
         {
             var token = new StringBuilder();
             var readingString = false;
             var readingFunction = false;
+            var readingSmartParameter = false;
             int curr;
             while ((curr = reader.Read()) != -1)
             {
                 var ch = (char)curr;
                 token.Append(ch);
-                if (readingFunction) 
+                if (readingFunction)//Array of chars that represents function
                 {
                     //TODO: Support Nested parenthesis and other functions inside a function
                     if (ch == ')') //finished readign function argument 
@@ -106,76 +86,72 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     }
                     continue;
                 }
-                if (!readingString && ch == '"')
-                {
-                    readingString = true;
-                }
-                else if (readingString && ch == '"')
-                {
-                    readingString = false;
-                }
-                if(readingString)
+                if (IsString(ref readingString, ch))//Array of chars that represents string
                     continue;
-                    
+                
                 var next = reader.Peek();
+                var nextType = next != -1? DetermineType((char)next) : TokenType.WhiteSpace;
                 var currType = DetermineType(ch, (char)next);
-                if (currType == TokenType.WhiteSpace)
+                if (readingSmartParameter && nextType!=TokenType.Operator) //Array of chars that represents smart parameter
                 {
                     continue;
                 }
-                if (currType == TokenType.DoubleOperator)
+                if (readingSmartParameter && nextType == TokenType.Operator)
                 {
-                    token.Append((char) reader.Read());
-                    yield return new Token(TokenType.Operator, token.ToString().Trim());
+                    yield return new Token(TokenType.SmartParameter, token.ToString().Trim());
                     token.Clear();
-                    continue;
+                    readingSmartParameter = false;
                 }
-                var nextType = next != -1 && (char)next!='=' ? DetermineType((char)next) : TokenType.WhiteSpace;
+                switch (currType)
+                {
+                    case TokenType.SmartParameter:
+                        readingSmartParameter = true;
+                        continue;
+                    case TokenType.WhiteSpace:
+                        continue;
+                    case TokenType.DoubleOperator:
+                        token.Append((char)reader.Read());
+                        yield return new Token(TokenType.Operator, token.ToString().Trim());
+                        token.Clear();
+                        continue;
+                }
+               
 
                 if (currType == nextType && currType != TokenType.Parenthesis) continue;
                 if (next == '(' && currType != TokenType.Operator && currType != TokenType.Parenthesis)
                 {
-                    //yield return new Token(TokenType.Function, token.ToString());
+                    //We are going to 'collect' the entire string
                     readingFunction = true;
                     continue;
                 }
                 yield return new Token(currType, token.ToString().Trim());
                 token.Clear();
             }
-        }
+            if(readingSmartParameter)
+                yield return new Token(TokenType.SmartParameter, token.ToString().Trim());
+        }      
         public IEnumerable<Token> Sort(IEnumerable<Token> tokens)
         {
-            //            if (!functionsDelegates.ContainsKey(token.Value))
-            //                throw new Exception($"Function '{token.Value}' is not defined.");
-            //            stack.Push(new Token(TokenType.Variable, functionsDelegates[token.Value](stack.Pop().ToString())));
-
             var stack = new Stack<Token>();
-//            foreach (var tok in tokens)
-//            {
-//                if (tok.Type == TokenType.Function)
-//                {
-//                    if (!FunctionsDelegates.ContainsKey(tok.Value))
-//                        throw new Exception($"Function '{tok.Value}' is not defined.");
-//                    stack.Push(stack.Any()
-//                    ? new Token(TokenType.Variable, FunctionsDelegates[tok.Value](stack.Peek().Value))
-//                    : tok);
-//                break;
-//                }
-//            }
-            
             foreach (var tok in tokens)
             {
                 switch (tok.Type)
                 {
                     case TokenType.Function:
-                    {
+                        {
                             var fName = tok.Value.Remove(tok.Value.IndexOf("(", StringComparison.Ordinal));
                             var fArg = tok.Value.Remove(0, tok.Value.IndexOf("(", StringComparison.Ordinal) + 1);
                             fArg = fArg.Remove(fArg.LastIndexOf(")", StringComparison.Ordinal));
                             if (!FunctionsDelegates.ContainsKey(fName))
                                 throw new Exception($"Function '{fName}' is not defined.");
-                        yield return new Token(TokenType.Variable, FunctionsDelegates[fName](fArg));
-                    }
+                            yield return new Token(TokenType.Variable, FunctionsDelegates[fName](fArg));
+                        }
+                        break;
+                    case TokenType.SmartParameter:
+                        {
+                           var fArg = tok.Value;
+                            yield return new Token(TokenType.Variable, FunctionsDelegates["smartParameter"] (fArg));
+                        }
                         break;
                     case TokenType.Variable:
                         yield return tok;
@@ -211,5 +187,24 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                 yield return token;
             }
         }
+        #region Service
+        private static TokenType GetOperator(char cur, char next, TokenType res)
+        {
+            if (Coll.Operators.ContainsKey(Convert.ToString(cur)))
+                res = TokenType.Operator;
+            if (next == ' ') return res;
+            if (Coll.Operators.ContainsKey(Convert.ToString(cur.ToString() + next)))
+                res = TokenType.DoubleOperator;
+            return res;
+        }
+        private bool IsString(ref bool readingString, char ch)
+        {
+            if (ch == '"')
+            {
+                readingString = !readingString;
+            }
+            return readingString;
+        }
+        #endregion
     }
 }

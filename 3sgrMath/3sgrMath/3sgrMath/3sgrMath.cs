@@ -17,6 +17,8 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Xml;
 using dcSmart;
@@ -196,18 +198,17 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
                 CurrentDCO.Variable[Const.DCOResultVar] = Const.True;
                 var localSmartObj = new SmartNav(this);
                 WriteLog(Messages.PFStart);
-                WriteLog(string.Format(Messages.PFProcessing,formula));
-                string eval;
-                string target;
-//                var ps = new Parser(CustomFunctions);
-//                if (TestForAssignement(formula, out target, out eval))
-//                {//we have an assignement to be made
-//                    localSmartObj.DCONavSetValue(target, ps.SubstringPush(eval));
-//                }
-//                else
-//                {
-//                    return Convert.ToBoolean(ps.SubstringPush(formula));
-//                }
+                WriteLog(string.Format(Messages.PFProcessing, formula));
+                string eval; //formula to be processed
+                string target; // target DCO node to have result assigned to
+                if (TestForAssignement(formula, out target, out eval))
+                {
+                    localSmartObj.DCONavSetValue(target, RunCalculations(eval));
+                }
+                else
+                {
+                    return Convert.ToBoolean(bool.Parse(RunCalculations(eval)));
+                }
             }
             catch (Exception ex)
             {
@@ -215,7 +216,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
                 //CallFormulaProcessor(ReadSmartParameter(formula));
                 // It is a best practice to have a try catch in every action to prevent any unexpected errors
                 // from being thrown back to RRS.
-                WriteLog(string.Format(Messages.Exception,ex.Message));
+                WriteLog(string.Format(Messages.PFProcessingException, formula,  ex.Message));
                 return false;
             }
             finally
@@ -224,7 +225,17 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
             }
             return true;
         }
-        
+
+        private string RunCalculations(string input)
+        {
+            Parser parser = new Parser(CustomFunctions);
+            using (var reader = new StringReader(input))
+            {
+                var sorted = parser.Sort(parser.Tokenize(reader).ToList());
+                return Calculator.Evaluate(sorted);
+            }
+        }
+
         /// <summary/>
         /// This is an example custom .NET action that takes multiple parameters with multiple types.
         /// The parameter order and types must match the definition in the RRX file.

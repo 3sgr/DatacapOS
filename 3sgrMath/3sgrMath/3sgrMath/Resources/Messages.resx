@@ -126,6 +126,9 @@
   <data name="PFProcessing" xml:space="preserve">
     <value>Starting processing formula:'{0}'</value>
   </data>
+  <data name="PFProcessingException" xml:space="preserve">
+    <value>Excpetion processing formula:'{0}'. Message: '{1}'</value>
+  </data>
   <data name="PFStart" xml:space="preserve">
     <value>Running 'ProcessFormula' action</value>
   </data>

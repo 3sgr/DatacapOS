@@ -88,6 +88,15 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Excpetion processing formula:&apos;{0}&apos;. Message: &apos;{1}&apos;.
+        /// </summary>
+        internal static string PFProcessingException {
+            get {
+                return ResourceManager.GetString("PFProcessingException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Running &apos;ProcessFormula&apos; action.
         /// </summary>
         internal static string PFStart {

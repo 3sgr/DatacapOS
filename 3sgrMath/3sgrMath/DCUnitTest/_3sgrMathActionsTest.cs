@@ -24,10 +24,12 @@ namespace DCUnitTest
     [TestClass]
     public class _3SgrMathActionsTest : BaseTestClass
     {
-        [TestMethod]
-        public void TestForAssignementTest()
+        public Dictionary<string, string> TestCasesSPLogic = new Dictionary<string, string>()
         {
-            var testCases = new Dictionary<string, string[]>
+            {"@B.New Fingerprint == 2", "True"}
+        };
+
+        public Dictionary<string, string[]> TestCases = new Dictionary<string, string[]>
             {
                 {"A=B+C", new[] {"A", "B+C", "True"}},
                 {" A = B + C ", new[] {"A", "B + C", "True"}},
@@ -36,7 +38,10 @@ namespace DCUnitTest
                 {"AAA=B+C", new[] { "AAA", "B+C", "True"}},
                 {"A=", new[] {"A", "B", "False"}}
             };
-            foreach (var kvp in testCases)
+        [TestMethod]
+        public void TestForAssignementTest()
+        {
+            foreach (var kvp in TestCases)
             {
                 string formula;
                 string target;
@@ -75,5 +80,23 @@ namespace DCUnitTest
             Assert.AreEqual("113",oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())"));
             Assert.AreEqual("11643.21",oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']"));
         }
+        
+        [TestMethod]
+        public void FormulaParserTestSP()
+        {
+            foreach (var kvp in TestCasesSPLogic)
+            {
+                try
+                {
+                    Assert.AreEqual(oActions.ProcessFormula(kvp.Key), bool.Parse(kvp.Value));
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Failed. Exception:{ex.Message}");
+                    throw;
+                }
+            }
+        }
+
     }
 }

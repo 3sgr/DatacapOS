@@ -6,8 +6,8 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
 {
     public static class Calculator
     {
-        public static string Evaluate(IEnumerable<Token> expression, Dictionary<string, Func<string, string>>  functionsDelegates)
-        {
+        public static string Evaluate(IEnumerable<Token> expression)
+        { 
             var stack = new Stack<Token>();
             foreach (var token in expression)
             {
