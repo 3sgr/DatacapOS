@@ -22,6 +22,7 @@ namespace DCUnitTest
             {"(12+12)>pow(2,3)", "True"},
             {"pow(2,3)==2+2*2+2", "True"},
             {"pow( 2 , 3 ) == 2 + 2 * 2 + 2 ", "True"},
+            {"(pi() > 3) & (pi()<4)", "True"},
         };
         public Dictionary<string, string> FormulaDataSet = new Dictionary<string, string>()
         {

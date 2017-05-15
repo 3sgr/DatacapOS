@@ -133,7 +133,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                 var nextType = next != -1 && (char)next!='=' ? DetermineType((char)next) : TokenType.WhiteSpace;
 
                 if (currType == nextType && currType != TokenType.Parenthesis) continue;
-                if (next == '(' && currType != TokenType.Operator)
+                if (next == '(' && currType != TokenType.Operator && currType != TokenType.Parenthesis)
                 {
                     //yield return new Token(TokenType.Function, token.ToString());
                     readingFunction = true;
