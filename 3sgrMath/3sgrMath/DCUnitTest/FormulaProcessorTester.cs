@@ -13,6 +13,16 @@ namespace DCUnitTest
     [TestClass]
     public class FormulaProcessorTester
     {
+        public Dictionary<string, string> FormulaFuncDataSet = new Dictionary<string, string>()
+        {
+            {"pow(2,3)", "8"},
+            {"abs(-3)", "3"},
+            {"sin(0)", "0"},
+            {"cos(0)", "1"},
+            {"(12+12)>pow(2,3)", "True"},
+            {"pow(2,3)==2+2*2+2", "True"},
+            {"pow( 2 , 3 ) == 2 + 2 * 2 + 2 ", "True"},
+        };
         public Dictionary<string, string> FormulaDataSet = new Dictionary<string, string>()
         {
             {"!(2>3)|(7<3)&(4==4)","True"},
@@ -104,7 +114,7 @@ namespace DCUnitTest
                     {
                         var tokens = parser.Tokenize(reader).ToList();
                         //Console.WriteLine(string.Join("\n", tokens));
-                        var res = Calculator.Evaluate(parser.Sort(tokens));
+                        var res = Calculator.Evaluate(parser.Sort(tokens), Functions.MathFunctions);
                         Assert.AreEqual(test.Value, res);
                         Debug.WriteLine("Success");
                     }
@@ -116,5 +126,47 @@ namespace DCUnitTest
                 }
             }
         }
+
+        [TestMethod]
+        public void FunctionFormulaTest()
+        {
+            var tok = "pow(2,3)";
+            var fName = tok.Remove(tok.IndexOf("("));
+            var fArg = tok.Remove(0, tok.IndexOf("(")+1);
+            fArg = fArg.Remove(fArg.LastIndexOf(")"));
+            tok = "abs(-1)";
+            fName = tok.Remove(tok.IndexOf("("));
+            fArg = tok.Remove(0, tok.IndexOf("(")+1);
+            fArg = fArg.Remove(fArg.LastIndexOf(")"));
+            tok = "Pi()";
+            fName = tok.Remove(tok.IndexOf("("));
+            fArg = tok.Remove(0, tok.IndexOf("(")+1);
+            fArg = fArg.Remove(fArg.LastIndexOf(")"));
+
+            foreach (var test in FormulaFuncDataSet)
+            {
+                
+                try
+                {
+                    Debug.WriteLine($"testing formula:'{test.Key}' expected result:{test.Value}");
+                    var parser = new Parser();
+                    using (var reader = new StringReader(test.Key))
+                    {
+                        var tokens = parser.Tokenize(reader).ToList();
+                        //Console.WriteLine(string.Join("\n", tokens));
+                        var sorted = parser.Sort(tokens);
+                        var res = Calculator.Evaluate(sorted, Functions.MathFunctions);
+                        Assert.AreEqual(test.Value, res);
+                        Debug.WriteLine("Success");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Failed. Exception:{ex.Message}");
+                    throw;
+                }
+            }
+        }
+        
     }
 }

@@ -6,9 +6,32 @@ using System.Text;
 
 namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
 {
-    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, WhiteSpace, DoubleOperator, Invalid }
+    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, Function, WhiteSpace, DoubleOperator, Invalid }
+    
     public class Parser
     {
+        public Dictionary<string, Func<string, string>> FunctionsDelegates;
+        public Parser()
+        {
+            FunctionsDelegates = new Dictionary<string, Func<string, string>>();
+            foreach (var fun in Functions.MathFunctions)
+            {
+                FunctionsDelegates.Add(fun.Key,fun.Value);
+            }
+        }
+        public Parser(Dictionary<string, Func<string, string>> customFunctions)
+        {
+            FunctionsDelegates = new Dictionary<string, Func<string, string>>();
+            foreach (var fun in Functions.MathFunctions)
+            {
+                FunctionsDelegates.Add(fun.Key, fun.Value);
+            }
+            foreach (var fun in customFunctions)
+            {
+                FunctionsDelegates.Add(fun.Key, fun.Value);
+            }
+        }
+
         private readonly IDictionary<string, Operator> _operators = new Dictionary<string, Operator>
         {
             ["+"] = new Operator { Name = "+", Precedence = 5 },
@@ -41,6 +64,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     return TokenType.Variable;
                 if (char.IsWhiteSpace(cur))
                     return TokenType.WhiteSpace;
+
                 switch (cur)
                 {
                     case ',':
@@ -65,11 +89,23 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         {
             var token = new StringBuilder();
             var readingString = false;
+            var readingFunction = false;
             int curr;
             while ((curr = reader.Read()) != -1)
             {
                 var ch = (char)curr;
                 token.Append(ch);
+                if (readingFunction) 
+                {
+                    //TODO: Support Nested parenthesis and other functions inside a function
+                    if (ch == ')') //finished readign function argument 
+                    {
+                        yield return new Token(TokenType.Function, token.ToString().Trim());
+                        token.Clear();
+                        readingFunction = false;
+                    }
+                    continue;
+                }
                 if (!readingString && ch == '"')
                 {
                     readingString = true;
@@ -95,25 +131,55 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     continue;
                 }
                 var nextType = next != -1 && (char)next!='=' ? DetermineType((char)next) : TokenType.WhiteSpace;
-                if (currType == nextType && currType!=TokenType.Parenthesis) continue;
+
+                if (currType == nextType && currType != TokenType.Parenthesis) continue;
+                if (next == '(' && currType != TokenType.Operator)
+                {
+                    //yield return new Token(TokenType.Function, token.ToString());
+                    readingFunction = true;
+                    continue;
+                }
                 yield return new Token(currType, token.ToString().Trim());
                 token.Clear();
             }
         }
         public IEnumerable<Token> Sort(IEnumerable<Token> tokens)
         {
+            //            if (!functionsDelegates.ContainsKey(token.Value))
+            //                throw new Exception($"Function '{token.Value}' is not defined.");
+            //            stack.Push(new Token(TokenType.Variable, functionsDelegates[token.Value](stack.Pop().ToString())));
+
             var stack = new Stack<Token>();
+//            foreach (var tok in tokens)
+//            {
+//                if (tok.Type == TokenType.Function)
+//                {
+//                    if (!FunctionsDelegates.ContainsKey(tok.Value))
+//                        throw new Exception($"Function '{tok.Value}' is not defined.");
+//                    stack.Push(stack.Any()
+//                    ? new Token(TokenType.Variable, FunctionsDelegates[tok.Value](stack.Peek().Value))
+//                    : tok);
+//                break;
+//                }
+//            }
+            
             foreach (var tok in tokens)
             {
                 switch (tok.Type)
                 {
-                    case TokenType.Number:
+                    case TokenType.Function:
+                    {
+                            var fName = tok.Value.Remove(tok.Value.IndexOf("(", StringComparison.Ordinal));
+                            var fArg = tok.Value.Remove(0, tok.Value.IndexOf("(", StringComparison.Ordinal) + 1);
+                            fArg = fArg.Remove(fArg.LastIndexOf(")", StringComparison.Ordinal));
+                            if (!FunctionsDelegates.ContainsKey(fName))
+                                throw new Exception($"Function '{fName}' is not defined.");
+                        yield return new Token(TokenType.Variable, FunctionsDelegates[fName](fArg));
+                    }
+                        break;
                     case TokenType.Variable:
                         yield return tok;
-                        break;
-                    /*case TokenType.Function:
-                        stack.Push(tok);
-                        break;*/
+                        break;                    
                     case TokenType.Comma:
                         while (stack.Peek().Value != "(")
                             yield return stack.Pop();
@@ -141,7 +207,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             {
                 var token = stack.Pop();
                 if (token.Type == TokenType.Parenthesis)
-                    throw new Exception("Mismatched parentheses");
+                    throw new Exception("Mismatched parentheses");                                               
                 yield return token;
             }
         }

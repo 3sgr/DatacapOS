@@ -31,11 +31,11 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
     /// </summary>
     public partial class Actions // This class must be a base class for .NET 4.0 Actions.
     {
-        Dictionary<string, Func<string, string>> _customFunctions;
+        public Dictionary<string, Func<string, string>> CustomFunctions;
 
         public Actions()
         {
-            _customFunctions = new Dictionary<string, Func<string, string>> { { "count", CountXmlNodes }, { "sum", SumXmlNodes }, { "sumASCII", SumASCII }, { "smartParameter", SmartParameter } };
+            CustomFunctions = new Dictionary<string, Func<string, string>> { { "count", CountXmlNodes }, { "sum", SumXmlNodes }, { "sumASCII", SumASCII }, { "smartParameter", SmartParameter } };
         }
 
         #region ExpectedByRRS
@@ -199,7 +199,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
                 WriteLog(string.Format(Messages.PFProcessing,formula));
                 string eval;
                 string target;
-//                var ps = new Parser(_customFunctions);
+//                var ps = new Parser(CustomFunctions);
 //                if (TestForAssignement(formula, out target, out eval))
 //                {//we have an assignement to be made
 //                    localSmartObj.DCONavSetValue(target, ps.SubstringPush(eval));

@@ -70,6 +70,15 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ,.
+        /// </summary>
+        internal static string Delimiter {
+            get {
+                return ResourceManager.GetString("Delimiter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &quot;&quot;.
         /// </summary>
         internal static string Empty {
@@ -99,7 +108,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         /// <summary>
         ///   Looks up a localized string similar to ^.
         /// </summary>
-        public static string OperationsHigh {
+        internal static string OperationsHigh {
             get {
                 return ResourceManager.GetString("OperationsHigh", resourceCulture);
             }
@@ -108,7 +117,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         /// <summary>
         ///   Looks up a localized string similar to +,=,-,&lt;,&gt;,==,&gt;=,&lt;=,!=,&amp;&amp;,||,!.
         /// </summary>
-        public static string OperationsLow {
+        internal static string OperationsLow {
             get {
                 return ResourceManager.GetString("OperationsLow", resourceCulture);
             }
@@ -117,7 +126,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         /// <summary>
         ///   Looks up a localized string similar to *,/,%.
         /// </summary>
-        public static string OperationsMid {
+        internal static string OperationsMid {
             get {
                 return ResourceManager.GetString("OperationsMid", resourceCulture);
             }
@@ -135,7 +144,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         /// <summary>
         ///   Looks up a localized string similar to [/[\]\^\$\|\*\+\!&amp;\-+=&lt;&gt;:;, ]{1,}.
         /// </summary>
-        public static string RegexFormulaMatch {
+        internal static string RegexFormulaMatch {
             get {
                 return ResourceManager.GetString("RegexFormulaMatch", resourceCulture);
             }

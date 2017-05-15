@@ -120,6 +120,9 @@
   <data name="ArithmeticOperations" xml:space="preserve">
     <value>^,/,*,-,+</value>
   </data>
+  <data name="Delimiter" xml:space="preserve">
+    <value>,</value>
+  </data>
   <data name="Empty" xml:space="preserve">
     <value>""</value>
   </data>
