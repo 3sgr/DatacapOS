@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources;
 
 namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
 {

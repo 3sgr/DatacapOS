@@ -27,13 +27,12 @@ namespace DCUnitTest
     {
         public Dictionary<string, string> TestCasesSPLogic = new Dictionary<string, string>()
         {
-            {"@B.New Fingerprint == 2", "True"},
+            {@"@B.Total = count(//B/D[1]/P) * count(//B/D[8]/P) * 2", "True"},
+            {@"@B.New Fingerprint == 2", "True"},
             {"sin(@B.New Fingerprint) < 2", "True"},
             {@"@B\Pages_per_Document >= count(//B/D[8]/P)", "False"},
             {@"@B\Pages_per_Document >= count(//B/D[1]/P)", "True"}
-
         };
-
         public Dictionary<string, string[]> TestCases = new Dictionary<string, string[]>
             {
                 {"A=B+C", new[] {"A", "B+C", "True"}},
@@ -76,7 +75,6 @@ namespace DCUnitTest
             Assert.AreEqual("113", oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())"));
             Assert.AreEqual("11643.21", oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']"));
         }
-
         [TestMethod]
         public void FormulaParserTest()
         {
@@ -85,7 +83,6 @@ namespace DCUnitTest
             Assert.AreEqual("113",oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())"));
             Assert.AreEqual("11643.21",oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']"));
         }
-        
         [TestMethod]
         public void FormulaParserTestSP()
         {
@@ -103,6 +100,5 @@ namespace DCUnitTest
                 }
             }
         }
-
     }
 }
