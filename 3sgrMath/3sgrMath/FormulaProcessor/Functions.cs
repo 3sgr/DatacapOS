@@ -47,6 +47,6 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         public static string Cos(string rad)
         {
             return Math.Cos(double.Parse(rad)).ToString(CultureInfo.InvariantCulture);
-        }
+        }       
     }
 }

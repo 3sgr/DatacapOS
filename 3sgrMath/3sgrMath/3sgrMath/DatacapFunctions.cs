@@ -122,7 +122,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
             //TODO: Enhance to process '=' inside string
             target = "";
             formula = theory.Trim();
-            if (!formula.Contains('='))
+            if (!formula.Contains('=')|| formula.Contains("==") || formula.Contains("<=") || formula.Contains("=<") || formula.Contains(">=") || formula.Contains("=>"))
                 return false;
             var ar = formula.Split('=');
             if (ar[0].Trim().Length <= 0 || ar[1].Trim().Length <= 0) return false;

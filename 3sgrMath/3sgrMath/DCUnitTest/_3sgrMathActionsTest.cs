@@ -16,6 +16,7 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Diagnostics;
+using SSSGroup.Datacap.CustomActions._3sgrMath.Resources;
 
 // ReSharper disable InconsistentNaming
 
@@ -26,7 +27,11 @@ namespace DCUnitTest
     {
         public Dictionary<string, string> TestCasesSPLogic = new Dictionary<string, string>()
         {
-            {"@B.New Fingerprint == 2", "True"}
+            {"@B.New Fingerprint == 2", "True"},
+            {"sin(@B.New Fingerprint) < 2", "True"},
+            {@"@B\Pages_per_Document >= count(//B/D[8]/P)", "False"},
+            {@"@B\Pages_per_Document >= count(//B/D[1]/P)", "True"}
+
         };
 
         public Dictionary<string, string[]> TestCases = new Dictionary<string, string[]>
@@ -75,7 +80,7 @@ namespace DCUnitTest
         [TestMethod]
         public void FormulaParserTest()
         {
-            Assert.AreEqual(true,oActions.ProcessFormula("@P.TotalPages = count(*//P)"));
+            Assert.AreEqual(true, oActions.ProcessFormula("@P.TotalPages = count(*//P)"));
             Assert.AreEqual("105",oActions.SumXmlNodes("sum(//B/D/P/V[@n='STATUS']/text())"));
             Assert.AreEqual("113",oActions.SumXmlNodes("sum(*//V[@n='STATUS']/text())"));
             Assert.AreEqual("11643.21",oActions.SumASCII("//B/D/P/F[@id='Invoice_Total']"));
@@ -89,6 +94,7 @@ namespace DCUnitTest
                 try
                 {
                     Assert.AreEqual(oActions.ProcessFormula(kvp.Key), bool.Parse(kvp.Value));
+                    Assert.IsTrue(bool.Parse(oActions.CurrentDCO.Variable[Const.DCOResultVar]));
                 }
                 catch (Exception ex)
                 {

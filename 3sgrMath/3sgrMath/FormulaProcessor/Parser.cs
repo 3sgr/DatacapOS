@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources;
 
 namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
 {
-    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, Function, WhiteSpace, DoubleOperator, SmartParameter, Invalid }
+    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, Function, WhiteSpace, DoubleOperator, SmartParameter, Other }
     
     public class Parser
     {
@@ -40,14 +41,17 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         private bool CompareOperators(string op1, string op2) => CompareOperators(Coll.Operators[op1], Coll.Operators[op2]);
         private TokenType DetermineType(char cur, char next = ' ')
         {
-            var res = TokenType.Invalid;
+            var res = TokenType.Other;
             {
-                if (char.IsLetter(cur) || cur == '"' || char.IsDigit(cur))
+                if (char.IsLetter(cur))
+                    return TokenType.Function;
+                if (cur == '"' || char.IsDigit(cur))
                     return TokenType.Variable;
                 if (char.IsWhiteSpace(cur))
                     return TokenType.WhiteSpace;
-                if (cur == '@')
+                if (cur == '@' || cur == '\\') 
                     return TokenType.SmartParameter;
+
                 switch (cur)
                 {
                     case ',':
@@ -60,8 +64,8 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                 }
                 res = GetOperator(cur, next, res);
             }
-            if (res == TokenType.Invalid)
-                throw new Exception("Wrong character");
+            //if (res == TokenType.Other)
+                //throw new Exception("Wrong character");
             return res;
         }       
         public IEnumerable<Token> Tokenize(TextReader reader)
@@ -124,6 +128,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                     readingFunction = true;
                     continue;
                 }
+                if (currType == TokenType.Function) continue;
                 yield return new Token(currType, token.ToString().Trim());
                 token.Clear();
             }
@@ -144,13 +149,13 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                             fArg = fArg.Remove(fArg.LastIndexOf(")", StringComparison.Ordinal));
                             if (!FunctionsDelegates.ContainsKey(fName))
                                 throw new Exception($"Function '{fName}' is not defined.");
-                            yield return new Token(TokenType.Variable, FunctionsDelegates[fName](fArg));
+                            yield return new Token(TokenType.Variable, FunctionsDelegates[fName](RecursivelyCallCalculations(fArg))); //call recursively all nested references/functions
                         }
                         break;
                     case TokenType.SmartParameter:
                         {
-                           var fArg = tok.Value;
-                            yield return new Token(TokenType.Variable, FunctionsDelegates["smartParameter"] (fArg));
+                           var sParam = tok.Value;
+                            yield return new Token(TokenType.Variable, FunctionsDelegates["smartParameter"] (sParam));
                         }
                         break;
                     case TokenType.Variable:
@@ -205,6 +210,33 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             }
             return readingString;
         }
+        private string RecursivelyCallCalculations(string param)
+        {
+            //Looks lile this neds to be made each specific function responsibility.
+            //Going to check only for smart parameters:
+            return FunctionsDelegates.ContainsKey("smartParameter") ? FunctionsDelegates["smartParameter"](param) : param;
+            /*
+            var nestedCall = false;
+            //TODO Add nested parenthesis
+            // ReSharper disable once UnusedVariable
+            foreach (var fName in FunctionsDelegates.Where(fName => param.Contains(fName.Key)))
+            {
+                nestedCall = true;
+            }
+            var cc = Templates.Operators.ToCharArray();
+            if (param.IndexOfAny(cc) >= 0)
+            {
+                nestedCall = true;
+            }
+            if (!nestedCall) return param;
+            var parser = new Parser {FunctionsDelegates = FunctionsDelegates};
+            using (var reader = new StringReader(param))
+            {
+                var sorted = parser.Sort(parser.Tokenize(reader).ToList());
+                return Calculator.Evaluate(sorted);
+            }*/
+        }
+
         #endregion
     }
 }

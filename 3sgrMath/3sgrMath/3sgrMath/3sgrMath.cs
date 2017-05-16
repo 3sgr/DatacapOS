@@ -37,7 +37,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
 
         public Actions()
         {
-            CustomFunctions = new Dictionary<string, Func<string, string>> { { "count", CountXmlNodes }, { "sum", SumXmlNodes }, { "sumASCII", SumASCII }, { "smartParameter", SmartParameter } };
+            CustomFunctions = new Dictionary<string, Func<string, string>> { { "count", CountXmlNodes }, { "sum", SumXmlNodes }, { "sumASCII", SumASCII }, { "smartParameter", SmartParameter }};
         }
 
         #region ExpectedByRRS

@@ -61,15 +61,6 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ^,/,*,-,+.
-        /// </summary>
-        internal static string ArithmeticOperations {
-            get {
-                return ResourceManager.GetString("ArithmeticOperations", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to ,.
         /// </summary>
         internal static string Delimiter {
@@ -79,56 +70,11 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;&quot;.
+        ///   Looks up a localized string similar to =&gt;&lt;!=&amp;&amp;|!^/*-+.
         /// </summary>
-        internal static string Empty {
+        internal static string Operators {
             get {
-                return ResourceManager.GetString("Empty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ?.
-        /// </summary>
-        internal static string IdSymbols {
-            get {
-                return ResourceManager.GetString("IdSymbols", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;,&gt;,==,&gt;=,&lt;=,!=,&amp;&amp;,||,!.
-        /// </summary>
-        internal static string LogicalOperators {
-            get {
-                return ResourceManager.GetString("LogicalOperators", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ^.
-        /// </summary>
-        internal static string OperationsHigh {
-            get {
-                return ResourceManager.GetString("OperationsHigh", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to +,=,-,&lt;,&gt;,==,&gt;=,&lt;=,!=,&amp;&amp;,||,!.
-        /// </summary>
-        internal static string OperationsLow {
-            get {
-                return ResourceManager.GetString("OperationsLow", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to *,/,%.
-        /// </summary>
-        internal static string OperationsMid {
-            get {
-                return ResourceManager.GetString("OperationsMid", resourceCulture);
+                return ResourceManager.GetString("Operators", resourceCulture);
             }
         }
         

@@ -117,29 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ArithmeticOperations" xml:space="preserve">
-    <value>^,/,*,-,+</value>
-  </data>
   <data name="Delimiter" xml:space="preserve">
     <value>,</value>
   </data>
-  <data name="Empty" xml:space="preserve">
-    <value>""</value>
-  </data>
-  <data name="IdSymbols" xml:space="preserve">
-    <value>?</value>
-  </data>
-  <data name="LogicalOperators" xml:space="preserve">
-    <value>&lt;,&gt;,==,&gt;=,&lt;=,!=,&amp;&amp;,||,!</value>
-  </data>
-  <data name="OperationsHigh" xml:space="preserve">
-    <value>^</value>
-  </data>
-  <data name="OperationsLow" xml:space="preserve">
-    <value>+,=,-,&lt;,&gt;,==,&gt;=,&lt;=,!=,&amp;&amp;,||,!</value>
-  </data>
-  <data name="OperationsMid" xml:space="preserve">
-    <value>*,/,%</value>
+  <data name="Operators" xml:space="preserve">
+    <value>=&gt;&lt;!=&amp;&amp;|!^/*-+</value>
   </data>
   <data name="Prefix" xml:space="preserve">
     <value>(</value>
