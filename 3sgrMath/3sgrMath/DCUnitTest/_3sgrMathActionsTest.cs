@@ -16,7 +16,7 @@ using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Diagnostics;
-using SSSGroup.Datacap.CustomActions._3sgrMath.Resources;
+using Datacap.Math.Resources;
 
 // ReSharper disable InconsistentNaming
 
@@ -27,11 +27,11 @@ namespace DCUnitTest
     {
         public Dictionary<string, string> TestCasesSPLogic = new Dictionary<string, string>()
         {
-            {@"@B.Total = count(//B/D[1]/P) * count(//B/D[8]/P) * 2", "True"},
             {@"@B.New Fingerprint == 2", "True"},
+            {@"@B.Total = count(//B/D[1]/P) * count(//B/D[8]/P) * 2", "True"},
             {"sin(@B.New Fingerprint) < 2", "True"},
             {@"@B\Pages_per_Document >= count(//B/D[8]/P)", "False"},
-            {@"@B\Pages_per_Document >= count(//B/D[1]/P)", "True"}
+            {@"@B\Pages_per_Document >= count(//B/D[1]/P)", "True"}                       
         };
         public Dictionary<string, string[]> TestCases = new Dictionary<string, string[]>
             {

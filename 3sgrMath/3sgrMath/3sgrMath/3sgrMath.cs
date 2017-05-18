@@ -22,10 +22,10 @@ using System.Linq;
 using System.Reflection;
 using System.Xml;
 using dcSmart;
-using SSSGroup.Datacap.CustomActions.FormulaProcessor;
-using SSSGroup.Datacap.CustomActions._3sgrMath.Resources;
+using Datacap.Math.Resources;
+using SSSGroup.Utilites.FormulaProcessor;
 
-namespace SSSGroup.Datacap.CustomActions._3sgrMath
+namespace Datacap.Math
 {
     /// <summary>
     /// Class difinition is split into multiple .cs files based on logical purpose of the code
@@ -201,9 +201,12 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath
                 WriteLog(string.Format(Messages.PFProcessing, formula));
                 string eval; //formula to be processed
                 string target; // target DCO node to have result assigned to
-                if (TestForAssignement(formula, out target, out eval))
+                var isAssignement = TestForAssignement(formula, out target, out eval);
+                var res = RunCalculations(eval);
+                WriteLog($"{eval} = {res}");
+                if (isAssignement)
                 {
-                    localSmartObj.DCONavSetValue(target, RunCalculations(eval));
+                    localSmartObj.DCONavSetValue(target, res);
                 }
                 else
                 {

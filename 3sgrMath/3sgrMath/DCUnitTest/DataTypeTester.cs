@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes;
+using SSSGroup.Utilites.FormulaProcessor.DataTypes;
 
 namespace DCUnitTest
 {

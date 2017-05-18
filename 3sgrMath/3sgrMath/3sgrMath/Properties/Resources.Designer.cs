@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SSSGroup.Datacap.CustomActions._3sgrMath.Properties {
+namespace Datacap.Math.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SSSGroup.Datacap.CustomActions._3sgrMath.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Datacap.Math.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -70,7 +70,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;rrx&gt;
+        ///   Looks up a localized string similar to &lt;rrx namespace=&quot;DatacapMath&quot; v=&quot;9.0.1.2.2&quot;&gt;
         ///&lt;!-- === .NET Action Definition and Help === --&gt;
         ///&lt;!-- Licensed Materials - Property of IBM
         ///
@@ -81,10 +81,8 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath.Properties {
         /// --&gt;
         ///
         ///&lt;!-- format: &lt;net ref=&quot;C#Namespace.Class&quot;&gt; --&gt;
-        ///&lt;net ref=&quot;_3sgrMath.Actions&quot;&gt;
-        ///  
-        ///  &lt;!-- Actions and Properties defined here are displayed in alphabetical order in DStudio --&gt;
-        ///  &lt;!-- An example custom act [rest of string was truncated]&quot;;.
+        ///&lt;net ref=&quot;Datacap.Math.Actions&quot;&gt;
+        ///  &lt;!-- Actions and Properties defined here are displayed in alphabetic [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TheRRX {
             get {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
+namespace SSSGroup.Utilites.FormulaProcessor
 {
     public static  class Coll
     {

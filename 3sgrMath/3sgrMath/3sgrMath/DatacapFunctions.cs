@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.Xml.XPath;
-using SSSGroup.Datacap.CustomActions._3sgrMath.Resources;
+using Datacap.Math.Resources;
 
-namespace SSSGroup.Datacap.CustomActions._3sgrMath
+namespace Datacap.Math
 {
     public partial class Actions
     {

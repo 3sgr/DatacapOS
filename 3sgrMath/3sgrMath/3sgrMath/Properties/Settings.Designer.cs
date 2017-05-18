@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SSSGroup.Datacap.CustomActions._3sgrMath.Properties {
+namespace Datacap.Math.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

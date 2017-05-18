@@ -1,7 +1,7 @@
 ﻿using System;
-using SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources;
+using SSSGroup.Utilites.FormulaProcessor.Resources;
 
-namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes
+namespace SSSGroup.Utilites.FormulaProcessor.DataTypes
 {
     public class BaseMath
     {

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes;
+﻿using System.Collections.Generic;
+using SSSGroup.Utilites.FormulaProcessor.DataTypes;
 
-namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
+namespace SSSGroup.Utilites.FormulaProcessor
 {
     public static class Calculator
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes
+namespace SSSGroup.Utilites.FormulaProcessor.DataTypes
 {
     public class BaseOperand<T>
     {

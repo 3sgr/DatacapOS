@@ -8,10 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
-    using System;
-    
-    
+namespace SSSGroup.Utilites.FormulaProcessor.Resources
+{
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -39,7 +37,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources.Templates", typeof(Templates).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SSSGroup.Utilites.FormulaProcessor.Resources.Templates", typeof(Templates).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

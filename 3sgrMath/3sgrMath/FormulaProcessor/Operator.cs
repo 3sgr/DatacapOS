@@ -1,4 +1,4 @@
-namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
+namespace SSSGroup.Utilites.FormulaProcessor
 {
     public class Operator
     {

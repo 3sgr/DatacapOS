@@ -8,11 +8,10 @@
     <ProjectGuid>{241C94A7-A0C0-4C05-8563-01A1196AB9F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SSSGroup.Datacap.CustomActions._3sgrMath</RootNamespace>
-    <AssemblyName>3sgrMath</AssemblyName>
+    <RootNamespace>Datacap.Math</RootNamespace>
+    <AssemblyName>Datacap.Math</AssemblyName>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>SSSGroupLtd.pfx</AssemblyOriginatorKeyFile>
     <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
     <SccLocalPath>&lt;Local Binding Root of Project&gt;</SccLocalPath>
     <SccAuxPath>&lt;Source Control Database&gt;</SccAuxPath>
@@ -63,14 +62,35 @@
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="dcsmart">
       <HintPath>..\..\..\..\..\Datacap\dcshared\NET\dcsmart.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="iRRX">
       <HintPath>..\..\..\..\..\Datacap\dcshared\NET\iRRX.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -80,7 +100,6 @@
   <ItemGroup>
     <Compile Include="3sgrMath.cs" />
     <Compile Include="DatacapFunctions.cs" />
-    <Compile Include="MathematicalFunctions.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -112,6 +131,7 @@
     <None Include="Resources\TheRRX.rrx">
       <SubType>Designer</SubType>
     </None>
+    <None Include="SSSGroupLtd.pfx" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="dclogXLib">
@@ -190,6 +210,7 @@
     <ProjectReference Include="..\FormulaProcessor\FormulaProcessor.csproj">
       <Project>{8EC0D2CF-F72D-4353-BC55-0D99CDD86700}</Project>
       <Name>FormulaProcessor</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -15,12 +15,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("_3sgrMath Custom Action Library")]
-[assembly: AssemblyDescription("_3sgrMath Custom Action Library")]
+[assembly: AssemblyTitle("SSS Group Ltd. Custom Action Library")]
+[assembly: AssemblyDescription("Custom Action Library to perform DCO navigation and formula calculations")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SSS Group Ltd.")]
-[assembly: AssemblyProduct("IBM Datacap")]
-[assembly: AssemblyCopyright("© Copyright IBM Corp. 1994, 2014")]
+[assembly: AssemblyProduct("IBM Datacap Custom Action Library")]
+[assembly: AssemblyCopyright("© Copyright SSS Group Ltd., 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -42,4 +42,4 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 [assembly: AssemblyVersion("9.1.0.1")]
-[assembly: AssemblyFileVersion("9.1.0.2")]
+[assembly: AssemblyFileVersion("9.1.0.3")]

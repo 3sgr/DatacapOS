@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
+namespace SSSGroup.Utilites.FormulaProcessor
 {
-    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, Function, WhiteSpace, DoubleOperator, SmartParameter, Other }
+    public enum TokenType { Number, Variable, Parenthesis, Operator, Comma, Function, WhiteSpace, DoubleOperator, Other }
     
     public class Parser
     {
@@ -32,7 +32,13 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                 FunctionsDelegates.Add(fun.Key, fun.Value);
             }
         }
-
+        public string Process(string formula)
+        {
+            using (var reader = new StringReader(formula))
+            {
+                return Calculator.Evaluate(Sort(Tokenize(reader).ToList()));
+            }
+        }
         private bool CompareOperators(Operator op1, Operator op2)
         {
             return op1.RightAssociative ? op1.Precedence < op2.Precedence : op1.Precedence <= op2.Precedence;
@@ -42,15 +48,12 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
         {
             var res = TokenType.Other;
             {
-                if (char.IsLetter(cur))
+                if (char.IsLetter(cur)|| cur == '@' || cur == '\\')
                     return TokenType.Function;
                 if (cur == '"' || char.IsDigit(cur))
                     return TokenType.Variable;
                 if (char.IsWhiteSpace(cur))
                     return TokenType.WhiteSpace;
-                if (cur == '@' || cur == '\\') 
-                    return TokenType.SmartParameter;
-
                 switch (cur)
                 {
                     case ',':
@@ -72,16 +75,30 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
             var token = new StringBuilder();
             var readingString = false;
             var readingFunction = false;
-            var readingSmartParameter = false;
+            var passedOpeningP = false;
+            // var readingSmartParameter = false;
             int curr;
             while ((curr = reader.Read()) != -1)
             {
                 var ch = (char)curr;
-                token.Append(ch);
-                if (readingFunction)//Array of chars that represents function
+                token.Append(ch);//read current and next chars
+                var next = reader.Peek();
+                var nextType = next != -1 ? DetermineType((char)next) : TokenType.WhiteSpace;
+                var currType = DetermineType(ch, (char)next);
+                if (readingFunction)//Array of chars that represents function with parenthesis
                 {
+                    if (ch == '(' && !passedOpeningP) //first opening parenthesis
+                    {
+                        passedOpeningP = true;
+                    }
                     //TODO: Support Nested parenthesis and other functions inside a function
-                    if (ch == ')') //finished readign function argument 
+                    if (ch == ')' && passedOpeningP) //finished readign function argument with parenthesis
+                    {
+                        yield return new Token(TokenType.Function, token.ToString().Trim());
+                        token.Clear();
+                        readingFunction = false;
+                    }
+                    else if((TokenType.Operator == nextType || TokenType.DoubleOperator == nextType) && !passedOpeningP) //Function without parenthesis
                     {
                         yield return new Token(TokenType.Function, token.ToString().Trim());
                         token.Clear();
@@ -91,25 +108,22 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                 }
                 if (IsString(ref readingString, ch))//Array of chars that represents string
                     continue;
+
                 
-                var next = reader.Peek();
-                var nextType = next != -1? DetermineType((char)next) : TokenType.WhiteSpace;
-                var currType = DetermineType(ch, (char)next);
-                if (readingSmartParameter && nextType!=TokenType.Operator) //Array of chars that represents smart parameter
+
+                /*if (readingSmartParameter && nextType != TokenType.Operator ) //Array of chars that represents smart parameter
                 {
                     continue;
                 }
+
                 if (readingSmartParameter && nextType == TokenType.Operator)
                 {
                     yield return new Token(TokenType.SmartParameter, token.ToString().Trim());
                     token.Clear();
                     readingSmartParameter = false;
-                }
+                }*/
                 switch (currType)
                 {
-                    case TokenType.SmartParameter:
-                        readingSmartParameter = true;
-                        continue;
                     case TokenType.WhiteSpace:
                         continue;
                     case TokenType.DoubleOperator:
@@ -120,8 +134,8 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                 }
                
 
-                if (currType == nextType && currType != TokenType.Parenthesis) continue;
-                if (next == '(' && currType != TokenType.Operator && currType != TokenType.Parenthesis)
+                if (currType == nextType && currType != TokenType.Parenthesis && curr != '@') continue;
+                if (next == '(' && currType != TokenType.Operator && currType != TokenType.Parenthesis || curr=='@')
                 {
                     //We are going to 'collect' the entire string
                     readingFunction = true;
@@ -131,8 +145,8 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                 yield return new Token(currType, token.ToString().Trim());
                 token.Clear();
             }
-            if(readingSmartParameter)
-                yield return new Token(TokenType.SmartParameter, token.ToString().Trim());
+            if(readingFunction)
+                yield return new Token(TokenType.Function, token.ToString().Trim());
         }      
         public IEnumerable<Token> Sort(IEnumerable<Token> tokens)
         {
@@ -143,18 +157,20 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
                 {
                     case TokenType.Function:
                         {
-                            var fName = tok.Value.Remove(tok.Value.IndexOf("(", StringComparison.Ordinal));
-                            var fArg = tok.Value.Remove(0, tok.Value.IndexOf("(", StringComparison.Ordinal) + 1);
-                            fArg = fArg.Remove(fArg.LastIndexOf(")", StringComparison.Ordinal));
-                            if (!FunctionsDelegates.ContainsKey(fName))
-                                throw new Exception($"Function '{fName}' is not defined.");
-                            yield return new Token(TokenType.Variable, FunctionsDelegates[fName](RecursivelyCallCalculations(fArg))); //call recursively all nested references/functions
-                        }
-                        break;
-                    case TokenType.SmartParameter:
-                        {
-                           var sParam = tok.Value;
-                            yield return new Token(TokenType.Variable, FunctionsDelegates["smartParameter"] (sParam));
+                            if (tok.Value.StartsWith("@"))
+                            {
+                                yield return new Token(TokenType.Variable, (RecursivelyCallCalculations(tok.Value))); //call recursively all nested references/functions
+                            }
+                            else
+                            {
+                                var fName = tok.Value.Remove(tok.Value.IndexOf("(", StringComparison.Ordinal));
+                                var fArg = tok.Value.Remove(0, tok.Value.IndexOf("(", StringComparison.Ordinal) + 1);
+                                fArg = fArg.Remove(fArg.LastIndexOf(")", StringComparison.Ordinal));
+                                if (!FunctionsDelegates.ContainsKey(fName))
+                                    throw new Exception($"Function '{fName}' is not defined.");
+                                yield return new Token(TokenType.Variable, FunctionsDelegates[fName](RecursivelyCallCalculations(fArg))); //call recursively all nested references/functions
+                            }
+                            
                         }
                         break;
                     case TokenType.Variable:

@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using SSSGroup.Datacap.CustomActions.FormulaProcessor.DataTypes;
-using SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources;
+using SSSGroup.Utilites.FormulaProcessor.DataTypes;
+using SSSGroup.Utilites.FormulaProcessor.Resources;
 
-
-namespace SSSGroup.Datacap.CustomActions.FormulaProcessor
+namespace SSSGroup.Utilites.FormulaProcessor
 {
     public static class Functions
     {

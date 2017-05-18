@@ -18,7 +18,7 @@ using dclogXLib;
 using dcrroLib;
 using PILOTCTRLLib;
 using TDCOLib;
-using SSSGroup.Datacap.CustomActions._3sgrMath;
+using Datacap.Math;
 // ReSharper disable AssignNullToNotNullAttribute
 // ReSharper disable PossibleNullReferenceException
 #pragma warning disable 649
@@ -38,9 +38,9 @@ namespace DCUnitTest
             if (null == runtimeDir)
                 runtimeDir = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             if (string.IsNullOrEmpty(setupDCO))
-                setupDCO = Path.Combine(runtimeDir.Parent.Parent.FullName, "Dependency", "DCO", "Setup", "APT.xml");
+                setupDCO = Path.Combine(runtimeDir.Parent.Parent.FullName, "Dependency", "TestDCO", "Setup", "APT.xml");
             if (string.IsNullOrEmpty(runtimeDCO))
-                runtimeDCO = Path.Combine(runtimeDir.Parent.Parent.FullName, "Dependency", "DCO", "Runtime", "Batch Profiler.xml");
+                runtimeDCO = Path.Combine(runtimeDir.Parent.Parent.FullName, "Dependency", "TestDCO", "Runtime", "Batch Profiler.xml");
 
             _dco = new DCO();
             _dclogxl = new MyDCLogXLib();

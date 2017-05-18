@@ -21,7 +21,7 @@ using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace SSSGroup.Datacap.CustomActions._3sgrMath
+namespace Datacap.Math
 {
     public class RRX : iRRX.iRRXnet // derive from expected interface
     {

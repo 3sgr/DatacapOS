@@ -5,8 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SSSGroup.Datacap.CustomActions.FormulaProcessor;
-using SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources;
+using SSSGroup.Utilites.FormulaProcessor.Resources;
+using SSSGroup.Utilites.FormulaProcessor;
 
 namespace DCUnitTest
 {
@@ -49,6 +49,7 @@ namespace DCUnitTest
         };
         public Dictionary<string, string> FormulaReduceDataSet = new Dictionary<string, string>()
         {
+            {@"@APPVAR(values/gen/FaxAutoindexThreshold)", "@APPVAR(values/gen/FaxAutoindexThreshold)"},
             {"\" 3 \"+\" 2 \"+\"2\"", "\" 3 \"\" 2 \"+\"2\"+"},
             {"2+2*2", "222*+"},
             {"(2+2)*2", "22+2*"},
@@ -59,7 +60,7 @@ namespace DCUnitTest
             {"(3+2+2)", "32+2+"},
             {"( 3 + 2 + 2 )", "32+2+"},
             {"( 3 + 5 * 7 - 2 )", "357*+2-"},
-            {"3+2+1+(11+12+13)", "32+1+1112+13++"},
+            {"3+2+1+(11+12+13)", "32+1+1112+13++"},            
             {@"1^2/3*4-5+6<7>8==9=>10>=11<=12=<13!=14&15|16!17", @"12^3/4*5-6+789101112131415&!==<<=>==>==><1617!|" },
         };
 
@@ -111,14 +112,9 @@ namespace DCUnitTest
                 {
                     Debug.WriteLine($"testing formula:'{test.Key}' expected result:{test.Value}");
                     var parser = new Parser();
-                    using (var reader = new StringReader(test.Key))
-                    {
-                        var tokens = parser.Tokenize(reader).ToList();
-                        //Console.WriteLine(string.Join("\n", tokens));
-                        var res = Calculator.Evaluate(parser.Sort(tokens));
-                        Assert.AreEqual(test.Value, res);
-                        Debug.WriteLine("Success");
-                    }
+                    var res = parser.Process(test.Key);
+                    Assert.AreEqual(test.Value, res);
+                    Debug.WriteLine("Success");
                 }
                 catch (Exception ex)
                 {

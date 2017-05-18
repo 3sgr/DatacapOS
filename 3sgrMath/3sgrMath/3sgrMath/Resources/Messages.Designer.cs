@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SSSGroup.Datacap.CustomActions._3sgrMath.Resources {
+namespace Datacap.Math.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SSSGroup.Datacap.CustomActions._3sgrMath.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SSSGroup.Datacap.CustomActions._3sgrMath.Resources.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Datacap.Math.Resources.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

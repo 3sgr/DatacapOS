@@ -1,4 +1,4 @@
-﻿<rrx>
+﻿<rrx namespace="Datacap.Math" v="9.0.1.2.2">
 <!-- === .NET Action Definition and Help === -->
 <!-- Licensed Materials - Property of IBM
 
@@ -9,8 +9,7 @@
  -->
 
 <!-- format: <net ref="C#Namespace.Class"> -->
-<net ref="_3sgrMath.Actions">
-  
+<net ref="Datacap.Math.Actions">
   <!-- Actions and Properties defined here are displayed in alphabetical order in DStudio -->
   <!-- An example custom action that takes multiple parameters. -->  
   <!-- This definition must match the c# menthod -->
@@ -21,15 +20,15 @@
     </ap>
     <h>
       See GitHub Wiki for more details:
-      <![CDATA[&lt;a href=&quot;https://github.com/AlexeyGorbunov/DatacapOS">GitHub</a>]]>
+      <![CDATA[https://github.com/3sgr/DatacapOS]]>
       <br/><br/>
       <e>
-        <b>ProcessFormula("@B.TotalNumberOfPages = Count(P)") </b><br/>
-        returns amount of pages and stores it in batch level varuable.
+        <b>ProcessFormula("@B.TotalNumberOfPages = count(P)") </b><br/>
+        Assignes number returned bu count(...) function to the Batch level variable.
       </e>
       <e>
         <b>ProcessFormula("@B.TotalNumberOfPages= 5+3")</b><br/>
-        Stores result of mathematical operation in batch level variable.
+        Assignes result of mathematical operation to the batch level variable.
       </e>
     </h>
     <lvl>All levels.</lvl>

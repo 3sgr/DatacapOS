@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
+namespace SSSGroup.Utilites.FormulaProcessor.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SSSGroup.Datacap.CustomActions.FormulaProcessor.Resources.ErrorEx", typeof(ErrorEx).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SSSGroup.Utilites.FormulaProcessor.Resources.ErrorEx", typeof(ErrorEx).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
