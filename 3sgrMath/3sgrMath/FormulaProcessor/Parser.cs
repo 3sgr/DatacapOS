@@ -75,7 +75,8 @@ namespace SSSGroup.Utilites.FormulaProcessor
             var token = new StringBuilder();
             var readingString = false;
             var readingFunction = false;
-            var passedOpeningP = false;
+            //var passedOpeningP = false;
+            int passedPar = 0;
             // var readingSmartParameter = false;
             int curr;
             while ((curr = reader.Read()) != -1)
@@ -87,18 +88,22 @@ namespace SSSGroup.Utilites.FormulaProcessor
                 var currType = DetermineType(ch, (char)next);
                 if (readingFunction)//Array of chars that represents function with parenthesis
                 {
-                    if (ch == '(' && !passedOpeningP) //first opening parenthesis
+                    if (ch == '(' ) //passed opening parenthesis
                     {
-                        passedOpeningP = true;
+                        passedPar++;
+                    }
+                    if (ch == ')') //passed closing parenthesis
+                    {
+                        passedPar--;
                     }
                     //TODO: Support Nested parenthesis and other functions inside a function
-                    if (ch == ')' && passedOpeningP) //finished readign function argument with parenthesis
+                    if (ch == ')' && 0==passedPar) //finished readign function argument with parenthesis
                     {
                         yield return new Token(TokenType.Function, token.ToString().Trim());
                         token.Clear();
                         readingFunction = false;
                     }
-                    else if((TokenType.Operator == nextType || TokenType.DoubleOperator == nextType) && !passedOpeningP) //Function without parenthesis
+                    else if((TokenType.Operator == nextType || TokenType.DoubleOperator == nextType || next == ')') && 0== passedPar) //Function without parenthesis adn/or with closing parenthesis
                     {
                         yield return new Token(TokenType.Function, token.ToString().Trim());
                         token.Clear();
@@ -109,19 +114,6 @@ namespace SSSGroup.Utilites.FormulaProcessor
                 if (IsString(ref readingString, ch))//Array of chars that represents string
                     continue;
 
-                
-
-                /*if (readingSmartParameter && nextType != TokenType.Operator ) //Array of chars that represents smart parameter
-                {
-                    continue;
-                }
-
-                if (readingSmartParameter && nextType == TokenType.Operator)
-                {
-                    yield return new Token(TokenType.SmartParameter, token.ToString().Trim());
-                    token.Clear();
-                    readingSmartParameter = false;
-                }*/
                 switch (currType)
                 {
                     case TokenType.WhiteSpace:

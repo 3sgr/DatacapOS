@@ -49,6 +49,10 @@ namespace DCUnitTest
         };
         public Dictionary<string, string> FormulaReduceDataSet = new Dictionary<string, string>()
         {
+            {"(1=>2)&(2=>3)&(4==4)&(5==5)&(6==6)",
+                "12=>23=>&44==&55==&66==&" },            
+            {"(@APPVAR(values/gen/TestValue) => @B.TotalPages)&(@B.TotalDocuments => 1)&(@B.BatchFalseVar == \"FALSE\")&(@B.New Fingerprint==2)&(@B.TYPE==\"APT\")",
+                "@APPVAR(values/gen/TestValue)@B.TotalPages=>@B.TotalDocuments1=>&@B.BatchFalseVar\"FALSE\"==&@B.New Fingerprint2==&@B.TYPE\"APT\"==&" },
             {@"@APPVAR(values/gen/FaxAutoindexThreshold)", "@APPVAR(values/gen/FaxAutoindexThreshold)"},
             {"\" 3 \"+\" 2 \"+\"2\"", "\" 3 \"\" 2 \"+\"2\"+"},
             {"2+2*2", "222*+"},
@@ -65,7 +69,7 @@ namespace DCUnitTest
         };
 
         [TestMethod]
-        public void TestStringRegexMatch()
+        public void StringRegexMatchTest()
         {
             //match everything between paranthesis for function argument.
             var r = new Regex(Templates.RegexParentMatch, RegexOptions.IgnorePatternWhitespace);
@@ -78,7 +82,7 @@ namespace DCUnitTest
             }
         }
         [TestMethod]
-        public void FormulaParceTest()
+        public void ReduceFormulaTest()
         {
             foreach (var test in FormulaReduceDataSet)
             {

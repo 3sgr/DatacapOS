@@ -8,6 +8,8 @@
 	<V n="Rotation Success First Pass">8</V>
 	<V n="Recog - First Level">8</V>
 	<V n="New Fingerprint">2</V>
+	<V n="TotalPages">9</V>
+	<V n="TotalDocuments">8</V>
 	<F id="Pages_per_Document">
 		<V n="TYPE">Pages_per_Document</V>
 		<V n="Position">0,0,0,0</V>

@@ -33,7 +33,7 @@ namespace DCUnitTest
             {@"@B\Pages_per_Document >= count(//B/D[8]/P)", "False"},
             {@"@B\Pages_per_Document >= count(//B/D[1]/P)", "True"}                       
         };
-        public Dictionary<string, string[]> TestCases = new Dictionary<string, string[]>
+        public Dictionary<string, string[]> TestCasesAssignement = new Dictionary<string, string[]>
             {
                 {"A=B+C", new[] {"A", "B+C", "True"}},
                 {" A = B + C ", new[] {"A", "B + C", "True"}},
@@ -45,7 +45,7 @@ namespace DCUnitTest
         [TestMethod]
         public void TestForAssignementTest()
         {
-            foreach (var kvp in TestCases)
+            foreach (var kvp in TestCasesAssignement)
             {
                 string formula;
                 string target;
