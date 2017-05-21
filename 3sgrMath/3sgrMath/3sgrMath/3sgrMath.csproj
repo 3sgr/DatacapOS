@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Datacap.Math</RootNamespace>
     <AssemblyName>Datacap.Math</AssemblyName>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>SSSGroupLtd.pfx</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
     <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
     <SccLocalPath>&lt;Local Binding Root of Project&gt;</SccLocalPath>
     <SccAuxPath>&lt;Source Control Database&gt;</SccAuxPath>
@@ -131,7 +132,6 @@
     <None Include="Resources\TheRRX.rrx">
       <SubType>Designer</SubType>
     </None>
-    <None Include="SSSGroupLtd.pfx" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="dclogXLib">
